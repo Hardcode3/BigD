@@ -23,7 +23,7 @@ On Windows, docker uses the Hyper-V virtualization.
     It allows to run multiple virtual computers on the same physical computer.
     The operating system (OS) already runs on a virtual computer, and have no way to make the difference between a physical and a virtual computer.
 
-    ![virtualization](/res/docker/Virtualization.png)
+    ![virtualization](../../res/docker/Virtualization.png)
 
 ### Virtual Machine (VM)
 
@@ -71,7 +71,7 @@ Main VM cloud hosts are:
      Containers are lightweight, standalone, and executable packages that include everything needed to run a piece of software, such as the code, runtime, system tools, libraries, and settings. 
      They ensure that software runs consistently across different computing environments by isolating the application from its surroundings.
 
-![vm_vs_container](/res/docker/vm_vs_container.png)
+![vm_vs_container](../../res/docker/vm_vs_container.png)
 
 !!! success "Benefits of containers"
 
