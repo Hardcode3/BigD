@@ -1,6 +1,6 @@
 site_name: Documentation
-repo_url: https://github.com/Hardcode3/mkdocs_template
-repo_name: Hardcode3/mkdocs_template
+repo_url: https://github.com/Hardcode3/BigD.git
+repo_name: Hardcode3/BigD
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
