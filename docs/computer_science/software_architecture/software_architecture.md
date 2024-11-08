@@ -157,7 +157,7 @@ CRC cards stands for Class, Responsibility and Collaborator (aka. Components, Co
 This is a way of representing high level structure ([[#Build a conceptual design]]).
 It is useful to record, organize and refine the components of the system.
 
-![crc_card](../res/software_architecture/CRC_card.jpg)
+![crc_card](../../res/software_architecture/CRC_card.jpg)
 
 Example using a bank system:
 
@@ -232,7 +232,7 @@ It has a frame lasting the whole life of the car and tires that can be replaced 
 
 Properties turn into variables and operations into members.
 
-![uml_card](../res/software_architecture/UML_card.jpg)
+![uml_card](../../res/software_architecture/UML_card.jpg)
 
 Translates into (without considering the exposition):
 
@@ -263,7 +263,7 @@ This can be done by using the `private` specifier and implementing getter and se
 	- Aggregation
 	- Composition
 
-![uml_decomposition](../res/software_architecture/UML_decomposition.jpg)
+![uml_decomposition](../../res/software_architecture/UML_decomposition.jpg)
 
 #### Association
 
@@ -286,7 +286,7 @@ For instance: a person can interact with a plane. Neither owns the other.
 - Classes can implement one or more interface at a time which allows them to have multiple types. 
 - Interfaces enable you to describe behaviors without the need to implement them, which allows you to reuse these abstractions.
 
-![UML_generalization](../res/software_architecture/UML_generalization.jpg)
+![UML_generalization](../../res/software_architecture/UML_generalization.jpg)
 
 #### Using inheritance
 
@@ -406,9 +406,9 @@ How to know when we misuse inheritance in POO?
 Sequence Diagrams are used to show your team how objects in your program interact with each other to complete tasks.
 This is a map of the conversations between the involved classes.
 
-![UML_diagrams-sequence_diagrams_UML](../res/software_architecture/UML_diagrams-sequence_diagrams_UML.jpg)
+![UML_diagrams-sequence_diagrams_UML](../../res/software_architecture/UML_diagrams-sequence_diagrams_UML.jpg)
 
-![UML_diagrams-sequence_diagrams_UML_example](../res/software_architecture/UML_diagrams-sequence_diagrams_UML_example.jpg)
+![UML_diagrams-sequence_diagrams_UML_example](../../res/software_architecture/UML_diagrams-sequence_diagrams_UML_example.jpg)
 
 ### UML state diagrams
 
@@ -425,9 +425,9 @@ There are 3 types of activities:
 
 Terminations represents an object being destroyed, or a process being complete, like returning the credit card at the bank machine.
 
-![UML_diagrams-state_diagrams_UML.jpg](../res/software_architecture/UML_diagrams-state_diagrams_UML.jpg)
+![UML_diagrams-state_diagrams_UML.jpg](../../res/software_architecture/UML_diagrams-state_diagrams_UML.jpg)
 
-![UML_diagrams-state_diagrams_UML_example.jpg](../res/software_architecture/UML_diagrams-state_diagrams_UML_example.jpg)
+![UML_diagrams-state_diagrams_UML_example.jpg](../../res/software_architecture/UML_diagrams-state_diagrams_UML_example.jpg)
 
 ## Model checking
 
