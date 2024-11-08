@@ -16,10 +16,13 @@ Let $\theta$ be the vector of parameters in the space $S$.
 The idea is to build successive approximations of the target density $\pi(\theta)$ until it is very close to the final one.
 
 Let the uniform distribution over all the global minimizers be such that:
+
 $$
 S\star = \{ \theta \in S : h(\theta) = min_{\theta}( h(\theta)) \}
 $$
+
 and define
+
 $$
 \left\{
 	\begin{array}{11}
@@ -28,12 +31,15 @@ $$
 	\end{array}
 \right.
 $$
+
 The uttimate goal is to find a way to sample from ${\pi(\theta)}$.
 
-First begin to build am approximate density called $\pi_{T} (\theta)$ where 
+First begin to build am approximate density called $\pi_{T} (\theta)$ where
+
 $$
 \pi_{T}(\theta) \propto exp{\left( \frac{-h(\theta)}{T} \right)}
 $$
+
 T is the **temperature**.
 
 1. As $T \rightarrow \infty$, $\pi(T)$ approaches to unifrom density
@@ -48,10 +54,10 @@ Choose a symmetric proposal density $q(. \mid \theta)$, then for the iteration $
 
 1. Sample $\quad \theta \star \sim q(\theta \mid \theta_{n})$
 2. Sample $\quad U \sim \mathcal{U}(0, 1)$
-3. Compute 
-$$
-\alpha(\theta \star \mid \theta_{n}) = min \left( \frac{exp(-h(\theta \star)/T)}{exp(-h(\theta_{n})/T)}, 1 \right) = min \left( exp \left( \frac{-(h(\theta \star - h(\theta_{n})}{T} \right), 1 \right)
-$$
+3. Compute
+	$$
+	\alpha(\theta \star \mid \theta_{n}) = min \left( \frac{exp(-h(\theta \star)/T)}{exp(-h(\theta_{n})/T)}, 1 \right) = min \left( exp \left( \frac{-(h(\theta \star - h(\theta_{n})}{T} \right), 1 \right)
+	$$
 4. Accept $\theta \star$ as the next state if $\quad U \leq \alpha (\theta \star \mid \theta_{n})$
 5. Decrease the temperature T
 
@@ -60,7 +66,9 @@ If $h(\theta \star) \geq h(\theta_{n})$ then the proposal $\theta \star$ has sti
 As T decreses it becomes less likely that an uphill proposal is accepted (in order to converge to a minima).
 
 A cooling schedule for T has to be choosen, and in general:
+
 $$
-T_{n} = \frac{a}{log(n+b)} \quad \forall a, b > 0 
+T_{n} = \frac{a}{log(n+b)} \quad \forall a, b > 0
 $$
+
 This make simulated annealing a very slow algorithm to converge.

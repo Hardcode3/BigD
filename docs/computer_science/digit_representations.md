@@ -5,22 +5,18 @@
 !!! info
     Binary code is a system of representing information using only two digits, 0 and 1. Each digit in a binary code is called a "bit," and a sequence of bits represents a piece of information. Binary is the fundamental language of computers, and it forms the basis for all digital systems. Here's how binary code works:
 
-    [!Binary and Computers]
     Computers use binary code internally because electronic circuits can easily represent two states (on/off, high/low voltage), corresponding to the binary digits 0 and 1. These binary states are the foundation of digital computing.
 
-    [!Binary and Data Storage]
     - **Text:** Characters are often represented in binary using character encoding schemes like ASCII or Unicode. Each character is assigned a unique binary code.
     - **Numbers:** Binary code is used to represent integer and floating-point numbers. Binary-coded decimals (BCD) and two's complement are common binary representations for numbers.
     - **Images, Audio, and Video:** These types of data are represented in binary as well. For example, pixels in an image may be represented using binary values to represent colors.
 
-    [!Boolean Logic]
     Binary code is closely tied to Boolean logic, where the values 0 and 1 represent the logical states of false and true, respectively. In computer programming and digital circuit design, Boolean logic is used for decision-making and control flow.
 
 ## Representations
 
-### **Binary**
+### **Binary (base 2)**
 
-[!Binary Representation (base 2)]
 In the binary system, numbers are represented using powers of 2. Each digit in a binary number represents a power of 2:
 
 - **Example: Binary representation of 101101:**
@@ -66,15 +62,12 @@ $1 \times 2^5 + 0 \times 2^4 + 1 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 1 \t
 
 ### **Binary Digits (Bits / octet)**
 
-[!Binary Digits (Bits)]
-
 - **Bit:** The smallest unit of data in binary code is a bit, which can be either 0 or 1. The term "bit" is a contraction of "binary digit."
 - **Byte:** A group of 8 bits is called a byte. Bytes are commonly used to represent characters in computer systems.
 - 4 bits (nibble) can be represented using Hexadecimal notation
 
 ### **Hexadecimal**
 
-[!Hexadecimal Representation (base 16)]
 In addition to binary, hexadecimal is often used to represent binary values more compactly.
  Each hexadecimal digit represents four bits (a nibble).
  The code representation starts with `0x` followed by the hexadecimal value (ex: `0xFF` is the decimal number `0xF.0 + 0xF.16 = 15 + 15.16 = 255`)

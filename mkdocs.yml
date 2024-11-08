@@ -3,8 +3,11 @@ repo_url: https://github.com/Hardcode3/BigD.git
 repo_name: Hardcode3/BigD
 extra_css:
   - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 theme:
   name: material
   logo: res/main_icon.png
@@ -41,6 +44,8 @@ markdown_extensions:
     - def_list
     - pymdownx.highlight
     - pymdownx.superfences
+    - pymdownx.arithmatex:
+        generic: true
     - attr_list
     - admonition
     - footnotes
@@ -66,8 +71,6 @@ nav:
     - Home: index.md
     - Computer Science:
       - computer_science/digit_representations.md
-      - Algorithms:
-        - computer_science/algorithms/simulated_annealing.md
       - Languages:
         - Python:
           - computer_science/languages/python/about_init_files.md
@@ -101,3 +104,24 @@ nav:
         - computer_science/tools/vcpkg.md
         - computer_science/tools/docker.md
         - computer_science/tools/github.md
+    - Algorithms:
+        - algorithms/simulated_annealing.md
+        - algorithms/rejection_sampling.md
+        - algorithms/metropolis_hastings.md
+        - algorithms/markov_chain_monte_carlo.md
+        - algorithms/inverse_problem_theory.md
+        - algorithms/algorithm_glossary.md
+        - algorithms/numerical_optimization.md
+    - Data Structures:
+        - data_structures/meshes.md
+        - data_structures/quadtree.md
+        - data_structures/spatial_acceleration_structures.md
+    - File Formats:
+        - file_formats/json.md
+        - file_formats/obj.md
+        - file_formats/segy.md
+        - file_formats/xml.md
+    - Geoscience:
+      - Seismic:
+        - geoscience/seismic/eikonal_equation.md
+
