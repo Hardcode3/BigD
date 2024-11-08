@@ -65,39 +65,39 @@ markdown_extensions:
 nav:
     - Home: index.md
     - Computer Science:
-      - computer_science\digit_representations.md
+      - computer_science/digit_representations.md
       - Algorithms:
-        - computer_science\algorithms\simulated_annealing.md
+        - computer_science/algorithms/simulated_annealing.md
       - Languages:
         - Python:
           - computer_science/languages/python/about_init_files.md
           - computer_science/languages/python/wheels.md
-          - computer_science\languages\python\environments.md
+          - computer_science/languages/python/environments.md
         - Bash:
-          - computer_science\languages\bash\bash_basics.md
+          - computer_science/languages/bash/bash_basics.md
           - Scripts examples:
-            - computer_science\languages\bash\scripts\confgure_and_build_cmake_solution.md
-            - computer_science\languages\bash\scripts\delete_folder.md
-            - computer_science\languages\bash\scripts\configure_python_environment.md
-            - computer_science\languages\bash\scripts\run_doxygen.md
+            - computer_science/languages/bash/scripts/confgure_and_build_cmake_solution.md
+            - computer_science/languages/bash/scripts/delete_folder.md
+            - computer_science/languages/bash/scripts/configure_python_environment.md
+            - computer_science/languages/bash/scripts/run_doxygen.md
         - CXX:
-          - computer_science\languages\cpp\cppcon_2022_back_to_basics_cpp_api_design.md
-          - computer_science\languages\cpp\pybind11_basics.md
+          - computer_science/languages/cpp/cppcon_2022_back_to_basics_cpp_api_design.md
+          - computer_science/languages/cpp/pybind11_basics.md
         - Java:
-          - computer_science\languages\java\java_basics.md
+          - computer_science/languages/java/java_basics.md
         - Markdown:
-          - computer_science\languages\markdown\markdown_basics.md
+          - computer_science/languages/markdown/markdown_basics.md
         - SQL:
-          - computer_science\languages\sql\sql_examples.md
+          - computer_science/languages/sql/sql_examples.md
       - Software architecture:
-        - computer_science\software_architecture\design_patterns.md
-        - computer_science\software_architecture\software_architecture.md
-        - computer_science\software_architecture\unified_modelling_language.md
+        - computer_science/software_architecture/design_patterns.md
+        - computer_science/software_architecture/software_architecture.md
+        - computer_science/software_architecture/unified_modelling_language.md
       - Tools:
-        - computer_science\tools\brew.md
-        - computer_science\tools\git.md
-        - computer_science\tools\screen.md
-        - computer_science\tools\tar.md
-        - computer_science\tools\vcpkg.md
-        - computer_science\tools\docker.md
-        - computer_science\tools\github.md
+        - computer_science/tools/brew.md
+        - computer_science/tools/git.md
+        - computer_science/tools/screen.md
+        - computer_science/tools/tar.md
+        - computer_science/tools/vcpkg.md
+        - computer_science/tools/docker.md
+        - computer_science/tools/github.md
