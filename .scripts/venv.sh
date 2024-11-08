@@ -23,8 +23,10 @@ check_venv_existence() {
 check_python() {
     if command -v python3 &> /dev/null; then
         echo "Python3 is installed."
+        python3 --version
     elif command -v python &> /dev/null; then
         echo "Python is installed."
+        python --version
     else
         echo "Python is not installed."
         return 1
