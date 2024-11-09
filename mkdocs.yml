@@ -1,6 +1,8 @@
 site_name: Documentation
 repo_url: https://github.com/Hardcode3/BigD.git
 repo_name: Hardcode3/BigD
+site_author: Baptiste PENOT
+copyright: © 2024 Baptiste Penot. All rights reserved.
 extra_css:
   - stylesheets/extra.css
   - https://unpkg.com/katex@0/dist/katex.min.css
@@ -11,6 +13,9 @@ extra_javascript:
 theme:
   name: material
   logo: res/main_icon.png
+  font:
+    text: Ubuntu
+    code: Roboto mono
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -19,109 +24,125 @@ theme:
     - content.code.copy
     - content.code.select
     - navigation.footer
-    #- navigation.path
+    - navigation.path
     - navigation.top
     - search.suggest
     - search.highlight
     - search.share
   palette:
-    # Palette toggle for light mode
-    - scheme: default
-      primary: custom
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: teal
       toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
+        icon: material/brightness-auto
         name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: teal
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
 plugins:
   - search
-
-
+  - bibtex:
+      bib_file: docs/refs.bib
 markdown_extensions:
-    - def_list
-    - pymdownx.highlight
-    - pymdownx.superfences
-    - pymdownx.arithmatex:
-        generic: true
-    - attr_list
-    - admonition
-    - footnotes
-    - pymdownx.details
-    - pymdownx.emoji:
-        emoji_index: !!python/name:material.extensions.emoji.twemoji
-        emoji_generator: !!python/name:material.extensions.emoji.to_svg
-    - markdown_include.include:
-        base_path: docs
-    - pymdownx.tabbed:
-        alternate_style: true
-    - abbr
-    - attr_list
-    - pymdownx.snippets
-    - md_in_html
-    - pymdownx.superfences:
-        custom_fences:
-            - name: mermaid
-              class: mermaid
-              format: !!python/name:pymdownx.superfences.fence_code_format
+  - def_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - markdown_include.include:
+      base_path: docs
+  - pymdownx.tabbed:
+      alternate_style: true
+  - abbr
+  - attr_list
+  - pymdownx.snippets
+  - md_in_html
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
-    - Home: index.md
-    - Computer Science:
-      - computer_science/digit_representations.md
+  - Home: index.md
+  - Dev:
       - Languages:
-        - Python:
-          - computer_science/languages/python/about_init_files.md
-          - computer_science/languages/python/wheels.md
-          - computer_science/languages/python/environments.md
-        - Bash:
-          - computer_science/languages/bash/bash_basics.md
-          - Scripts examples:
-            - computer_science/languages/bash/scripts/confgure_and_build_cmake_solution.md
-            - computer_science/languages/bash/scripts/delete_folder.md
-            - computer_science/languages/bash/scripts/configure_python_environment.md
-            - computer_science/languages/bash/scripts/run_doxygen.md
-        - CXX:
-          - computer_science/languages/cpp/cppcon_2022_back_to_basics_cpp_api_design.md
-          - computer_science/languages/cpp/pybind11_basics.md
-        - Java:
-          - computer_science/languages/java/java_basics.md
-        - Markdown:
-          - computer_science/languages/markdown/markdown_basics.md
-        - SQL:
-          - computer_science/languages/sql/sql_examples.md
+          - Python:
+              - dev/languages/python/about_init_files.md
+              - dev/languages/python/wheels.md
+              - dev/languages/python/environments.md
+          - Bash:
+              - dev/languages/bash/bash_basics.md
+              - Scripts examples:
+                  - dev/languages/bash/scripts/confgure_and_build_cmake_solution.md
+                  - dev/languages/bash/scripts/delete_folder.md
+                  - dev/languages/bash/scripts/configure_python_environment.md
+                  - dev/languages/bash/scripts/run_doxygen.md
+          - CXX:
+              - dev/languages/cpp/cppcon_2022_back_to_basics_cpp_api_design.md
+              - dev/languages/cpp/pybind11_basics.md
+          - Java:
+              - dev/languages/java/java_basics.md
+          - Markdown:
+              - dev/languages/markdown/markdown_basics.md
+          - SQL:
+              - dev/languages/sql/sql_examples.md
       - Software architecture:
-        - computer_science/software_architecture/design_patterns.md
-        - computer_science/software_architecture/software_architecture.md
-        - computer_science/software_architecture/unified_modelling_language.md
+          - dev/software_architecture/design_patterns.md
+          - dev/software_architecture/software_architecture.md
+          - dev/software_architecture/unified_modelling_language.md
       - Tools:
-        - computer_science/tools/brew.md
-        - computer_science/tools/git.md
-        - computer_science/tools/screen.md
-        - computer_science/tools/tar.md
-        - computer_science/tools/vcpkg.md
-        - computer_science/tools/docker.md
-        - computer_science/tools/github.md
-    - Algorithms:
-        - algorithms/simulated_annealing.md
-        - algorithms/rejection_sampling.md
-        - algorithms/metropolis_hastings.md
-        - algorithms/markov_chain_monte_carlo.md
-        - algorithms/inverse_problem_theory.md
-        - algorithms/algorithm_glossary.md
-        - algorithms/numerical_optimization.md
-    - Data Structures:
-        - data_structures/meshes.md
-        - data_structures/quadtree.md
-        - data_structures/spatial_acceleration_structures.md
-    - File Formats:
-        - file_formats/json.md
-        - file_formats/obj.md
-        - file_formats/segy.md
-        - file_formats/xml.md
-    - Geoscience:
+          - dev/tools/brew.md
+          - dev/tools/git.md
+          - dev/tools/screen.md
+          - dev/tools/tar.md
+          - dev/tools/vcpkg.md
+          - dev/tools/docker.md
+          - dev/tools/github.md
+  - Algorithms:
+      - algorithms/simulated_annealing.md
+      - algorithms/rejection_sampling.md
+      - algorithms/metropolis_hastings.md
+      - algorithms/markov_chain_monte_carlo.md
+      - algorithms/inverse_problem_theory.md
+      - algorithms/algorithm_glossary.md
+      - algorithms/numerical_optimization.md
+  - Data Structures:
+      - data_structures/digit_representations.md
+      - data_structures/meshes.md
+      - data_structures/quadtree.md
+      - data_structures/spatial_acceleration_structures.md
+  - File Formats:
+      - file_formats/json.md
+      - file_formats/obj.md
+      - file_formats/segy.md
+      - file_formats/xml.md
+  - Geoscience:
       - Seismic:
-        - geoscience/seismic/eikonal_equation.md
-
+          - geoscience/seismic/eikonal_equation.md
+          - geoscience/seismic/seismic_industry_history.md
+          - geoscience/seismic/fast_marching_method.md
+          - geoscience/seismic/fast_sweeping_method.md
+          - geoscience/seismic/full_waveform_inversion.md
+          - geoscience/seismic/born_modelling.md
+          - geoscience/seismic/tomography.md
