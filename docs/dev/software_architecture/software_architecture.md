@@ -1,5 +1,9 @@
 # Software Architecture
 
+## A quick overview
+
+![bytebytego_gif](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0fb05a9a-d6d3-4961-a005-b5d43c3d89eb_800x1040.gif){target=_blank title="A cheat sheet for system designs from ByteByteGo.com"}
+
 ## Introduction to software architecture
 
 !!! success "The objectives of software design is to make the code:"
@@ -14,8 +18,8 @@ Some say that it is the same problem at a different scale.
 Required skills:
 
 - Problem understanding through:
-    - Technical expertise (keep reading)
-    - Communication (with engineer, clients, developer, etc...)
+	- Technical expertise (keep reading)
+	- Communication (with engineer, clients, developer, etc...)
 - Project planning
 - Forward problem solution
 - Creativity

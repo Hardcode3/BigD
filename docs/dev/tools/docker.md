@@ -3,99 +3,20 @@
 !!! info
 
     Docker is a [virtualization](https://en.wikipedia.org/wiki/Virtualization){target=_blank} technique based on containers.
+    
     It allows running very light and isolated containers.
-
-On Windows, docker uses the Hyper-V virtualization.
 
 !!! quote
 
     - [Develop inside a container using VSCode](https://code.visualstudio.com/docs/devcontainers/containers){target=_blank}
     - [Docker documentation](https://docs.docker.com/){target=_blank}
     - [Docker Hub](https://hub.docker.com/){target=_blank}
-    - [Play with Docker](https://labs.play-with-docker.com/)[target=_blank]
+    - [Play with Docker](https://labs.play-with-docker.com/){target=_blank}
+    - [ByteByteGo: Virtualization and Containerization: Which one to pick?](https://blog.bytebytego.com/p/virtualization-and-containerization){target=_blank}
 
 ## Preliminaries
 
-### Virtualization
-
-!!! info
-    Virtualization is the emulation of a physical computer using a software called hypervisor.
-    It allows to run multiple virtual computers on the same physical computer.
-    The operating system (OS) already runs on a virtual computer, and have no way to make the difference between a physical and a virtual computer.
-
-    ![virtualization](../../res/docker/Virtualization.png)
-
-### Virtual Machine (VM)
-
-VMs are base on [virtualization](#virtualization).
-
-!!! success "Benefits of VMs"
-
-    - Low hardware cost
-    - Ease of installation
-    - Installation speed
-
-!!! error "Drawbacks of VMs"
-
-    Needs:
-
-    - An OS
-    - Its libraries
-    - Its commands
-    - Its dedicated ressources
-
-Some VMs requires an OS on host machine:
-
-- VMWare (paid)
-- Virtualbox
-- QEMU
-- Virtual Server (paid)
-
-Some hypervisors do not require any OS to be installed on host machine (Bare Metal VMs):
-
-- Xen
-- VMWare ESX (paid)
-- Hyper-V (commercial)
-- Linux KVM
-
-Main VM cloud hosts are:
-
-- AWS (Amazon)
-- Azure (MS)
-- Digital Ocean
-
-### Containers
-
-!!! info "What is a container?"
-
-     Containers are lightweight, standalone, and executable packages that include everything needed to run a piece of software, such as the code, runtime, system tools, libraries, and settings. 
-     They ensure that software runs consistently across different computing environments by isolating the application from its surroundings.
-
-![vm_vs_container](../../res/docker/vm_vs_container.png)
-
-!!! success "Benefits of containers"
-
-    - Low CPU, RAM and disk usage
-    - More containers can be created given the low ressource usage
-    - Even lower hardware cost compared to VMs
-    - Very fast deployment and startup
-
-Containers are based on containers engines and also runs on a host machine.
-The main difference between containers and VMs is that a container is a process of the host machine, making it completely isolated from it.
-
-### Image
-
-A container is created using an image.
-
-Using Oriented Object Programming the container would be the class and the image would be an instance of this class.
-
-An image is defined by its tag: it is fixed.
-On the other hand, the container is dynamic and can be used from this fixed image.
-
-### Layers
-
-An image is made from layers.
-Layers can be added or removed so that the image is relevant for our usage.
+See [virtualization notes](virtualization.md).
 
 ## Docker hub
 

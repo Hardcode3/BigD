@@ -86,6 +86,12 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Dev:
+      - dev/cyber_security.md
+      - dev/code_quality.md
+      - AI:
+          - dev/ai/generative_ai.md
+      - Database:
+          - dev/database/relational_database.md
       - Languages:
           - Python:
               - dev/languages/python/about_init_files.md
@@ -111,6 +117,9 @@ nav:
           - dev/software_architecture/design_patterns.md
           - dev/software_architecture/software_architecture.md
           - dev/software_architecture/unified_modelling_language.md
+          - dev/software_architecture/authentication_mechanisms.md
+      - Dev Sec Ops:
+          - dev/devsecops/software_version_numbers.md
       - Tools:
           - dev/tools/brew.md
           - dev/tools/git.md
@@ -119,6 +128,10 @@ nav:
           - dev/tools/vcpkg.md
           - dev/tools/docker.md
           - dev/tools/github.md
+          - dev/tools/amazon_aws.md
+          - dev/tools/virtualization.md
+      - Operating Systems:
+          - dev/os/linux_file_system.md
   - Algorithms:
       - algorithms/simulated_annealing.md
       - algorithms/rejection_sampling.md
@@ -127,6 +140,7 @@ nav:
       - algorithms/inverse_problem_theory.md
       - algorithms/algorithm_glossary.md
       - algorithms/numerical_optimization.md
+      - algorithms/big_0_notation
   - Data Structures:
       - data_structures/digit_representations.md
       - data_structures/meshes.md
