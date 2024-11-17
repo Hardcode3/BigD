@@ -160,3 +160,8 @@ nav:
           - geoscience/seismic/full_waveform_inversion.md
           - geoscience/seismic/born_modelling.md
           - geoscience/seismic/tomography.md
+          - geoscience/seismic/seismic_fundamentals.md
+  - Mathematics:
+      - Signal Processing:
+          - mathematics/fourrier_transform.md
+          - mathematics/sampling_theory.md
