@@ -2,6 +2,11 @@
 
 !!! info "The **Fourier Transform** is a mathematical tool that transforms a signal from its original domain (often time or space) into the frequency domain. It breaks down signals into their constituent sinusoidal components (sines and cosines) to analyze their frequency content."
 
+!!! quote "Resources"
+
+    - [Youtube 3BlueOneBrown](https://youtu.be/spUNpyF58BY?si=43lJ-UPiy6w0a0AV){target=_blank}
+    - [Wolfram MathWorld](https://mathworld.wolfram.com/FourierTransform.html){target=_blank}
+
 ---
 
 ## Continuous Fourier Transform (CFT)
@@ -19,7 +24,7 @@ X(f) = \int_{-\infty}^\infty x(t) e^{-j 2 \pi f t} \, dt
 - **\( t \):** Time
 - **\( e^{-j 2 \pi f t} \):** Complex exponential (sinusoidal basis function)
 
-#### Inverse Transform
+### Inverse Transform
 
 \[
 x(t) = \int_{-\infty}^\infty X(f) e^{j 2 \pi f t} \, df
@@ -60,11 +65,6 @@ x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X[k] e^{j \frac{2 \pi}{N} k n}
 
 ---
 
-## Applications
+## Usual Fourrier Transforms
 
-1. **Signal Processing:** Analyzing and filtering signals.
-2. **Communications:** Modulation and frequency analysis.
-3. **Image Processing:** Convolution and edge detection.
-4. **Audio Analysis:** Spectral analysis of sound.
-
-The **Fast Fourier Transform (FFT)** is a computationally efficient algorithm to compute the DFT, widely used in practice.
+![Usual Fourrier transforms table](https://media.cheggcdn.com/media/fff/fff4050d-7215-4cdd-b056-0af757fd3058/php6hYhHm)

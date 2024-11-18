@@ -120,6 +120,8 @@ nav:
           - dev/software_architecture/authentication_mechanisms.md
       - Dev Sec Ops:
           - dev/devsecops/software_version_numbers.md
+          - dev/devsecops/software_development_lifecycle.md
+          - dev/devsecops/api_testing.md
       - Tools:
           - dev/tools/brew.md
           - dev/tools/git.md
