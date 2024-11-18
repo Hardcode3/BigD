@@ -163,6 +163,7 @@ nav:
           - geoscience/seismic/born_modelling.md
           - geoscience/seismic/tomography.md
           - geoscience/seismic/seismic_fundamentals.md
+          - geoscience/seismic/huygens_principle.md
   - Mathematics:
       - Signal Processing:
           - mathematics/fourrier_transform.md
