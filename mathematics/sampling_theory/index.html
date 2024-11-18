@@ -1511,6 +1511,48 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/devsecops/software_development_lifecycle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software Development Lifecycle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/devsecops/api_testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2742,6 +2784,54 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sampling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sampling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nyquist-shannon-sampling-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nyquist-Shannon Sampling Theorem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nyquist-Shannon Sampling Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nyquist-frequency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nyquist frequency
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aliasing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aliasing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2768,6 +2858,30 @@
       Example
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using calculus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-an-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using an image
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2837,6 +2951,54 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sampling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sampling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nyquist-shannon-sampling-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nyquist-Shannon Sampling Theorem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nyquist-Shannon Sampling Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nyquist-frequency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nyquist frequency
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aliasing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aliasing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2863,6 +3025,30 @@
       Example
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using calculus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-an-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using an image
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2899,30 +3085,25 @@
 </div>
 <hr />
 <h2 id="key-concepts">Key Concepts</h2>
-<ol>
-<li><strong>Sampling:</strong></li>
-<li>
-<p>Sampling involves measuring a continuous-time signal <span class="arithmatex">\( x(t) \)</span> at discrete intervals, resulting in <span class="arithmatex">\( x[n] = x(nT_s) \)</span>, where:</p>
+<h3 id="sampling">Sampling</h3>
+<p>Sampling involves measuring a continuous-time signal <span class="arithmatex">\( x(t) \)</span> at discrete intervals, resulting in </p>
+<div class="arithmatex">\[
+x[n] = x(nT_s)
+\]</div>
+<p>where:</p>
 <ul>
-<li><span class="arithmatex">\( T_s \)</span>: Sampling period.</li>
+<li><span class="arithmatex">\( T_s \)</span>: Sampling period or sampling interval.</li>
 <li><span class="arithmatex">\( f_s = \frac{1}{T_s} \)</span>: Sampling frequency (samples per second).</li>
 </ul>
-</li>
-<li>
-<p><strong>Nyquist-Shannon Sampling Theorem:</strong></p>
-</li>
-<li>A continuous signal can be perfectly reconstructed from its samples if the sampling frequency <span class="arithmatex">\( f_s \)</span> is greater than twice the highest frequency component <span class="arithmatex">\( f_{\text{max}} \)</span> of the signal:
-     [
-     f_s &gt; 2 f_{\text{max}}
-     ]</li>
-<li>
-<p><strong>Nyquist frequency:</strong> <span class="arithmatex">\( f_{\text{Nyquist}} = \frac{f_s}{2} \)</span>, the maximum frequency that can be accurately represented with a given sampling rate.</p>
-</li>
-<li>
-<p><strong>Aliasing:</strong></p>
-</li>
-<li>If <span class="arithmatex">\( f_s \leq 2 f_{\text{max}} \)</span>, higher frequency components appear as <strong>lower-frequency artifacts</strong> in the sampled signal, distorting the reconstructed signal. This phenomenon is called <strong>aliasing</strong>.</li>
-</ol>
+<h3 id="nyquist-shannon-sampling-theorem">Nyquist-Shannon Sampling Theorem</h3>
+<p>A continuous signal can be perfectly reconstructed from its samples if the sampling frequency <span class="arithmatex">\( f_s \)</span> is greater than twice the highest frequency component <span class="arithmatex">\( f_{\text{max}} \)</span> of the signal:</p>
+<div class="arithmatex">\[
+f_s &gt; 2 f_{\text{max}}
+\]</div>
+<h4 id="nyquist-frequency">Nyquist frequency</h4>
+<p><span class="arithmatex">\( f_{\text{Nyquist}} = \frac{f_s}{2} \)</span>, the maximum frequency that can be accurately represented with a given sampling rate.</p>
+<h3 id="aliasing">Aliasing</h3>
+<p>If <span class="arithmatex">\( f_s \leq 2 f_{\text{max}} \)</span>, higher frequency components appear as <strong>lower-frequency artifacts</strong> in the sampled signal, distorting the reconstructed signal. This phenomenon is called <strong>aliasing</strong>.</p>
 <hr />
 <h2 id="reconstruction">Reconstruction</h2>
 <ul>
@@ -2931,38 +3112,52 @@
 <hr />
 <h2 id="key-relationships"><strong>Key Relationships</strong></h2>
 <ol>
-<li><strong>Sampling Frequency <span class="arithmatex">\( f_s \)</span>:</strong></li>
-<li>Determines how often the signal is sampled.</li>
 <li>
-<p>A higher <span class="arithmatex">\( f_s \)</span> allows for capturing higher frequencies and more detail.</p>
+<p><strong>Sampling Frequency <span class="arithmatex">\( f_s \)</span>:</strong></p>
+<ul>
+<li>Determines how often the signal is sampled.</li>
+<li>A higher <span class="arithmatex">\( f_s \)</span> allows for capturing higher frequencies and more detail.</li>
+</ul>
 </li>
 <li>
 <p><strong>Reconstructed Signal Frequency:</strong></p>
-</li>
+<ul>
 <li>After reconstruction, frequencies up to <span class="arithmatex">\( f_{\text{Nyquist}} \)</span> are preserved accurately.</li>
 <li>Frequencies above <span class="arithmatex">\( f_{\text{Nyquist}} \)</span> are aliased.</li>
+</ul>
+</li>
 </ol>
 <hr />
 <h2 id="example">Example</h2>
+<h3 id="using-calculus">Using calculus</h3>
 <ul>
-<li>Consider a signal with a maximum frequency <span class="arithmatex">\( f_{\text{max}} = 1 \, \text{kHz} \)</span>:</li>
-<li><strong>Minimum Sampling Rate:</strong> <span class="arithmatex">\( f_s &gt; 2 \times 1 \, \text{kHz} = 2 \, \text{kHz} \)</span>.</li>
+<li>
+<p>Consider a signal with a maximum frequency <span class="arithmatex">\( f_{\text{max}} = 1 \, \text{kHz} \)</span>:</p>
+</li>
+<li>
+<p><strong>Minimum Sampling Rate:</strong> <span class="arithmatex">\( f_s &gt; 2 \times 1 \, \text{kHz} = 2 \, \text{kHz} \)</span>.</p>
+</li>
 <li>If sampled at <span class="arithmatex">\( 4 \, \text{kHz} \)</span>, the signal can be perfectly reconstructed.</li>
 <li>If sampled at <span class="arithmatex">\( 1.5 \, \text{kHz} \)</span>, aliasing occurs, and the original signal cannot be accurately reconstructed.</li>
 </ul>
+<h3 id="using-an-image">Using an image</h3>
+<p><img alt="Conclusions of sampling around Nyquist Rate - Stack Exchange" src="https://rula-tech.com/uploads/images/Knowledge%20Articles/Articles/Nyquist/nyquiet.png" /></p>
 <hr />
 <h2 id="practical-considerations">Practical Considerations</h2>
 <ol>
-<li>Anti-Aliasing Filter</li>
 <li>
-<p>Used before sampling to remove frequencies above <span class="arithmatex">\( f_{\text{Nyquist}} \)</span>, preventing aliasing.</p>
+<p>Anti-Aliasing Filter</p>
+<ul>
+<li>Used before sampling to remove frequencies above <span class="arithmatex">\( f_{\text{Nyquist}} \)</span>, preventing aliasing.</li>
+</ul>
 </li>
 <li>
-<p><strong>Oversampling:</strong></p>
-</li>
+<p>Oversampling</p>
+<ul>
 <li>Sampling at a rate significantly higher than <span class="arithmatex">\( 2 f_{\text{max}} \)</span> can improve practical reconstruction by reducing noise sensitivity.</li>
+</ul>
+</li>
 </ol>
-<p>Let me know if you’d like detailed examples or visual aids!</p>
 
 
 
