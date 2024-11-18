@@ -11,25 +11,25 @@
       
       
       
-        <link rel="prev" href="../seismic_fundamentals/">
+        <link rel="prev" href="../huygens_principle/">
       
       
-        <link rel="next" href="../../../mathematics/fourrier_transform/">
+        <link rel="next" href="../../mathematics/fourrier_transform/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
-        <title>Huygens' Principle - Documentation</title>
+        <title>Wave propagation - Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,11 +48,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#huygens-principle" class="md-skip">
+        <a href="#wave-propagation" class="md-skip">
           Skip to content
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
       
-  <img src="../../../res/main_icon.png" alt="logo">
+  <img src="../../res/main_icon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Huygens' Principle
+              Wave propagation
             
           </span>
         </div>
@@ -231,7 +231,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -250,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../dev/cyber_security/" class="md-tabs__link">
+        <a href="../../dev/cyber_security/" class="md-tabs__link">
           
   
   Dev
@@ -268,7 +268,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../algorithms/simulated_annealing/" class="md-tabs__link">
+        <a href="../../algorithms/simulated_annealing/" class="md-tabs__link">
           
   
   Algorithms
@@ -286,7 +286,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../data_structures/digit_representations/" class="md-tabs__link">
+        <a href="../../data_structures/digit_representations/" class="md-tabs__link">
           
   
   Data Structures
@@ -304,44 +304,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../file_formats/json/" class="md-tabs__link">
+        <a href="../../file_formats/json/" class="md-tabs__link">
           
   
   File Formats
 
         </a>
       </li>
-    
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../eikonal_equation/" class="md-tabs__link">
-          
-  
-  Geoscience
-
-        </a>
-      </li>
-    
-  
-
     
   
 
@@ -359,7 +328,54 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../mathematics/fourrier_transform/" class="md-tabs__link">
+        <a href="../../geoscience/seismic/eikonal_equation/" class="md-tabs__link">
+          
+  
+  Geoscience
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../huygens_principle/" class="md-tabs__link">
+          
+  
+  Physics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../mathematics/fourrier_transform/" class="md-tabs__link">
           
   
   Mathematics
@@ -401,9 +417,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
-  <img src="../../../res/main_icon.png" alt="logo">
+  <img src="../../res/main_icon.png" alt="logo">
 
     </a>
     Documentation
@@ -430,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -490,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/cyber_security/" class="md-nav__link">
+      <a href="../../dev/cyber_security/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/code_quality/" class="md-nav__link">
+      <a href="../../dev/code_quality/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -572,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/ai/generative_ai/" class="md-nav__link">
+      <a href="../../dev/ai/generative_ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -641,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/database/relational_database/" class="md-nav__link">
+      <a href="../../dev/database/relational_database/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -750,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/python/about_init_files/" class="md-nav__link">
+      <a href="../../dev/languages/python/about_init_files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -771,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/python/wheels/" class="md-nav__link">
+      <a href="../../dev/languages/python/wheels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -792,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/python/environments/" class="md-nav__link">
+      <a href="../../dev/languages/python/environments/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -861,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/bash/bash_basics/" class="md-nav__link">
+      <a href="../../dev/languages/bash/bash_basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -922,7 +938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/bash/scripts/confgure_and_build_cmake_solution/" class="md-nav__link">
+      <a href="../../dev/languages/bash/scripts/confgure_and_build_cmake_solution/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -943,7 +959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/bash/scripts/delete_folder/" class="md-nav__link">
+      <a href="../../dev/languages/bash/scripts/delete_folder/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -964,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/bash/scripts/configure_python_environment/" class="md-nav__link">
+      <a href="../../dev/languages/bash/scripts/configure_python_environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -985,7 +1001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/bash/scripts/run_doxygen/" class="md-nav__link">
+      <a href="../../dev/languages/bash/scripts/run_doxygen/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1062,7 +1078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/cpp/cppcon_2022_back_to_basics_cpp_api_design/" class="md-nav__link">
+      <a href="../../dev/languages/cpp/cppcon_2022_back_to_basics_cpp_api_design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1083,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/cpp/pybind11_basics/" class="md-nav__link">
+      <a href="../../dev/languages/cpp/pybind11_basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1152,7 +1168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/java/java_basics/" class="md-nav__link">
+      <a href="../../dev/languages/java/java_basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1221,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/markdown/markdown_basics/" class="md-nav__link">
+      <a href="../../dev/languages/markdown/markdown_basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1290,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/languages/sql/sql_examples/" class="md-nav__link">
+      <a href="../../dev/languages/sql/sql_examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1367,7 +1383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/software_architecture/design_patterns/" class="md-nav__link">
+      <a href="../../dev/software_architecture/design_patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1388,7 +1404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/software_architecture/software_architecture/" class="md-nav__link">
+      <a href="../../dev/software_architecture/software_architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1409,7 +1425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/software_architecture/unified_modelling_language/" class="md-nav__link">
+      <a href="../../dev/software_architecture/unified_modelling_language/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1430,7 +1446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/software_architecture/authentication_mechanisms/" class="md-nav__link">
+      <a href="../../dev/software_architecture/authentication_mechanisms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1499,7 +1515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/devsecops/software_version_numbers/" class="md-nav__link">
+      <a href="../../dev/devsecops/software_version_numbers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1520,7 +1536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/devsecops/software_development_lifecycle/" class="md-nav__link">
+      <a href="../../dev/devsecops/software_development_lifecycle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1541,7 +1557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/devsecops/api_testing/" class="md-nav__link">
+      <a href="../../dev/devsecops/api_testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1610,7 +1626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/tools/brew/" class="md-nav__link">
+      <a href="../../dev/tools/brew/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1631,7 +1647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/tools/git/" class="md-nav__link">
+      <a href="../../dev/tools/git/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1652,7 +1668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/tools/screen/" class="md-nav__link">
+      <a href="../../dev/tools/screen/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1673,7 +1689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/tools/tar/" class="md-nav__link">
+      <a href="../../dev/tools/tar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1694,7 +1710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/tools/vcpkg/" class="md-nav__link">
+      <a href="../../dev/tools/vcpkg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1715,7 +1731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/tools/docker/" class="md-nav__link">
+      <a href="../../dev/tools/docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1736,7 +1752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/tools/github/" class="md-nav__link">
+      <a href="../../dev/tools/github/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1757,7 +1773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/tools/amazon_aws/" class="md-nav__link">
+      <a href="../../dev/tools/amazon_aws/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1778,7 +1794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/tools/virtualization/" class="md-nav__link">
+      <a href="../../dev/tools/virtualization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1847,7 +1863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev/os/linux_file_system/" class="md-nav__link">
+      <a href="../../dev/os/linux_file_system/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1923,7 +1939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algorithms/simulated_annealing/" class="md-nav__link">
+      <a href="../../algorithms/simulated_annealing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1944,7 +1960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algorithms/rejection_sampling/" class="md-nav__link">
+      <a href="../../algorithms/rejection_sampling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1965,7 +1981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algorithms/metropolis_hastings/" class="md-nav__link">
+      <a href="../../algorithms/metropolis_hastings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1986,7 +2002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algorithms/markov_chain_monte_carlo/" class="md-nav__link">
+      <a href="../../algorithms/markov_chain_monte_carlo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2007,7 +2023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algorithms/inverse_problem_theory/" class="md-nav__link">
+      <a href="../../algorithms/inverse_problem_theory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2028,7 +2044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algorithms/algorithm_glossary/" class="md-nav__link">
+      <a href="../../algorithms/algorithm_glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2049,7 +2065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algorithms/numerical_optimization/" class="md-nav__link">
+      <a href="../../algorithms/numerical_optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2070,7 +2086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../algorithms/big_0_notation" class="md-nav__link">
+      <a href="../../algorithms/big_0_notation" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2138,7 +2154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../data_structures/digit_representations/" class="md-nav__link">
+      <a href="../../data_structures/digit_representations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2159,7 +2175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../data_structures/meshes/" class="md-nav__link">
+      <a href="../../data_structures/meshes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2180,7 +2196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../data_structures/quadtree/" class="md-nav__link">
+      <a href="../../data_structures/quadtree/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2201,7 +2217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../data_structures/spatial_acceleration_structures/" class="md-nav__link">
+      <a href="../../data_structures/spatial_acceleration_structures/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2269,7 +2285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../file_formats/json/" class="md-nav__link">
+      <a href="../../file_formats/json/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2290,7 +2306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../file_formats/obj/" class="md-nav__link">
+      <a href="../../file_formats/obj/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2311,7 +2327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../file_formats/segy/" class="md-nav__link">
+      <a href="../../file_formats/segy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2332,7 +2348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../file_formats/xml/" class="md-nav__link">
+      <a href="../../file_formats/xml/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2341,6 +2357,269 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Geoscience
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Geoscience
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Seismic
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Seismic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geoscience/seismic/eikonal_equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Eikonal equation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geoscience/seismic/seismic_industry_history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Seismic Industry History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geoscience/seismic/fast_marching_method/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fast Marching Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geoscience/seismic/fast_sweeping_method/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fast Sweeping Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geoscience/seismic/full_waveform_inversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Full Waveform Inversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geoscience/seismic/born_modelling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Born Modelling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geoscience/seismic/tomography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tomography
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geoscience/seismic/seismic_fundamentals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamentals of seismic acquisition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2377,69 +2656,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    Geoscience
+    Physics
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Geoscience
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Seismic
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6_1">
-            <span class="md-nav__icon md-icon"></span>
-            Seismic
+            Physics
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2450,158 +2684,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../eikonal_equation/" class="md-nav__link">
+      <a href="../huygens_principle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Eikonal equation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../seismic_industry_history/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Seismic Industry History
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fast_marching_method/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Fast Marching Method
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fast_sweeping_method/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Fast Sweeping Method
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../full_waveform_inversion/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Full Waveform Inversion
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../born_modelling/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Born Modelling
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tomography/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Tomography
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../seismic_fundamentals/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Fundamentals of seismic acquisition
+    Huygens' Principle
   </span>
   
 
@@ -2631,7 +2718,7 @@
           
   
   <span class="md-ellipsis">
-    Huygens' Principle
+    Wave propagation
   </span>
   
 
@@ -2642,7 +2729,7 @@
         
   
   <span class="md-ellipsis">
-    Huygens' Principle
+    Wave propagation
   </span>
   
 
@@ -2664,46 +2751,112 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#-wikipedia" class="md-nav__link">
+  <a href="#seismic-wave-propagation" class="md-nav__link">
     <span class="md-ellipsis">
-      - Wikipedia
+      Seismic wave propagation
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#images" class="md-nav__link">
-    <span class="md-ellipsis">
-      Images
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Images">
+    <nav class="md-nav" aria-label="Seismic wave propagation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#core-principle-applied-to-plane-and-spherical-waves" class="md-nav__link">
+  <a href="#general-wave-equation-for-elastic-waves" class="md-nav__link">
     <span class="md-ellipsis">
-      Core principle applied to plane and spherical waves
+      General Wave Equation for Elastic Waves
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#diffraction-explained" class="md-nav__link">
+  <a href="#p-wave-and-s-wave-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Diffraction explained
+      P-Wave and S-Wave Components
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="P-Wave and S-Wave Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#p-wave-equation-compressional-wave" class="md-nav__link">
+    <span class="md-ellipsis">
+      P-Wave Equation (Compressional Wave)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#transmission-at-interface-explained" class="md-nav__link">
+  <a href="#s-wave-equation-shear-wave" class="md-nav__link">
     <span class="md-ellipsis">
-      Transmission at interface explained
+      S-Wave Equation (Shear Wave)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-displacement-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Displacement Field
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seismic-wave-velocities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seismic Wave Velocities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Seismic Wave Velocities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#p-wave-velocity-alpha" class="md-nav__link">
+    <span class="md-ellipsis">
+      P-wave velocity (\(\alpha\))
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-wave-velocity-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      S-wave velocity (\(\beta\))
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Notes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demonstration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demonstration
     </span>
   </a>
   
@@ -2729,14 +2882,6 @@
     </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
     
       
       
@@ -2757,10 +2902,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2771,8 +2916,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Mathematics
           </label>
@@ -2797,10 +2942,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
         
           
-          <label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2811,8 +2956,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
             <span class="md-nav__icon md-icon"></span>
             Signal Processing
           </label>
@@ -2825,7 +2970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mathematics/fourrier_transform/" class="md-nav__link">
+      <a href="../../mathematics/fourrier_transform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2846,7 +2991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mathematics/sampling_theory/" class="md-nav__link">
+      <a href="../../mathematics/sampling_theory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2902,46 +3047,112 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#-wikipedia" class="md-nav__link">
+  <a href="#seismic-wave-propagation" class="md-nav__link">
     <span class="md-ellipsis">
-      - Wikipedia
+      Seismic wave propagation
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#images" class="md-nav__link">
-    <span class="md-ellipsis">
-      Images
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Images">
+    <nav class="md-nav" aria-label="Seismic wave propagation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#core-principle-applied-to-plane-and-spherical-waves" class="md-nav__link">
+  <a href="#general-wave-equation-for-elastic-waves" class="md-nav__link">
     <span class="md-ellipsis">
-      Core principle applied to plane and spherical waves
+      General Wave Equation for Elastic Waves
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#diffraction-explained" class="md-nav__link">
+  <a href="#p-wave-and-s-wave-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Diffraction explained
+      P-Wave and S-Wave Components
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="P-Wave and S-Wave Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#p-wave-equation-compressional-wave" class="md-nav__link">
+    <span class="md-ellipsis">
+      P-Wave Equation (Compressional Wave)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#transmission-at-interface-explained" class="md-nav__link">
+  <a href="#s-wave-equation-shear-wave" class="md-nav__link">
     <span class="md-ellipsis">
-      Transmission at interface explained
+      S-Wave Equation (Shear Wave)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-displacement-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Displacement Field
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seismic-wave-velocities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seismic Wave Velocities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Seismic Wave Velocities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#p-wave-velocity-alpha" class="md-nav__link">
+    <span class="md-ellipsis">
+      P-wave velocity (\(\alpha\))
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#s-wave-velocity-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      S-wave velocity (\(\beta\))
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Notes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demonstration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demonstration
     </span>
   </a>
   
@@ -2970,24 +3181,74 @@
   
 
 
-<h1 id="huygens-principle">Huygens' Principle</h1>
-<div class="admonition info">
-<p class="admonition-title">Concept</p>
-<p>Every point on a wavefront can be considered a secondary source of spherical wavelets.
-These secondary wavelets spread outward, and the new wavefront is formed by the constructive interference of these wavelets.</p>
-</div>
-<div class="admonition quote">
-<p class="admonition-title">Resources</p>
-<h2 id="-wikipedia">- <a href="https://en.wikipedia.org/wiki/Huygens%E2%80%93Fresnel_principle">Wikipedia</a></h2>
-</div>
-<h2 id="images">Images</h2>
-<h3 id="core-principle-applied-to-plane-and-spherical-waves">Core principle applied to plane and spherical waves</h3>
-<p><img alt="britannica picture" src="https://cdn.britannica.com/04/5704-050-A28FFCBE/waves-wave-principle-plane-point-Huygens-BB.jpg" /></p>
-<h3 id="diffraction-explained">Diffraction explained</h3>
-<p><img alt="Wikipedia diffraction image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Refraction_on_an_aperture_-_Huygens-Fresnel_principle.svg/1920px-Refraction_on_an_aperture_-_Huygens-Fresnel_principle.svg.png" /></p>
-<p><img alt="Wikipedia GIF" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Wavelength%3Dslitwidth.gif" /></p>
-<h3 id="transmission-at-interface-explained">Transmission at interface explained</h3>
-<p><img alt="Wikipedia Transmission at interface" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Refraction_-_Huygens-Fresnel_principle.svg/1920px-Refraction_-_Huygens-Fresnel_principle.svg.png" /></p>
+<h1 id="wave-propagation">Wave propagation</h1>
+<h2 id="seismic-wave-propagation">Seismic wave propagation</h2>
+<p>In 3D isotropic seismic wave propagation, the equations governing <strong>P-waves (compressional waves)</strong> and <strong>S-waves (shear waves)</strong> are derived from the wave equation for elastic media. These equations describe how seismic displacements propagate through an isotropic, homogeneous elastic medium.</p>
+<hr />
+<h3 id="general-wave-equation-for-elastic-waves">General Wave Equation for Elastic Waves</h3>
+<p>The displacement vector <span class="arithmatex">\(\mathbf{u}(\mathbf{r}, t)\)</span> satisfies:</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 \mathbf{u}}{\partial t^2} = (\lambda + 2\mu) \nabla (\nabla \cdot \mathbf{u}) - \mu \nabla \times (\nabla \times \mathbf{u}),
+\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(\rho\)</span>: density of the medium,  </li>
+<li><span class="arithmatex">\(\lambda, \mu\)</span>: Lamé parameters,  </li>
+<li><span class="arithmatex">\(\mathbf{u}(\mathbf{r}, t)\)</span>: displacement vector,  </li>
+<li><span class="arithmatex">\(t\)</span>: time,  </li>
+<li><span class="arithmatex">\(\nabla\)</span>: spatial gradient operator.  </li>
+</ul>
+<hr />
+<h3 id="p-wave-and-s-wave-components">P-Wave and S-Wave Components</h3>
+<p>This general wave equation can be decomposed into P-wave and S-wave components:</p>
+<hr />
+<h4 id="p-wave-equation-compressional-wave">P-Wave Equation (Compressional Wave)</h4>
+<p>P-waves correspond to the irrotational part of the displacement field, governed by:</p>
+<div class="arithmatex">\[
+\nabla^2 \phi - \frac{1}{\alpha^2} \frac{\partial^2 \phi}{\partial t^2} = 0,
+\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(\phi(\mathbf{r}, t)\)</span> is the scalar potential such that <span class="arithmatex">\(\mathbf{u}_P = \nabla \phi\)</span>,</li>
+<li><span class="arithmatex">\(\alpha = \sqrt{\frac{\lambda + 2\mu}{\rho}}\)</span> is the P-wave velocity.</li>
+</ul>
+<hr />
+<h4 id="s-wave-equation-shear-wave">S-Wave Equation (Shear Wave)</h4>
+<p>S-waves correspond to the solenoidal (divergence-free) part of the displacement field, governed by:</p>
+<div class="arithmatex">\[
+\nabla^2 \mathbf{\Psi} - \frac{1}{\beta^2} \frac{\partial^2 \mathbf{\Psi}}{\partial t^2} = 0,
+\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(\mathbf{\Psi}(\mathbf{r}, t)\)</span> is the vector potential such that <span class="arithmatex">\(\mathbf{u}_S = \nabla \times \mathbf{\Psi}\)</span>,</li>
+<li><span class="arithmatex">\(\beta = \sqrt{\frac{\mu}{\rho}}\)</span> is the S-wave velocity.</li>
+</ul>
+<hr />
+<h3 id="full-displacement-field">Full Displacement Field</h3>
+<p>The total displacement field <span class="arithmatex">\(\mathbf{u}(\mathbf{r}, t)\)</span> is the sum of the P-wave and S-wave contributions:</p>
+<div class="arithmatex">\[
+\mathbf{u} = \nabla \phi + \nabla \times \mathbf{\Psi}.
+\]</div>
+<hr />
+<h3 id="seismic-wave-velocities">Seismic Wave Velocities</h3>
+<h4 id="p-wave-velocity-alpha">P-wave velocity (<span class="arithmatex">\(\alpha\)</span>)</h4>
+<div class="arithmatex">\[
+\alpha = \sqrt{\frac{\lambda + 2\mu}{\rho}}
+\]</div>
+<h4 id="s-wave-velocity-beta">S-wave velocity (<span class="arithmatex">\(\beta\)</span>)</h4>
+<div class="arithmatex">\[
+\beta = \sqrt{\frac{\mu}{\rho}}
+\]</div>
+<p>These velocities depend on the elastic properties (<span class="arithmatex">\(\lambda, \mu\)</span>) and density (<span class="arithmatex">\(\rho\)</span>) of the medium.</p>
+<hr />
+<h3 id="key-notes">Key Notes</h3>
+<ul>
+<li><strong>Isotropy:</strong> Assumes uniform properties in all directions.</li>
+<li><strong>Homogeneity:</strong> Assumes constant <span class="arithmatex">\(\lambda, \mu, \rho\)</span> in the medium.</li>
+<li>For layered or anisotropic media, additional terms or adjustments are required.</li>
+</ul>
+<h3 id="demonstration">Demonstration</h3>
+<p>TODO</p>
 
 
 
@@ -3023,7 +3284,7 @@ These secondary wavelets spread outward, and the new wavefront is formed by the 
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../seismic_fundamentals/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fundamentals of seismic acquisition">
+          <a href="../huygens_principle/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Huygens&#39; Principle">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3033,14 +3294,14 @@ These secondary wavelets spread outward, and the new wavefront is formed by the 
                 Previous
               </span>
               <div class="md-ellipsis">
-                Fundamentals of seismic acquisition
+                Huygens' Principle
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../../mathematics/fourrier_transform/" class="md-footer__link md-footer__link--next" aria-label="Next: Fourrier Transform">
+          <a href="../../mathematics/fourrier_transform/" class="md-footer__link md-footer__link--next" aria-label="Next: Fourrier Transform">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
@@ -3084,12 +3345,12 @@ These secondary wavelets spread outward, and the new wavefront is formed by the 
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.footer", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.footer", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="../../../javascripts/katex.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       
