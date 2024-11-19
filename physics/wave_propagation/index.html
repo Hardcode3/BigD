@@ -2860,6 +2860,66 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Demonstration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-with-newtons-second-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting with Newton's Second Law
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recovering-the-momentum-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recovering the momentum equation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-stress-strain-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the stress-strain equation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-the-wave-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      To the wave equation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decomposition-in-p-waves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decomposition in P-waves
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decomposition-in-s-waves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decomposition in S-waves
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -3156,6 +3216,66 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Demonstration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-with-newtons-second-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting with Newton's Second Law
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recovering-the-momentum-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recovering the momentum equation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-stress-strain-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the stress-strain equation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-the-wave-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      To the wave equation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decomposition-in-p-waves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decomposition in P-waves
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decomposition-in-s-waves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decomposition in S-waves
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -3248,7 +3368,218 @@
 <li>For layered or anisotropic media, additional terms or adjustments are required.</li>
 </ul>
 <h3 id="demonstration">Demonstration</h3>
-<p>TODO</p>
+<p>The demonstration is done for elastic isotropic and homogeneous media.</p>
+<h4 id="starting-with-newtons-second-law">Starting with Newton's Second Law</h4>
+<p>In its most basic form, Newton's law states:</p>
+<div class="arithmatex">\[
+F = ma
+\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(F\)</span> is the force in <span class="arithmatex">\(N/m\)</span> or in <span class="arithmatex">\(kg.m.s^{-1}\)</span></li>
+<li><span class="arithmatex">\(m\)</span> is the mass subject to acceleration in <span class="arithmatex">\(kg\)</span></li>
+<li><span class="arithmatex">\(a\)</span> is the acceleration of the mass in <span class="arithmatex">\(m.s^{-1}\)</span></li>
+</ul>
+<p>In other words, the force per unit volume is linked to the density of the material:</p>
+<div class="arithmatex">\[
+\frac{F}{V} = \frac{m}{V}.a = \rho a
+\]</div>
+<p>For a continuous medium, this translates to:</p>
+<div class="arithmatex">\[
+\text{force per unit volume} = \text{mass per unit volume} * \text{acceleration}
+\]</div>
+<p>The equation for is:</p>
+<div class="arithmatex">\[
+F_{total} = \rho \frac{\partial^2 u}{\partial t^2}
+\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(\rho\)</span> is the mass per unit volume or material density in <span class="arithmatex">\(kg/m^3\)</span></li>
+<li><span class="arithmatex">\(u\)</span> is the displacement vector, describing motion of particles in the medium in <span class="arithmatex">\(m\)</span></li>
+<li><span class="arithmatex">\(\frac{\partial^2 u}{\partial t^2}\)</span> is the particle acceleration (second derivative of the position with respect to time)</li>
+</ul>
+<h4 id="recovering-the-momentum-equation">Recovering the momentum equation</h4>
+<p>In a continuous elastic medium, there are two main sources of force acting on a small element of material:</p>
+<ol>
+<li>Body forces (<span class="arithmatex">\(F\)</span>): external forces like gravity or a seismic source acting throughout the volume of the material.</li>
+<li>Stress gradient (<span class="arithmatex">\(\nabla.\tau\)</span>): internal forces due to the stress variations within the material. Stress represents how forces are distributed inside the medium and is described by a tensor <span class="arithmatex">\(\tau\)</span>. The gradient of the stress tensor <span class="arithmatex">\(\nabla.\tau\)</span> gives the net force acting on the element due to stress imbalances.</li>
+</ol>
+<p>Therefore, summing these forces give:</p>
+<div class="arithmatex">\[
+F_{total} = \nabla.\tau+F
+\]</div>
+<p>This equation is the momentum equation, and is the foundation for deriving seismic wave equations.
+It says that the motion of a material element is driven by internal stress variations and external body forces.</p>
+<p>If internal forces are negligible, then <span class="arithmatex">\(F\)</span> vanishes and the simplified equations is:</p>
+<div class="arithmatex">\[
+F_{total} = \nabla.\tau
+\]</div>
+<h4 id="using-the-stress-strain-equation">Using the stress-strain equation</h4>
+<p>To solve for the displacement <span class="arithmatex">\(u\)</span>, we need to relate the stress tensor <span class="arithmatex">\(\tau\)</span> to the dusplacement field <span class="arithmatex">\(u\)</span>.
+This is done using Hooke's law for a linear, elastic and isotropic material.</p>
+<div class="arithmatex">\[
+\tau_{ij} = \lambda \delta_{ij} (\nabla . u) + 2 \mu e_{ij} = \lambda \delta_{ij} (\nabla . u) + \mu (\partial_i u_j + \partial_j u_i)
+\]</div>
+<p>where:</p>
+<ol>
+<li>
+<p><strong><span class="arithmatex">\(\tau_{ij}\)</span></strong>: Stress Tensor</p>
+<ul>
+<li>Describes internal forces per unit area within the material.</li>
+<li>Subscripts <span class="arithmatex">\(i\)</span> and <span class="arithmatex">\(j\)</span> indicate directions:<ul>
+<li><span class="arithmatex">\(i\)</span>: Direction of the force.</li>
+<li><span class="arithmatex">\(j\)</span>: Orientation of the surface on which the force acts.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\lambda\)</span> and <span class="arithmatex">\(\mu\)</span></strong>: Lamé Parameters</p>
+<ul>
+<li>Material-specific constants that describe how a material responds to stress.</li>
+<li><span class="arithmatex">\(\lambda\)</span>: Bulk modulus-related term, governing volume changes.</li>
+<li><span class="arithmatex">\(\mu\)</span>: Shear modulus, governing shape changes (shear deformation).</li>
+<li>Together, they define the elastic properties of the medium.</li>
+</ul>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\delta_{ij}\)</span></strong>: Kronecker Delta</p>
+<ul>
+<li>A mathematical tool that equals:</li>
+</ul>
+<div class="arithmatex">\[
+\delta_{ij} =
+\begin{cases}
+1, &amp; \text{if } i = j \ (\text{diagonal terms, e.g., \(\tau_{xx}\)}), \\
+0, &amp; \text{if } i \neq j \ (\text{off-diagonal terms, e.g., \(\tau_{xy}\)}).
+\end{cases}
+\]</div>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(e_{ij}\)</span></strong>: Strain Tensor</p>
+<ul>
+<li>Describes deformation of the material:</li>
+<li><span class="arithmatex">\(e_{ij} = \frac{1}{2} \left( \partial_i u_j + \partial_j u_i \right)\)</span>,</li>
+<li>Symmetric with respect to <span class="arithmatex">\(i\)</span> and <span class="arithmatex">\(j\)</span>,</li>
+<li>Represents how displacement gradients (<span class="arithmatex">\(\partial_i u_j\)</span>) cause material deformation.</li>
+</ul>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(e_{kk}\)</span></strong>: Volumetric Strain</p>
+<ul>
+<li>Sum of the diagonal components of the strain tensor (<span class="arithmatex">\(e_{xx} + e_{yy} + e_{zz}\)</span>):</li>
+</ul>
+<div class="arithmatex">\[
+e_{kk} = \nabla \cdot \mathbf{u}.
+\]</div>
+<ul>
+<li>Represents changes in the material's volume (compression or dilation).</li>
+</ul>
+</li>
+</ol>
+<p><strong><span class="arithmatex">\(\lambda \delta_{ij} e_{kk}\)</span></strong>:</p>
+<ul>
+<li>Describes the isotropic part of stress (uniform compression or dilation).</li>
+<li>Depends on the volumetric strain <span class="arithmatex">\(e_{kk}\)</span>.</li>
+<li>Acts only on the diagonal components of <span class="arithmatex">\(\tau_{ij}\)</span> (normal stresses).</li>
+</ul>
+<p><strong><span class="arithmatex">\(2\mu e_{ij}\)</span></strong>:</p>
+<ul>
+<li>Describes the deviatoric part of stress (shape-changing or shearing deformation).</li>
+<li>Depends on the strain tensor <span class="arithmatex">\(e_{ij}\)</span>.</li>
+<li>Acts on both diagonal and off-diagonal components of <span class="arithmatex">\(\tau_{ij}\)</span>.</li>
+</ul>
+<h4 id="to-the-wave-equation">To the wave equation</h4>
+<p>By substituting this stress-strain relationship into the simplified momentum equation, we can derive the equations governing the propagation of seismic waves, ultimately leading to the separation of P-waves and S-waves.</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 u}{\partial t^2} = \nabla \cdot \left( \lambda \delta_{ij} (\nabla.u) + \mu(\nabla u + (\nabla u)^T) \right)
+\]</div>
+<p>If the material is homogeneous (elasticity parameters does not depend on space) <span class="arithmatex">\(\lambda\)</span>, <span class="arithmatex">\(\mu\)</span> and <span class="arithmatex">\(\rho\)</span> are constants:</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 u}{\partial t^2} = \lambda \delta_{ij} \nabla \cdot (\nabla \cdot u) + \mu \nabla \cdot (\nabla \cdot u) + \mu \nabla \cdot (\nabla u)^T
+\]</div>
+<p>Simplifications using the vector identity <span class="arithmatex">\(\nabla \times (\nabla \times u) = \nabla \cdot (\nabla \cdot u) - \nabla^2 u\)</span> can be done.
+Also <span class="arithmatex">\(\nabla^2 u = \nabla \cdot (\nabla u)^T\)</span>.</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 u}{\partial t^2} = \lambda \delta_{ij} \nabla \cdot (\nabla \cdot u) + \mu \nabla \cdot (\nabla \cdot u) + \mu (\nabla \cdot (\nabla \cdot u) - \nabla \times (\nabla \times u))
+\]</div>
+<p>Developing:</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 u}{\partial t^2} = \lambda \delta_{ij} \nabla \cdot (\nabla \cdot u) + \mu \nabla \cdot (\nabla \cdot u) + \mu \nabla \cdot (\nabla \cdot u) - \mu \nabla \times (\nabla \times u)
+\]</div>
+<p>And grouping terms in <span class="arithmatex">\(\nabla \cdot (\nabla \cdot u)\)</span>, we get:</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 u}{\partial t^2} = (\lambda + 2 \mu) \nabla \cdot (\nabla \cdot u)  - \mu \nabla \times (\nabla \times u)
+\]</div>
+<h4 id="decomposition-in-p-waves">Decomposition in P-waves</h4>
+<p>Taking the divergence (<span class="arithmatex">\(\nabla \cdot\)</span>) of the wave equation gives the equation for P-waves:</p>
+<div class="arithmatex">\[
+\nabla \cdot \left( \rho \frac{\partial^2 u}{\partial t^2} \right) = \nabla \cdot \left[ (\lambda + 2 \mu) \nabla \cdot (\nabla \cdot u)  - \mu \nabla \times (\nabla \times u) \right]
+\]</div>
+<p>Since the divergence of a curl is always zero:</p>
+<div class="arithmatex">\[
+\nabla \cdot \left( \rho \frac{\partial^2 u}{\partial t^2} \right) = \nabla \cdot \left[ (\lambda + 2 \mu) \nabla \cdot (\nabla \cdot u) \right]
+\]</div>
+<p>And that the material is homogeneous:</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 (\nabla \cdot u)}{\partial t^2} = (\lambda + 2 \mu) \nabla \cdot \nabla \cdot (\nabla \cdot u)
+\]</div>
+<p>Lets detail a bit.</p>
+<p>The Laplacian, <span class="arithmatex">\(\nabla^2\)</span>, is the natural result of applying divergence twice on a scalar field because of symmetry in second-order partial derivatives (Clairaut's theorem):</p>
+<div class="arithmatex">\[
+\nabla \cdot \nabla \cdot (\nabla \cdot u) = \nabla^2 (\nabla \cdot u)
+\]</div>
+<p>Simplifying to (homogeneous medium, <span class="arithmatex">\(\rho\)</span> is constant):</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 (\nabla \cdot u)}{\partial t^2} = (\lambda + 2 \mu) \nabla^2 (\nabla \cdot u)
+\]</div>
+<p>Define <span class="arithmatex">\(\phi = \nabla \cdot u\)</span>.
+<span class="arithmatex">\(\phi\)</span> is a scalar field or scalar potential representing compressional component of the wave.</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 \phi}{\partial t^2} = (\lambda + 2 \mu) \nabla^2 \phi
+\]</div>
+<p>Or:</p>
+<div class="arithmatex">\[
+\frac{\partial^2 \phi}{\partial t^2} = \frac{\lambda + 2 \mu}{\rho} \nabla^2 \phi
+\]</div>
+<p>Using <span class="arithmatex">\(\frac{\lambda + 2 \mu}{\rho} = \alpha^2 = V_p^2\)</span> (P-wave velocity) we get the common notation:</p>
+<div class="arithmatex">\[
+\frac{\partial^2 \phi}{\partial t^2} = \alpha^2 \nabla^2 \phi
+\]</div>
+<h4 id="decomposition-in-s-waves">Decomposition in S-waves</h4>
+<p>Taking the curl (<span class="arithmatex">\(\nabla \times\)</span>) of the wave equation gives the equation for S-waves:</p>
+<div class="arithmatex">\[
+\nabla \times \left( \rho \frac{\partial^2 u}{\partial t^2} \right) = \nabla \times \left[ (\lambda + 2 \mu) \nabla (\nabla \cdot u)  - \mu \nabla \times (\nabla \times u) \right]
+\]</div>
+<p>The curl of a gradient is always zero:</p>
+<div class="arithmatex">\[
+\nabla \times \left( \rho \frac{\partial^2 u}{\partial t^2} \right) = \nabla \times \left[ - \mu \nabla \times (\nabla \times u) \right]
+\]</div>
+<p>Lets detail a bit.</p>
+<p>Simplifying to (homogeneous medium, <span class="arithmatex">\(\rho\)</span> and <span class="arithmatex">\(\mu\)</span> do not depend on space coordinates):</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 (\nabla \times u)}{\partial t^2} = - \mu \nabla \times \nabla \times (\nabla \times u)
+\]</div>
+<p>But we have the vector identity <span class="arithmatex">\(\nabla \times (\nabla \times u) = \nabla (\nabla \cdot u) - \nabla^2 u\)</span>.</p>
+<p>Taking the curl of this vector identity gives: <span class="arithmatex">\(\nabla \times \nabla \times (\nabla \times u) = \nabla \times \nabla (\nabla \cdot u) - \nabla \times \nabla^2 u\)</span>.</p>
+<p>Lets break down this expression and simplify it:</p>
+<ol>
+<li>The curl of a gradient is always zero: <span class="arithmatex">\(\nabla \times \nabla (\nabla \cdot u) = 0\)</span></li>
+<li>Taking the curl of the Laplacian is equivalent to taking the Laplacian of the curl: <span class="arithmatex">\(\nabla \times \nabla^2 u = \nabla^2 (\nabla \times u)\)</span></li>
+</ol>
+<p>In the end: <span class="arithmatex">\(\nabla \times \nabla \times (\nabla \times u) = \nabla^2 (\nabla \times u)\)</span>.</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 (\nabla \times u)}{\partial t^2} = \mu \nabla^2 (\nabla \times u)
+\]</div>
+<p>Define <span class="arithmatex">\(\Psi = \nabla \times u\)</span>.
+<span class="arithmatex">\(\Psi\)</span> is a vector field or vector potential representing the shear component of the wave.</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 \Psi}{\partial t^2} = \mu \nabla^2 \Psi
+\]</div>
+<p>Using <span class="arithmatex">\(\frac{\mu}{\rho} = \beta^2 = V_s^2\)</span> (S-wave velocity) we get the common notation:</p>
+<div class="arithmatex">\[
+\frac{\partial^2 \Psi}{\partial t^2} = \beta^2 \nabla^2 \Psi
+\]</div>
 
 
 
