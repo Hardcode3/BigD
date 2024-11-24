@@ -90,6 +90,8 @@ nav:
       - dev/code_quality.md
       - AI:
           - dev/ai/generative_ai.md
+      - Computer Science:
+          - dev/computer_science/parallelism_and_concurrency.md
       - Database:
           - dev/database/relational_database.md
       - Languages:
