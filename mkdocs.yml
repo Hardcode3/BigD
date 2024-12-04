@@ -131,6 +131,7 @@ nav:
           - dev/tools/tar.md
           - dev/tools/vcpkg.md
           - dev/tools/docker.md
+          - dev/tools/docker-compose.md
           - dev/tools/github.md
           - dev/tools/amazon_aws.md
           - dev/tools/virtualization.md
