@@ -1,5 +1,85 @@
 # Git
 
+## Git Tags
+
+!!! tip "Overview"
+
+    Git tags are used to mark specific points in history as important, typically to indicate releases or milestones in a project.
+
+!!! cite "Refs"
+
+    [Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+
+### List all tags
+
+To list all the tags in the repository:  
+
+```bash
+git tag
+```
+
+### View tag details
+
+To display detailed information about a specific tag (commit, author, date, etc.):  
+
+```bash
+git show <tag_name>
+```
+
+### Create a new tag
+
+You can create two types of tags:
+
+- **Lightweight tags**: A simple reference to a commit (no extra metadata).
+
+  ```bash
+  git tag <tag_name>
+  ```
+
+- **Annotated tags**: Include additional information such as the tagger's name, email, and a tagging message.
+
+  ```bash
+  git tag -a <tag_name> -m "<tagging_message>"
+  ```
+
+### Tag a specific commit
+
+You can tag a particular commit by its hash. First, view commit history with `git log --pretty=oneline` to find the commit hash, then:  
+
+```bash
+git tag -a <tag_name> <commit_hash>
+```
+
+### Push a tag to remote
+
+To push a specific tag to a remote repository:
+
+```bash
+git push origin <tag_name>
+```
+
+### Delete a local tag
+
+To remove a tag locally:
+
+```bash
+git tag -d <tag_name>
+```
+
+### Fetch tags from remote
+
+Fetch a tags from remote:
+
+```bash
+git fetch --tags
+```
+
+To fetch a specific tag:
+
+```bash
+git fetch origin <tag_name>
+```
+
 ## Git modules
 
 ### Add a git module
