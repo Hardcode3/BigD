@@ -90,6 +90,9 @@ nav:
       - dev/code_quality.md
       - AI:
           - dev/ai/generative_ai.md
+      - API:
+          - dev/api/rest_api.md
+          - dev/api/api_testing.md
       - Computer Science:
           - dev/computer_science/parallelism_and_concurrency.md
       - Database:
@@ -123,7 +126,6 @@ nav:
       - Dev Sec Ops:
           - dev/devsecops/software_version_numbers.md
           - dev/devsecops/software_development_lifecycle.md
-          - dev/devsecops/api_testing.md
       - Tools:
           - dev/tools/curl.md
           - dev/tools/brew.md
