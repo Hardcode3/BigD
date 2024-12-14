@@ -79,6 +79,26 @@ The following frameworks can be used, depending on your preferred language:
 - [Django REST Framework (DRF)](https://www.django-rest-framework.org/): Full-featured and powerful for Django-based projects.
 - [FastAPI](https://fastapi.tiangolo.com/): High-performance framework with built-in validation.
 
+##### Comparison
+
+!!! cite
+
+    [Comparison of Flask, Django, and FastAPI: Advantages, Disadvantages, and Use Cases](https://medium.com/@tubelwj/comparison-of-flask-django-and-fastapi-advantages-disadvantages-and-use-cases-63e7c692382a){target=_blank}
+
+| Framework | Advantages                                                                | Disadvantages                                                                    | Use Cases                                                                                   |
+|-----------|---------------------------------------------------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| Flask     | - Lightweight and easy to learn                                           | - Fewer built-in features, requiring additional libraries                        | - Small to medium-sized projects                                                            |
+|           | - Highly flexible, allowing custom tool and library choices               | - Lack of standardized project structures                                        | - Rapid prototyping and simple APIs                                                         |
+|           | - Supports rapid development                                              |                                                                                  | - Quick iteration projects                                                                  |
+| Django    | - All-in-one framework with powerful built-in features (ORM, auth, admin) | - Steeper learning curve                                                         | - Large and complex web applications                                                        |
+|           | - Comprehensive documentation and active community support                | - Lower performance due to rich features                                         | - Content management systems (CMS)                                                          |
+|           | - Scalable with flexible extension mechanisms                             |                                                                                  | - Applications requiring reliability, security, and admin functionality                     |
+| FastAPI   | - High performance with asynchronous programming                          | - Relatively new, with potentially less mature solutions and community support   | - High-performance APIs and real-time applications                                          |
+|           | - Automatically generates interactive documentation                       | - Steeper learning curve for developers unfamiliar with asynchronous programming | - Applications handling a large number of concurrent requests with low latency              |
+|           | - Type annotations enhance readability and maintainability                |                                                                                  | - Prototypes, Proof of Concepts (POC), and rapid development projects requiring type safety |
+
+
+
 #### Java
 
 - [Spring Boot](https://spring.io/projects/spring-boot): Enterprise-level and highly configurable.
