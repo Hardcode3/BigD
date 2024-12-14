@@ -125,6 +125,7 @@ nav:
           - dev/devsecops/software_development_lifecycle.md
           - dev/devsecops/api_testing.md
       - Tools:
+          - dev/tools/curl.md
           - dev/tools/brew.md
           - dev/tools/git.md
           - dev/tools/screen.md
