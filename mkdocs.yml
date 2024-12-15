@@ -1,4 +1,4 @@
-site_name: Documentation
+site_name: My Knowledge DB - BigD
 repo_url: https://github.com/Hardcode3/BigD.git
 repo_name: Hardcode3/BigD
 site_author: Baptiste PENOT
@@ -17,18 +17,23 @@ theme:
     text: Ubuntu
     code: Roboto mono
   features:
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    - content.code.annotate
-    - content.code.copy
-    - content.code.select
+    - navigation.expand
     - navigation.footer
     - navigation.path
     - navigation.top
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
     - search.suggest
     - search.highlight
     - search.share
+    - toc.follow
+    - toc.integrate
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -85,6 +90,8 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Contact: 
+      - contact.md
   - Dev:
       - dev/cyber_security.md
       - dev/code_quality.md
@@ -153,7 +160,7 @@ nav:
       - algorithms/inverse_problem_theory.md
       - algorithms/algorithm_glossary.md
       - algorithms/numerical_optimization.md
-      - algorithms/big_0_notation
+      - algorithms/big_0_notation.md
   - Data Structures:
       - data_structures/data_structures.md
       - data_structures/digit_representations.md

@@ -8,7 +8,7 @@
 
     - [SEG Wiki](https://wiki.seg.org/wiki/SEG-Y){target=_blank}
 
-![seg_wiki](../../res/segy_format/SEG-Y_bytestream_all_revisions_.png)
+![seg_wiki](../res/segy_format/SEG-Y_bytestream_all_revisions_.png)
 
 Key features of the SEGY file format include:
 

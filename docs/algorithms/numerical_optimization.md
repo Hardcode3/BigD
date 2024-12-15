@@ -2,8 +2,8 @@
 
 Optimization techniques are classified into 2 parts:
 
-1. [Local - gradient based optimization algorithms](#local---gradient-based-optimization-algorithms)
-2. [Global - non gradient based optimization algorithms](#global---non-gradient-based-optimization-algorithms)
+1. Local - gradient based optimization algorithms
+2. Global - non gradient based optimization algorithms
 
 Their purpose is to minimize the objective function for the given variables.
 

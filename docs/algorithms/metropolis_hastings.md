@@ -20,7 +20,7 @@ Let $\pi (X)$ be the target density (the stationnary distribution that our Marko
     
 3. Simulate $u \sim \mathcal{U}(0, 1)$. If $u \leq \alpha(y \mid x)$ then the next state is equal to $y$, otherwise we stay on $x$.
 
-These three steps reprensent the transition kernel of the [Markov chain]([Markof_Chain_Monte_Carlo](obsidian://open?vault=obsidian&file=dev%2Falgorithms%2FMarkov_Chain_Monte_Carlo)) from which we are simulating.
+These three steps reprensent the transition kernel of the [Markov chain](markov_chain_monte_carlo.md) from which we are simulating.
 
 ## Properties
 

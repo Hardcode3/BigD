@@ -6,7 +6,7 @@
     - It’s a **central file to manage package-level exports and initialization**.
     - Properly structuring `__init__.py` helps keep packages modular, readable, and easy to import.
 
-!!! Note "These tips are linked to [python wheels](Wheels)."
+!!! Note "These tips are linked to [python wheels](./wheels.md)."
 
 Here's a breakdown of its purpose and behavior in the context of creating a Python package.
 

@@ -23,7 +23,7 @@ But this can lead to unused cells in the grid, wasting memory space.
 They solve the former problems while keeping the advantages.
 First we need to start with a scene boundary and then do finer subdivisions only if needed.
 Hence, the max subdivision number and minimum number of triangles for spliting are parameters to be defined.
-Then a recursive split is made into quadrants (2D - [Quadtree](Quadtree.md)) and octants (3D - Octree).
+Then a recursive split is made into quadrants (2D - [Quadtree](quadtree.md)) and octants (3D - Octree).
 The algorithm is stopped after the defined number of subdivisions is reached or if no cell has more than the defined number of triangles.
 
 ### Binary space partition tree (BSP tree)
