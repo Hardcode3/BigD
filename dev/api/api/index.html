@@ -808,9 +808,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#what-is-an-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is an API?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is an API?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-technical-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-technical definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-interact-with-an-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to interact with an API?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#api-architecture-styles" class="md-nav__link">
     <span class="md-ellipsis">
       API Architecture Styles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refs
     </span>
   </a>
   
@@ -3434,12 +3485,39 @@
 
 
 <h1 id="api">API</h1>
+<h2 id="what-is-an-api">What is an API?</h2>
+<h3 id="technical-definition">Technical definition</h3>
+<p>API stands for Application Programming Interface.
+An API is a set of protocols, routines and tools for building applications.
+It defines how different software components should interact with each other.
+This way, developers can create applications that are able to interact with other applications, services or platforms through a standardized interface.</p>
+<h3 id="non-technical-definition">Non-technical definition</h3>
+<p>Say developers of a new weather app want to populate their app with weather data.
+They obviously cannot get and process weather data, because they are not meteorologists.
+Therefore meterologists devs create an API to provide weather information for everyone who wants to embed their weather data.
+By using the weather API, developers are able to create a new weather app.</p>
+<h2 id="how-to-interact-with-an-api">How to interact with an API?</h2>
+<p>As prerequisits:</p>
+<ol>
+<li>Find the documentation of the API</li>
+<li>Find a language supporting HTTP protocol</li>
+</ol>
+<p>Then:</p>
+<ol>
+<li>Request information to the API using (or not) an access token</li>
+<li>Let the API process the request and send back the response</li>
+<li>Process the response in the application (can be JSON, XML for <a href="../rest_api/">REST APIs</a> for instance)</li>
+</ol>
 <h2 id="api-architecture-styles">API Architecture Styles</h2>
 <div class="admonition cite">
 <p class="admonition-title">Refs</p>
 <p><a href="https://youtu.be/4vLxWqE94l4">YouTube - ByteByteGo - Top 6 Most Popular API Architecture Styles</a></p>
 </div>
 <p><img alt="API Architecture Styles" src="https://pbs.twimg.com/media/GOzmnA7bEAANSCR?format=jpg&amp;name=large" target="_blank" /></p>
+<h2 id="refs">Refs</h2>
+<ul>
+<li><a href="https://katalon.com/resources-center/blog/api-examples" target="_blank">Katalon - 10 Popular API Examples: A Full List</a></li>
+</ul>
 
 
 
