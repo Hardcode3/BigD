@@ -6,3 +6,6 @@
     --md-typeset-line-height: 2.0;      /* Line height */
     
   }
+  .md-nav__link--nested {
+    padding-left: 20px;
+}
