@@ -62,6 +62,10 @@ HTTP status codes are used to indicate the outcome of a request:
 
 ---
 
+## Authentication
+
+![ByteByteGo - REST API authentication methods](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F152fcb14-3acf-4027-a3c2-307f4596ef4b_3000x3900.png){target=_blank}
+
 ## Tools to Build REST APIs
 
 ### Programming Frameworks

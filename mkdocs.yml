@@ -91,8 +91,11 @@ nav:
       - AI:
           - dev/ai/generative_ai.md
       - API:
+          - dev/api/api.md
           - dev/api/rest_api.md
           - dev/api/api_testing.md
+      - Cloud Services:
+          - dev/cloud_services/cloud_services_comparison.md
       - Computer Science:
           - dev/computer_science/parallelism_and_concurrency.md
       - Database:
@@ -117,6 +120,7 @@ nav:
           - Markdown:
               - dev/languages/markdown/markdown_basics.md
           - SQL:
+              - dev/languages/sql/sql.md
               - dev/languages/sql/sql_examples.md
       - Software architecture:
           - dev/software_architecture/design_patterns.md
@@ -151,6 +155,7 @@ nav:
       - algorithms/numerical_optimization.md
       - algorithms/big_0_notation
   - Data Structures:
+      - data_structures/data_structures.md
       - data_structures/digit_representations.md
       - data_structures/meshes.md
       - data_structures/quadtree.md
