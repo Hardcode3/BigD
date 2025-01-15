@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -957,6 +957,69 @@
   
   <span class="md-ellipsis">
     Parallelism and Concurrency
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../computer_science/program_process_thread/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Program vs Process vs Thread
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../computer_science/url_uri_urn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    URL vs URI vs URN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../computer_science/multithreading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multithreading
   </span>
   
 
@@ -3539,8 +3602,8 @@ This file signals to Python that the directory should be treated as a package, m
 <h2 id="2-setting-up-imports-and-namespaces">2. <strong>Setting Up Imports and Namespaces</strong></h2>
 <p>The <code>__init__.py</code> file allows you to control what’s exposed when someone imports the package. For example:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># mypackage/__init__.py</span>
-<span class="kn">from</span> <span class="nn">.module1</span> <span class="kn">import</span> <span class="n">MyClass</span>
-<span class="kn">from</span> <span class="nn">.module2</span> <span class="kn">import</span> <span class="n">my_function</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.module1</span><span class="w"> </span><span class="kn">import</span> <span class="n">MyClass</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.module2</span><span class="w"> </span><span class="kn">import</span> <span class="n">my_function</span>
 </code></pre></div>
 <p>With this setup, importing the package (<code>import mypackage</code>) will expose <code>MyClass</code> and <code>my_function</code> directly under <code>mypackage</code>.
 You can also use <code>__all__</code> to define the public API of the package, which restricts what’s available when using <code>from package import *</code>.</p>
@@ -3570,11 +3633,11 @@ Each level in the hierarchy requires its own <code>__init__.py</code> file to be
 <div class="admonition example">
 <p class="admonition-title">Here’s an example of what <code>mypackage/__init__.py</code> might look like:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Import specific functions or classes from modules within the package</span>
-<span class="kn">from</span> <span class="nn">.module1</span> <span class="kn">import</span> <span class="n">MyClass</span>
-<span class="kn">from</span> <span class="nn">.module2</span> <span class="kn">import</span> <span class="n">my_function</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.module1</span><span class="w"> </span><span class="kn">import</span> <span class="n">MyClass</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.module2</span><span class="w"> </span><span class="kn">import</span> <span class="n">my_function</span>
 
 <span class="c1"># Import specific functions or classes from subpackage</span>
-<span class="kn">from</span> <span class="nn">.subpackage.submodule</span> <span class="kn">import</span> <span class="n">SubClass</span><span class="p">,</span> <span class="n">sub_function</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.subpackage.submodule</span><span class="w"> </span><span class="kn">import</span> <span class="n">SubClass</span><span class="p">,</span> <span class="n">sub_function</span>
 <span class="c1"># Optionnally from .subpackage.submodule import * imports every component defined in the submodule subpackage (no need to repeat function names)</span>
 
 <span class="c1"># Optionally define an __all__ variable to control what’s accessible when using `from mypackage import *`</span>
@@ -3595,7 +3658,7 @@ Each level in the hierarchy requires its own <code>__init__.py</code> file to be
 <div class="admonition example">
 <p class="admonition-title">Here’s an example of <code>mypackage/subpackage/__init__.py</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Import elements from submodule</span>
-<span class="kn">from</span> <span class="nn">.submodule</span> <span class="kn">import</span> <span class="n">SubClass</span><span class="p">,</span> <span class="n">sub_function</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.submodule</span><span class="w"> </span><span class="kn">import</span> <span class="n">SubClass</span><span class="p">,</span> <span class="n">sub_function</span>
 
 <span class="c1"># Control what’s accessible when using `from mypackage.subpackage import *`</span>
 <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;SubClass&quot;</span><span class="p">,</span> <span class="s2">&quot;sub_function&quot;</span><span class="p">]</span>
@@ -3610,27 +3673,27 @@ Each level in the hierarchy requires its own <code>__init__.py</code> file to be
 <p>For completeness, here’s a quick idea of what the individual modules might contain:</p>
 <div class="admonition example">
 <p class="admonition-title"><code>mypackage/module1.py</code></p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MyClass initialized&quot;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">helper_function</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">helper_function</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Helper function in module1&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <div class="admonition example">
 <p class="admonition-title"><code>mypackage/module2.py</code></p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Function in module2&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <div class="admonition example">
 <p class="admonition-title"><code>mypackage/subpackage/submodule.py</code></p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">SubClass</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">SubClass</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SubClass initialized&quot;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">sub_function</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sub_function</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Function in submodule&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
@@ -3638,19 +3701,19 @@ Each level in the hierarchy requires its own <code>__init__.py</code> file to be
 <p>Once structured, the package can be imported and used as follows:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Import from the main package ()</span>
 <span class="c1"># Good for users, since they do not have to know the structure of the library</span>
-<span class="kn">from</span> <span class="nn">mypackage</span> <span class="kn">import</span> <span class="n">MyClass</span><span class="p">,</span> <span class="n">my_function</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mypackage</span><span class="w"> </span><span class="kn">import</span> <span class="n">MyClass</span><span class="p">,</span> <span class="n">my_function</span>
 
 <span class="c1"># Import from the sub-package (recommended for internal imports)</span>
 <span class="c1"># Users may not have to know the package strucure of the library</span>
-<span class="kn">from</span> <span class="nn">mypackage.subpackage</span> <span class="kn">import</span> <span class="n">SubClass</span><span class="p">,</span> <span class="n">sub_function</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mypackage.subpackage</span><span class="w"> </span><span class="kn">import</span> <span class="n">SubClass</span><span class="p">,</span> <span class="n">sub_function</span>
 
 <span class="c1"># Import every symbol (not recommended because it can cause undefined behaviors with shadowed names)</span>
-<span class="kn">from</span> <span class="nn">mypackage</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mypackage</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 
 <span class="c1"># Import the library in a namespace</span>
 <span class="c1"># Recommended because it specifies the namespace and avoids name conflicts</span>
 <span class="c1"># Functions has to be called with mp. before function / class names</span>
-<span class="kn">import</span> <span class="nn">mypackage</span> <span class="k">as</span> <span class="nn">mp</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">mypackage</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mp</span>
 
 <span class="c1"># Using the imports</span>
 <span class="n">instance</span> <span class="o">=</span> <span class="p">(</span><span class="n">mp</span><span class="o">.</span><span class="p">)</span><span class="n">MyClass</span><span class="p">()</span>
@@ -3765,7 +3828,7 @@ Each level in the hierarchy requires its own <code>__init__.py</code> file to be
     <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.footer", "navigation.path", "navigation.top", "content.code.annotate", "content.code.copy", "content.code.select", "search.suggest", "search.highlight", "search.share", "toc.follow", "toc.integrate"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
         <script src="../../../../javascripts/katex.js"></script>
       
