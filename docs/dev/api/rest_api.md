@@ -8,11 +8,17 @@
 
 A **REST API (Representational State Transfer Application Programming Interface)** is a standardized way to allow different applications to communicate with each other over HTTP. It is widely used to build web services that are lightweight, scalable, and easy to integrate.
 
+![ByteByteGo-What-is-a-REST-API](https://yt3.ggpht.com/EfXligl9sX6GpPtD_FZGzfjOOoeSlhOf-NyEaiHjsRt2XFRPlBK5WK99HyfIaVUF3rzk-VgvLwym=s1600-rw-nd-v1)
+
 ![REST API image](https://images.ctfassets.net/vwq10xzbe6iz/5sBH4Agl614xM7exeLsTo7/9e84dce01735f155911e611c42c9793f/rest-api.png)
 
 ---
 
 ## Key Concepts in REST APIs
+
+### Overview
+
+![ByteByteGo_REST_API_DESIGN](https://media.licdn.com/dms/image/v2/D4E22AQGZDGh06DwITg/feedshare-shrink_800/B4EZRWh94yGcAg-/0/1736618534141?e=1740009600&v=beta&t=NT-X0vjp-5A2NGdJk09YVyYaUzRK0IBZCg23CHcDxv8)
 
 ### Resources
 

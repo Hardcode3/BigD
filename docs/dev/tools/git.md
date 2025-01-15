@@ -1,5 +1,9 @@
 # Git
 
+## How git commands work
+
+![ByteByteGo on How git commands work](https://yt3.ggpht.com/MIIjhi8ZC7Gn5q8D7Uc8osw_oQ35GOUr3wcCpz7V4l6NJQNlAxqdm2Ub8PQmMn587cK0RsDaaHQ3tOk=s1600-rw-nd-v1)
+
 ## Git Tags
 
 !!! tip "Overview"

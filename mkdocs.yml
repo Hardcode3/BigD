@@ -105,6 +105,9 @@ nav:
           - dev/cloud_services/cloud_services_comparison.md
       - Computer Science:
           - dev/computer_science/parallelism_and_concurrency.md
+          - dev/computer_science/program_process_thread.md
+          - dev/computer_science/url_uri_urn.md
+          - dev/computer_science/multithreading.md
       - Database:
           - dev/database/relational_database.md
       - Languages:
