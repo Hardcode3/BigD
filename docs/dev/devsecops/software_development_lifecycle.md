@@ -1,3 +1,5 @@
 # Software Development Lifecycle
 
-![BytebyteGo SoftWare Lifecycle](https://media.licdn.com/dms/image/v2/D4E22AQFplvKXXexafw/feedshare-shrink_1280/feedshare-shrink_1280/0/1730869672343?e=1734566400&v=beta&t=7qKJ5NQcSsqNkId5bSx4NWdJCENWSUPIws22PhYu8Fc)
+![BytebyteGo SoftWare Lifecycle](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ce0f4be-6997-4f1c-818a-073a63492220_1280x1564.gif)
+
+![Medium CICD](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*xvgN769-Q2gB4QhupT_Bkw.png)

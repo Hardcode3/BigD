@@ -3,4 +3,5 @@ markdown-include
 mkdocs-material
 mkdocs-material-extensions
 mkdocs-macros-plugin
-mkdocs-bibtex                   # bibtex reference support
+mkdocs-bibtex
+mkdocs-mermaid2-plugin

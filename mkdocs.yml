@@ -103,6 +103,7 @@ nav:
           - dev/api/api_testing.md
       - Cloud Services:
           - dev/cloud_services/cloud_services_comparison.md
+          - dev/cloud_services/aws/aws.md
       - Computer Science:
           - dev/computer_science/parallelism_and_concurrency.md
           - dev/computer_science/program_process_thread.md
