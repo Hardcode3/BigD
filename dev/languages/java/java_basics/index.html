@@ -892,6 +892,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -4361,7 +4382,7 @@
 <div class="admonition cite">
 <p class="admonition-title">Cite</p>
 <ul>
-<li><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html">Oracle official website</a></li>
+<li>(https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html)</li>
 </ul>
 </div>
 <h2 id="variables">Variables</h2>
@@ -4380,12 +4401,12 @@
 <h3 id="primitive-data-types">Primitive data types</h3>
 <p>The eight primitive data types supported by the Java programming language are:</p>
 <ul>
-<li><strong>byte</strong>: The <code>byte</code> data type is an 8-bit signed two's complement integer. It has a minimum value of -128 and a maximum value of 127 (inclusive). The <code>byte</code> data type can be useful for saving memory in large <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html">arrays</a>, where the memory savings actually matters. They can also be used in place of <code>int</code> where their limits help to clarify your code; the fact that a variable's range is limited can serve as a form of documentation.</li>
+<li><strong>byte</strong>: The <code>byte</code> data type is an 8-bit signed two's complement integer. It has a minimum value of -128 and a maximum value of 127 (inclusive). The <code>byte</code> data type can be useful for saving memory in large (https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html), where the memory savings actually matters. They can also be used in place of <code>int</code> where their limits help to clarify your code; the fact that a variable's range is limited can serve as a form of documentation.</li>
 <li><strong>short</strong>: The <code>short</code> data type is a 16-bit signed two's complement integer. It has a minimum value of -32,768 and a maximum value of 32,767 (inclusive). As with <code>byte</code>, the same guidelines apply: you can use a <code>short</code> to save memory in large arrays, in situations where the memory savings actually matters.</li>
-<li><strong>int</strong>: By default, the <code>int</code> data type is a 32-bit signed two's complement integer, which has a minimum value of -231 and a maximum value of 231-1. In Java SE 8 and later, you can use the <code>int</code> data type to represent an unsigned 32-bit integer, which has a minimum value of 0 and a maximum value of 232-1. Use the Integer class to use <code>int</code> data type as an unsigned integer. See the section The Number Classes for more information. Static methods like <code>compareUnsigned</code>, <code>divideUnsigned</code> etc have been added to the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html"><code>Integer</code></a> class to support the arithmetic operations for unsigned integers.</li>
-<li><strong>long</strong>: The <code>long</code> data type is a 64-bit two's complement integer. The signed long has a minimum value of -263 and a maximum value of 263-1. In Java SE 8 and later, you can use the <code>long</code> data type to represent an unsigned 64-bit long, which has a minimum value of 0 and a maximum value of 264-1. Use this data type when you need a range of values wider than those provided by <code>int</code>. The <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html"><code>Long</code></a> class also contains methods like <code>compareUnsigned</code>, <code>divideUnsigned</code> etc to support arithmetic operations for unsigned long.</li>
-<li><strong>float</strong>: The <code>float</code> data type is a single-precision 32-bit IEEE 754 floating point. Its range of values is beyond the scope of this discussion, but is specified in the <a href="https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html#jls-4.2.3">Floating-Point Types, Formats, and Values</a> section of the Java Language Specification. As with the recommendations for <code>byte</code> and <code>short</code>, use a <code>float</code> (instead of <code>double</code>) if you need to save memory in large arrays of floating point numbers. This data type should never be used for precise values, such as currency. For that, you will need to use the <a href="https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html">java.math.BigDecimal</a> class instead. <a href="https://docs.oracle.com/javase/tutorial/java/data/index.html">Numbers and Strings</a> covers <code>BigDecimal</code> and other useful classes provided by the Java platform.</li>
-<li><strong>double</strong>: The <code>double</code> data type is a double-precision 64-bit IEEE 754 floating point. Its range of values is beyond the scope of this discussion, but is specified in the <a href="https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html#jls-4.2.3">Floating-Point Types, Formats, and Values</a> section of the Java Language Specification. For decimal values, this data type is generally the default choice. As mentioned above, this data type should never be used for precise values, such as currency.</li>
+<li><strong>int</strong>: By default, the <code>int</code> data type is a 32-bit signed two's complement integer, which has a minimum value of -231 and a maximum value of 231-1. In Java SE 8 and later, you can use the <code>int</code> data type to represent an unsigned 32-bit integer, which has a minimum value of 0 and a maximum value of 232-1. Use the Integer class to use <code>int</code> data type as an unsigned integer. See the section The Number Classes for more information. Static methods like <code>compareUnsigned</code>, <code>divideUnsigned</code> etc have been added to the (https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html) class to support the arithmetic operations for unsigned integers.</li>
+<li><strong>long</strong>: The <code>long</code> data type is a 64-bit two's complement integer. The signed long has a minimum value of -263 and a maximum value of 263-1. In Java SE 8 and later, you can use the <code>long</code> data type to represent an unsigned 64-bit long, which has a minimum value of 0 and a maximum value of 264-1. Use this data type when you need a range of values wider than those provided by <code>int</code>. The (https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html) class also contains methods like <code>compareUnsigned</code>, <code>divideUnsigned</code> etc to support arithmetic operations for unsigned long.</li>
+<li><strong>float</strong>: The <code>float</code> data type is a single-precision 32-bit IEEE 754 floating point. Its range of values is beyond the scope of this discussion, but is specified in the (https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html#jls-4.2.3) section of the Java Language Specification. As with the recommendations for <code>byte</code> and <code>short</code>, use a <code>float</code> (instead of <code>double</code>) if you need to save memory in large arrays of floating point numbers. This data type should never be used for precise values, such as currency. For that, you will need to use the (https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html) class instead. (https://docs.oracle.com/javase/tutorial/java/data/index.html) covers <code>BigDecimal</code> and other useful classes provided by the Java platform.</li>
+<li><strong>double</strong>: The <code>double</code> data type is a double-precision 64-bit IEEE 754 floating point. Its range of values is beyond the scope of this discussion, but is specified in the (https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html#jls-4.2.3) section of the Java Language Specification. For decimal values, this data type is generally the default choice. As mentioned above, this data type should never be used for precise values, such as currency.</li>
 <li><strong>boolean</strong>: The <code>boolean</code> data type has only two possible values: <code>true</code> and <code>false</code>. Use this data type for simple flags that track true/false conditions. This data type represents one bit of information, but its "size" isn't something that's precisely defined. </li>
 <li><strong>char</strong>: The <code>char</code> data type is a single 16-bit Unicode character. It has a minimum value of <code>'\u0000'</code> (or 0) and a maximum value of <code>'\uffff'</code> (or 65,535 inclusive).</li>
 </ul>
@@ -4470,40 +4491,40 @@ The Java programming language also supports a few special escape sequences for 
 </code></pre></div>
 <h3 id="derived-types">Derived types</h3>
 <h4 id="strings">Strings</h4>
-<p>In addition to the eight primitive data types listed above, the Java programming language also provides special support for character strings via the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">java.lang.String</a> class. Enclosing your character string within double quotes will automatically create a new <code>String</code> object; for example, <code>String s = "this is a string";</code>. <code>String</code> objects are <em>immutable</em>, which means that once created, their values cannot be changed. The <code>String</code> class is not technically a primitive data type, but considering the special support given to it by the language, you'll probably tend to think of it as such.</p>
+<p>In addition to the eight primitive data types listed above, the Java programming language also provides special support for character strings via the (https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) class. Enclosing your character string within double quotes will automatically create a new <code>String</code> object; for example, <code>String s = "this is a string";</code>. <code>String</code> objects are <em>immutable</em>, which means that once created, their values cannot be changed. The <code>String</code> class is not technically a primitive data type, but considering the special support given to it by the language, you'll probably tend to think of it as such.</p>
 <h4 id="arrays">Arrays</h4>
 <h5 id="declaration">Declaration</h5>
 <div class="highlight"><pre><span></span><code><span class="c1">// declares an array of integers</span>
-<span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">anArray</span><span class="p">;</span>
-<span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="n">anArrayOfBytes</span><span class="p">;</span>
-<span class="kt">short</span><span class="o">[]</span><span class="w"> </span><span class="n">anArrayOfShorts</span><span class="p">;</span>
-<span class="kt">long</span><span class="o">[]</span><span class="w"> </span><span class="n">anArrayOfLongs</span><span class="p">;</span>
-<span class="kt">float</span><span class="o">[]</span><span class="w"> </span><span class="n">anArrayOfFloats</span><span class="p">;</span>
-<span class="kt">double</span><span class="o">[]</span><span class="w"> </span><span class="n">anArrayOfDoubles</span><span class="p">;</span>
-<span class="kt">boolean</span><span class="o">[]</span><span class="w"> </span><span class="n">anArrayOfBooleans</span><span class="p">;</span>
-<span class="kt">char</span><span class="o">[]</span><span class="w"> </span><span class="n">anArrayOfChars</span><span class="p">;</span>
-<span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">anArrayOfStrings</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">anArray</span><span class="p">;</span>
+<span class="kt">byte</span><span class="w"> </span><span class="n">anArrayOfBytes</span><span class="p">;</span>
+<span class="kt">short</span><span class="w"> </span><span class="n">anArrayOfShorts</span><span class="p">;</span>
+<span class="kt">long</span><span class="w"> </span><span class="n">anArrayOfLongs</span><span class="p">;</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">anArrayOfFloats</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">anArrayOfDoubles</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">anArrayOfBooleans</span><span class="p">;</span>
+<span class="kt">char</span><span class="w"> </span><span class="n">anArrayOfChars</span><span class="p">;</span>
+<span class="n">String</span><span class="w"> </span><span class="n">anArrayOfStrings</span><span class="p">;</span>
 </code></pre></div>
 <h5 id="creating-initializing-and-accessing-an-array">Creating, initializing and accessing an array</h5>
 <div class="highlight"><pre><span></span><code><span class="c1">// create an array of integers</span>
-<span class="n">anArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="mi">10</span><span class="o">]</span><span class="p">;</span>
-<span class="n">anArray</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="c1">// initialize first element</span>
-<span class="n">anArray</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">;</span><span class="w"> </span><span class="c1">// initialize second element</span>
-<span class="n">anArray</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">300</span><span class="p">;</span><span class="w"> </span><span class="c1">// and so forth</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Element 1 at index 0: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">anArray</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Element 2 at index 1: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">anArray</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Element 3 at index 2: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">anArray</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="p">);</span>
+<span class="n">anArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">;</span>
+<span class="n">anArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="c1">// initialize first element</span>
+<span class="n">anArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">;</span><span class="w"> </span><span class="c1">// initialize second element</span>
+<span class="n">anArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">300</span><span class="p">;</span><span class="w"> </span><span class="c1">// and so forth</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Element 1 at index 0: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">anArray</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Element 2 at index 1: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">anArray</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Element 3 at index 2: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">anArray</span><span class="p">);</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">anArray</span><span class="p">.</span><span class="na">length</span><span class="p">);</span><span class="w"> </span><span class="c1">// print array length</span>
 </code></pre></div>
 <p>Alternatively, you can use the shortcut syntax to create and initialize an array:</p>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">anArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">anArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
 <span class="w">    </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="mi">300</span><span class="p">,</span>
 <span class="w">    </span><span class="mi">400</span><span class="p">,</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span><span class="w"> </span><span class="mi">600</span><span class="p">,</span><span class="w"> </span>
 <span class="w">    </span><span class="mi">700</span><span class="p">,</span><span class="w"> </span><span class="mi">800</span><span class="p">,</span><span class="w"> </span><span class="mi">900</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span>
 <span class="p">};</span>
 </code></pre></div>
 <p>Multidimensional arrays can be created as follows:</p>
-<div class="highlight"><pre><span></span><code><span class="n">String</span><span class="o">[][]</span><span class="w"> </span><span class="n">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="p">{</span><span class="s">&quot;Mr. &quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Mrs. &quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Ms. &quot;</span><span class="p">},</span>
 <span class="w">            </span><span class="p">{</span><span class="s">&quot;Smith&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Jones&quot;</span><span class="p">}</span>
 <span class="w">        </span><span class="p">};</span>
@@ -4514,13 +4535,13 @@ The Java programming language also supports a few special escape sequences for 
 <span class="w">                             </span><span class="n">Object</span><span class="w"> </span><span class="n">dest</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">destPos</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">length</span><span class="p">)</span>
 </code></pre></div>
 <p>Either manually:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">copyFrom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">copyFrom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="s">&quot;Affogato&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Americano&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cappuccino&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Corretto&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cortado&quot;</span><span class="p">,</span><span class="w">   </span>
 <span class="w">            </span><span class="s">&quot;Doppio&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Espresso&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Frappucino&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Freddo&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Lungo&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Macchiato&quot;</span><span class="p">,</span><span class="w">      </span>
 <span class="w">            </span><span class="s">&quot;Marocchino&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Ristretto&quot;</span><span class="w"> </span><span class="p">};</span>
 
-<span class="w">        </span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">copyTo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="o">[</span><span class="mi">7</span><span class="o">]</span><span class="p">;</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">copyTo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">String</span><span class="p">;</span>
 <span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">arraycopy</span><span class="p">(</span><span class="n">copyFrom</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">copyTo</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">);</span>
 <span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">coffee</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">copyTo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">coffee</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w">           </span>
@@ -4528,13 +4549,13 @@ The Java programming language also supports a few special escape sequences for 
 <span class="w">    </span><span class="p">}</span>
 </code></pre></div>
 <p>Or using the <code>java.utils.Arrays</code> class:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">copyFrom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">copyFrom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="s">&quot;Affogato&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Americano&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cappuccino&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Corretto&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cortado&quot;</span><span class="p">,</span><span class="w">   </span>
 <span class="w">            </span><span class="s">&quot;Doppio&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Espresso&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Frappucino&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Freddo&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Lungo&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Macchiato&quot;</span><span class="p">,</span><span class="w">      </span>
 <span class="w">            </span><span class="s">&quot;Marocchino&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Ristretto&quot;</span><span class="w"> </span><span class="p">};</span>
 
-<span class="w">        </span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">copyTo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">Arrays</span><span class="p">.</span><span class="na">copyOfRange</span><span class="p">(</span><span class="n">copyFrom</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">);</span><span class="w">        </span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">copyTo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">util</span><span class="p">.</span><span class="na">Arrays</span><span class="p">.</span><span class="na">copyOfRange</span><span class="p">(</span><span class="n">copyFrom</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">);</span><span class="w">        </span>
 <span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">coffee</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">copyTo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">coffee</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">);</span><span class="w">           </span>
 <span class="w">        </span><span class="p">}</span><span class="w">            </span>
@@ -4549,13 +4570,13 @@ The Java programming language also supports a few special escape sequences for 
 <li>
 <p>Creating a stream that uses an array as its source (the <code>stream</code> method). For example, the following statement prints the contents of the <code>copyTo</code> array in the same way as in the previous example:
 java.util.Arrays.stream(copyTo).map(coffee -&gt; coffee + " ").forEach(System.out::print);<br />
-See <a href="https://docs.oracle.com/javase/tutorial/collections/streams/index.html">Aggregate Operations</a> for more information about streams.</p>
+See (https://docs.oracle.com/javase/tutorial/collections/streams/index.html) for more information about streams.</p>
 </li>
 <li>
 <p>Converting an array to a string. The <code>toString</code> method converts each element of the array to a string, separates them with commas, then surrounds them with brackets. For example, the following statement converts the <code>copyTo</code> array to a string and prints it:
 <code>System.out.println(java.util.Arrays.toString(copyTo));</code>
 This statement prints the following:
-<code>[Cappuccino, Corretto, Cortado, Doppio, Espresso, Frappucino, Freddo]</code></p>
+``</p>
 </li>
 </ul>
 <h2 id="operators">Operators</h2>
@@ -4705,7 +4726,7 @@ This statement prints the following:
 </code></pre></div>
 <h3 id="bitwise-and-bitshift-operators">Bitwise and bitshift operators</h3>
 <p>Same as C and C++.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">bitmask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x000F</span><span class="p">;</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x2222</span><span class="p">;</span>
 <span class="w">    </span><span class="c1">// prints &quot;2&quot;</span>
@@ -4715,7 +4736,7 @@ This statement prints the following:
 <h2 id="expressions-statements-and-blocks">Expressions, Statements, and Blocks</h2>
 <h3 id="expressions">Expressions</h3>
 <blockquote>
-<p>[!info] An <em>expression</em> is a construct made up of variables, operators, and method invocations, which are constructed according to the syntax of the language, that evaluates to a single value.</p>
+<p>An <em>expression</em> is a construct made up of variables, operators, and method invocations, which are constructed according to the syntax of the language, that evaluates to a single value.</p>
 </blockquote>
 <h4 id="regular-expression">Regular expression</h4>
 <div class="highlight"><pre><span></span><code><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
@@ -4752,10 +4773,10 @@ This statement prints the following:
 <p>Controls the order in which the statements get executed.</p>
 <h3 id="blocks">Blocks</h3>
 <blockquote>
-<p>[!info] A <em>block</em> is a group of zero or more statements between balanced braces and can be used anywhere a single statement is allowed.</p>
+<p>A <em>block</em> is a group of zero or more statements between balanced braces and can be used anywhere a single statement is allowed.</p>
 </blockquote>
 <div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">BlockDemo</span><span class="w"> </span><span class="p">{</span>
-<span class="w">     </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">          </span><span class="kt">boolean</span><span class="w"> </span><span class="n">condition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
 <span class="w">          </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">**</span><span class="c1">// begin block 1**</span>
 <span class="w">               </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Condition is true.&quot;</span><span class="p">);</span>
@@ -4834,7 +4855,7 @@ This statement prints the following:
 <h4 id="break-statements">Break statements</h4>
 <h5 id="unlabeled-break-statement">Unlabeled <code>break</code> statement</h5>
 <div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">arrayOfInts</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">arrayOfInts</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">searchfor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">arrayOfInts</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">searchfor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">foundIt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
 <span class="w">            </span><span class="o">**</span><span class="k">break</span><span class="p">;</span><span class="o">**</span>
 <span class="w">    </span><span class="p">}</span>
@@ -4843,8 +4864,8 @@ This statement prints the following:
 <h5 id="labeled-break-statement">Labeled <code>break</code> statement</h5>
 <div class="highlight"><pre><span></span><code><span class="nl">search</span><span class="p">:</span>
 <span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">arrayOfInts</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">arrayOfInts</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">arrayOfInts</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">searchfor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">arrayOfInts</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">arrayOfInts</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">searchfor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                </span><span class="n">foundIt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
 <span class="w">                </span><span class="k">break</span><span class="w"> </span><span class="n">search</span><span class="p">;</span>
 <span class="w">            </span><span class="p">}</span>
@@ -4892,7 +4913,7 @@ This statement prints the following:
 <h4 id="defining-fields">Defining fields</h4>
 <p>In general, class declarations can include these components, in order:</p>
 <ol>
-<li>Modifiers such as <em>public</em>, <em>private</em>, and a number of others (However, note that the <em>private</em> modifier can only be applied to <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html">Nested Classes</a>.)<ul>
+<li>Modifiers such as <em>public</em>, <em>private</em>, and a number of others (However, note that the <em>private</em> modifier can only be applied to (https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html).)<ul>
 <li><code>public</code> modifier—the field is accessible from all classes.</li>
 <li><code>private</code> modifier—the field is accessible only within its own class.</li>
 </ul>
@@ -4943,10 +4964,10 @@ This statement prints the following:
 <div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="n">Polygon</span><span class="w"> </span><span class="nf">polygonFrom</span><span class="p">(</span><span class="n">Point</span><span class="p">...</span><span class="w"> </span><span class="n">corners</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">numberOfSides</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">corners</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
 <span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">squareOfSide1</span><span class="p">,</span><span class="w"> </span><span class="n">lengthOfSide1</span><span class="p">;</span>
-<span class="w">    </span><span class="n">squareOfSide1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">corners</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">corners</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">x</span><span class="p">)</span>
-<span class="w">                     </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">corners</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">corners</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">x</span><span class="p">)</span><span class="w"> </span>
-<span class="w">                     </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">corners</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">corners</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">y</span><span class="p">)</span>
-<span class="w">                     </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">corners</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">corners</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">y</span><span class="p">);</span>
+<span class="w">    </span><span class="n">squareOfSide1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">corners</span><span class="p">.</span><span class="na">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">corners</span><span class="p">.</span><span class="na">x</span><span class="p">)</span>
+<span class="w">                     </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">corners</span><span class="p">.</span><span class="na">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">corners</span><span class="p">.</span><span class="na">x</span><span class="p">)</span><span class="w"> </span>
+<span class="w">                     </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">corners</span><span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">corners</span><span class="p">.</span><span class="na">y</span><span class="p">)</span>
+<span class="w">                     </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">corners</span><span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">corners</span><span class="p">.</span><span class="na">y</span><span class="p">);</span>
 <span class="w">    </span><span class="n">lengthOfSide1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="n">squareOfSide1</span><span class="p">);</span>
 
 <span class="w">    </span><span class="c1">// more method body code follows that creates and returns a </span>
@@ -5368,7 +5389,7 @@ The following table shows where the members of the <code>Alpha</code> class are
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Inner class:&quot;</span><span class="p">);</span>
 <span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;------------&quot;</span><span class="p">);</span>
 <span class="w">        </span><span class="n">OuterClass</span><span class="w"> </span><span class="n">outerObject</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">OuterClass</span><span class="p">();</span>

@@ -880,6 +880,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3537,7 +3558,7 @@
 
 <h1 id="spatial-acceleration-structrures">Spatial acceleration structrures</h1>
 <h2 id="useful-links">Useful links</h2>
-<p><a href="https://www.youtube.com/watch?v=MzUxOe5x24w">Youtube - Rendering Lecture 1 - Spatial Acceleration Structures</a></p>
+<p>(https://www.youtube.com/watch?v=MzUxOe5x24w)</p>
 <h2 id="why-using-spacial-acceleration-structures">Why using spacial acceleration structures ?</h2>
 <p>Scenes in vedeogames or rendering consists of millions or even billions of triangles. In order to compute some distances between any point and any vertex, some inneficient nested loops are required.
 This is where spatial data structures are useful.</p>
@@ -3550,7 +3571,7 @@ But this can lead to unused cells in the grid, wasting memory space.</p>
 <p>They solve the former problems while keeping the advantages.
 First we need to start with a scene boundary and then do finer subdivisions only if needed.
 Hence, the max subdivision number and minimum number of triangles for spliting are parameters to be defined.
-Then a recursive split is made into quadrants (2D - <a href="../quadtree/">Quadtree</a>) and octants (3D - Octree).
+Then a recursive split is made into quadrants (2D - (quadtree.md)) and octants (3D - Octree).
 The algorithm is stopped after the defined number of subdivisions is reached or if no cell has more than the defined number of triangles.</p>
 <h3 id="binary-space-partition-tree-bsp-tree">Binary space partition tree (BSP tree)</h3>
 <p>A recursive split via hyperplanes is done.

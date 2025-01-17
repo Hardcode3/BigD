@@ -892,6 +892,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2283,8 +2304,26 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Add a git module">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-a-project-having-submodules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone a project having submodules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Clone a project having submodules">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clone-sudmodules-with-the-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone sudmodules with the project
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#clone-submodules-in-a-differed-way" class="md-nav__link">
@@ -3624,7 +3663,7 @@
 
 <h1 id="git">Git</h1>
 <h2 id="how-git-commands-work">How git commands work</h2>
-<p><img alt="ByteByteGo on How git commands work" src="https://yt3.ggpht.com/MIIjhi8ZC7Gn5q8D7Uc8osw_oQ35GOUr3wcCpz7V4l6NJQNlAxqdm2Ub8PQmMn587cK0RsDaaHQ3tOk=s1600-rw-nd-v1" /></p>
+<p>!(https://yt3.ggpht.com/MIIjhi8ZC7Gn5q8D7Uc8osw_oQ35GOUr3wcCpz7V4l6NJQNlAxqdm2Ub8PQmMn587cK0RsDaaHQ3tOk=s1600-rw-nd-v1)</p>
 <h2 id="git-tags">Git Tags</h2>
 <div class="admonition tip">
 <p class="admonition-title">Overview</p>
@@ -3632,7 +3671,7 @@
 </div>
 <div class="admonition cite">
 <p class="admonition-title">Refs</p>
-<p><a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">Git Basics - Tagging</a></p>
+<p>(https://git-scm.com/book/en/v2/Git-Basics-Tagging)</p>
 </div>
 <h3 id="list-all-tags">List all tags</h3>
 <p>To list all the tags in the repository:  </p>
@@ -3686,25 +3725,24 @@ git<span class="w"> </span>submodule<span class="w"> </span>add<span class="w"> 
 </code></pre></div>
 <p>The former lines of code will clone the repository Imgui from the given URL in the folder <code>external/imgui</code> even if not already existing using the name imgui.
 A hidden .gitmodules file should appear alongside the .git folder and contains the newly added git modules:</p>
-<p>```text .gitmodules
-[submodule "glfw"]
-        path = external/glfw
-        url = https://github.com/glfw/glfw.git
-        branch = master
-<div class="highlight"><pre><span></span><code>Add some more gitmodules by repeating the process.
+<p>```text .gitmodules</p>
+<div class="highlight"><pre><span></span><code>    path = external/glfw
+    url = https://github.com/glfw/glfw.git
+    branch = master
+</code></pre></div>
+<p>```
 
-### Clone a project having submodules
-
-#### Clone sudmodules with the project
-
-```bash
-git clone --recursive &lt;URL&gt;
-</code></pre></div></p>
+Add some more gitmodules by repeating the process.
+</p>
+<h3 id="clone-a-project-having-submodules">Clone a project having submodules</h3>
+<h4 id="clone-sudmodules-with-the-project">Clone sudmodules with the project</h4>
+<p><code>bash
+git clone --recursive &lt;URL&gt;</code></p>
 <p>By using this command, every submodule of the project will be initialized during the cloning procedure of the main project.</p>
 <h4 id="clone-submodules-in-a-differed-way">Clone submodules in a differed way</h4>
 <p>TODO</p>
 <h3 id="delete-a-module-from-the-git-repository">Delete a module from the git repository</h3>
-<p>A very helpful github gist is available <a href="https://gist.github.com/myusuf3/7f645819ded92bda6677">here</a></p>
+<p>A very helpful github gist is available (https://gist.github.com/myusuf3/7f645819ded92bda6677)</p>
 <div class="highlight"><pre><span></span><code><span class="c1">## Remove the submodule entry from .git/config</span>
 git<span class="w"> </span>submodule<span class="w"> </span>deinit<span class="w"> </span>-f<span class="w"> </span>path/to/submodule
 

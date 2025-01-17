@@ -892,6 +892,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3699,8 +3720,8 @@
 <div class="admonition cite">
 <p class="admonition-title">Cite</p>
 <ul>
-<li><a href="https://github.com/pybind/pybind11">GitHub</a></li>
-<li><a href="https://pybind11.readthedocs.io/en/stable/">Official documentation</a></li>
+<li>(https://github.com/pybind/pybind11)</li>
+<li>(https://pybind11.readthedocs.io/en/stable/)</li>
 </ul>
 </div>
 <h2 id="bindings-for-custom-types">Bindings for custom types</h2>
@@ -3797,7 +3818,7 @@
 <span class="w">    </span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;bark&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">PolymorphicDog</span><span class="o">::</span><span class="n">bark</span><span class="p">);</span>
 
 <span class="c1">// Again, return a base pointer to a derived instance</span>
-<span class="n">m</span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;pet_store2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[]()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolymorphicPet</span><span class="o">&gt;</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PolymorphicDog</span><span class="p">);</span><span class="w"> </span><span class="p">});</span>
+<span class="n">m</span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;pet_store2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolymorphicPet</span><span class="o">&gt;</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PolymorphicDog</span><span class="p">);</span><span class="w"> </span><span class="p">});</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">=</span> <span class="n">example</span><span class="o">.</span><span class="n">pet_store2</span><span class="p">()</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
@@ -3899,7 +3920,7 @@
 <p class="admonition-title">*args derive from a tuple and *kwargs from a dictionnary</p>
 </div>
 <h3 id="specify-that-an-argument-is-keyword-only">Specify that an argument is keyword only</h3>
-<div class="highlight"><pre><span></span><code><span class="n">m</span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;f&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[](</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">},</span>
+<div class="highlight"><pre><span></span><code><span class="n">m</span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;f&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">},</span>
 <span class="w">      </span><span class="n">py</span><span class="o">::</span><span class="n">arg</span><span class="p">(</span><span class="s">&quot;a&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">py</span><span class="o">::</span><span class="n">kw_only</span><span class="p">(),</span><span class="w"> </span><span class="n">py</span><span class="o">::</span><span class="n">arg</span><span class="p">(</span><span class="s">&quot;b&quot;</span><span class="p">));</span>
 </code></pre></div>
 <div class="admonition info">
@@ -3907,7 +3928,7 @@
 <p>Therefore it is not useful to specify it.</p>
 </div>
 <h3 id="specify-that-an-argument-is-positional-only">Specify that an argument is positional only</h3>
-<div class="highlight"><pre><span></span><code><span class="n">m</span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;f&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[](</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">},</span>
+<div class="highlight"><pre><span></span><code><span class="n">m</span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;f&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">},</span>
 <span class="w">       </span><span class="n">py</span><span class="o">::</span><span class="n">arg</span><span class="p">(</span><span class="s">&quot;a&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">py</span><span class="o">::</span><span class="n">pos_only</span><span class="p">(),</span><span class="w"> </span><span class="n">py</span><span class="o">::</span><span class="n">arg</span><span class="p">(</span><span class="s">&quot;b&quot;</span><span class="p">));</span>
 </code></pre></div>
 <h2 id="default-values">Default values</h2>
@@ -3920,8 +3941,8 @@
 <h2 id="force-non-conversions-between-types">Force non-conversions between types</h2>
 <p>Sometimes we do not want to convert arguments.
 For instance if a function takes a float and we do not want to use any other type like integer, then we can add <code>.noconvert()</code> specifier.</p>
-<div class="highlight"><pre><span></span><code><span class="n">m</span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;floats_only&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[](</span><span class="kt">double</span><span class="w"> </span><span class="n">f</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">f</span><span class="p">;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="n">py</span><span class="o">::</span><span class="n">arg</span><span class="p">(</span><span class="s">&quot;f&quot;</span><span class="p">).</span><span class="n">noconvert</span><span class="p">());</span>
-<span class="n">m</span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;floats_preferred&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[](</span><span class="kt">double</span><span class="w"> </span><span class="n">f</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">f</span><span class="p">;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="n">py</span><span class="o">::</span><span class="n">arg</span><span class="p">(</span><span class="s">&quot;f&quot;</span><span class="p">));</span>
+<div class="highlight"><pre><span></span><code><span class="n">m</span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;floats_only&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">f</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">f</span><span class="p">;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="n">py</span><span class="o">::</span><span class="n">arg</span><span class="p">(</span><span class="s">&quot;f&quot;</span><span class="p">).</span><span class="n">noconvert</span><span class="p">());</span>
+<span class="n">m</span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;floats_preferred&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">f</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">f</span><span class="p">;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="n">py</span><span class="o">::</span><span class="n">arg</span><span class="p">(</span><span class="s">&quot;f&quot;</span><span class="p">));</span>
 </code></pre></div>
 
 

@@ -892,6 +892,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3882,8 +3903,8 @@
 
 <h1 id="python-environment">Python environment</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Python is an [[#Interpreted languages]], meaning it needs an environment to work properly.
-Other programming languages can require a compilation phase to transform the code in binary instructions for the computer. Theses are called the [[#Compiled languages]].
+<p>Python is an ], meaning it needs an environment to work properly.
+Other programming languages can require a compilation phase to transform the code in binary instructions for the computer. Theses are called the ].
 There are also other programming languages execution methods that will not be detailed here (JIT, semi-interpreted, ...).</p>
 <p>There are mainly 3 ways to create an environment for Python:</p>
 <ul>
@@ -3895,7 +3916,7 @@ There are also other programming languages execution methods that will not be de
 The choice depends largely on the use case.</p>
 <h2 id="executing-python-code">Executing Python code</h2>
 <p>Python files are simply text files with a <code>.py</code> extension.
-They can be executed in a terminal / shell / console called [[#Command-Line Interface (CLI)]] on your system.</p>
+They can be executed in a terminal / shell / console called ] on your system.</p>
 <div class="admonition info">
 <p class="admonition-title">There are several command-line interfaces to be aware of:</p>
 <p>For windows:</p>
@@ -3919,15 +3940,15 @@ They can be executed in a terminal / shell / console called [[#Command-Line Inte
 </ol>
 </div>
 <p>Code can also be executed in an  (Spyder, PyCharm, VSCode, ...).</p>
-<p>In any of these scenarios, you need an [[#Integrated Development Environment (IDE)]] to be able to execute Python code.</p>
+<p>In any of these scenarios, you need an ] to be able to execute Python code.</p>
 <h2 id="how-to-call-python">How to call Python ?</h2>
 <p>The Python base environment is the one that comes installed with your Python distribution.</p>
 <ul>
-<li>You can find the different Python versions on the <a href="https://www.python.org/">official website</a>.</li>
+<li>You can find the different Python versions on the (https://www.python.org/).</li>
 <li>You can install multiple versions of Python on your system and be able to use them only if its a different major version. (3.9.1 can not be installed if 3.9.4 is already installed, but 3.11 can).</li>
 </ul>
 <p>Installing a Python version will lead to a clean, empty from libraries environment.
-Therefore you can not use any external librairies (<a href="https://numpy.org/">numpy</a>, <a href="https://scipy.org/">scipy</a>, <a href="https://matplotlib.org/stable/">matplotlib</a>, ...).
+Therefore you can not use any external librairies ((https://numpy.org/), (https://scipy.org/), (https://matplotlib.org/stable/), ...).
 You need first to install librairies.</p>
 <div class="admonition warn">
 <p class="admonition-title">Python can only be called from the console if</p>
@@ -3944,7 +3965,7 @@ You need first to install librairies.</p>
 <li><code>python --version</code> (often)</li>
 <li><code>python3 --version</code> (if <code>python</code> is not found)</li>
 <li>if <code>python</code> is still not found, it means that it is not installed on your system or that you have not added it to the PATH</li>
-<li>If you have multiple Python distributions installed, use the [[#py launcher]] (must be installed):</li>
+<li>If you have multiple Python distributions installed, use the ] (must be installed):</li>
 <li><code>py -3.9 -m --version</code> (you can specify the version you need with a minus before and only two numbers)</li>
 </ul>
 </div>
@@ -4042,7 +4063,7 @@ You need first to install librairies.</p>
 <h2 id="anaconda-environment">Anaconda environment</h2>
 <p>Anaconda is a popular distribution for Python and other programming languages commonly used in data science and scientific computing. It includes many pre-installed libraries and tools to simplify the setup for data-related tasks. Here are the steps to use Anaconda with Python:</p>
 <h3 id="1-install-anaconda">1. Install Anaconda</h3>
-<p>Visit the <a href="https://www.anaconda.com/products/distribution">Anaconda website</a> and download the Anaconda distribution suitable for your operating system (Windows, macOS, or Linux). Follow the installation instructions provided on the website.</p>
+<p>Visit the (https://www.anaconda.com/products/distribution) and download the Anaconda distribution suitable for your operating system (Windows, macOS, or Linux). Follow the installation instructions provided on the website.</p>
 <h3 id="2-open-anaconda-navigator-optional">2. Open Anaconda Navigator (Optional)</h3>
 <p>Anaconda Navigator is a graphical interface that comes with the Anaconda distribution. You can use it to manage environments, install packages, and launch applications. After installation, you can open Anaconda Navigator from the Start menu (Windows) or the Applications folder (macOS).</p>
 <h3 id="3-create-and-manage-environments">3. Create and Manage Environments</h3>
@@ -4090,11 +4111,11 @@ conda<span class="w"> </span>update<span class="w"> </span>anaconda
 <h2 id="other-environments">Other environments</h2>
 <p>Apart from the base Python environment, virtual environments, and Anaconda environments, there are other environments or tools that developers and data scientists use for managing Python environments. Some of them include:</p>
 <h3 id="1-pipenv">1. <strong>Pipenv:</strong></h3>
-<p><a href="https://pipenv.pypa.io/">Pipenv</a> is a tool for managing Python environments, dependencies, and packaging in a single file. It aims to bring the best of all packaging worlds (bundled, required, and development) to the Python world.</p>
+<p>(https://pipenv.pypa.io/) is a tool for managing Python environments, dependencies, and packaging in a single file. It aims to bring the best of all packaging worlds (bundled, required, and development) to the Python world.</p>
 <h3 id="2-poetry">2. <strong>Poetry:</strong></h3>
-<p><a href="https://python-poetry.org/">Poetry</a> is a modern dependency management and packaging tool for Python. It simplifies and centralizes the configuration of your projects, including dependency management, packaging, and publishing.</p>
+<p>(https://python-poetry.org/) is a modern dependency management and packaging tool for Python. It simplifies and centralizes the configuration of your projects, including dependency management, packaging, and publishing.</p>
 <h3 id="5-pyenv">5. <strong>pyenv:</strong></h3>
-<p><a href="https://github.com/pyenv/pyenv">pyenv</a> allows you to easily install and switch between multiple versions of Python. It's particularly useful for managing different Python versions on your system.</p>
+<p>(https://github.com/pyenv/pyenv) allows you to easily install and switch between multiple versions of Python. It's particularly useful for managing different Python versions on your system.</p>
 <h3 id="6-pip-package-installer">6. <strong>pip (package installer):</strong></h3>
 <p>While not an environment management tool itself, the <code>pip</code> package installer can be used with <code>requirements.txt</code> files to specify and install dependencies for a project. Tools like <code>pip-tools</code> can help manage dependencies more efficiently.</p>
 <p>These tools offer various features and approaches to creating, managing, and isolating Python environments. The choice of which one to use depends on your specific needs and preferences. Some developers prefer the simplicity of <code>venv</code>, while others may choose more feature-rich tools like <code>Pipenv</code> or <code>Poetry</code> for managing dependencies and packaging. Conda is often favored in data science and scientific computing due to its ability to handle non-Python libraries and its cross-platform support.</p>

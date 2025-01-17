@@ -882,6 +882,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dev/cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3492,7 +3513,7 @@
 <h1 id="fast-marching-method">Fast Marching Method</h1>
 <div class="admonition info">
 <p class="admonition-title">Overview</p>
-<p>The Fast Marching Method (FMM) is a numerical algorithm used to solve the [[Eikonal equation]], which describes the travel time of a wavefront through a medium.
+<p>The Fast Marching Method (FMM) is a numerical algorithm used to solve the ], which describes the travel time of a wavefront through a medium.
 It is particularly useful in seismic modeling, image processing, and various other applications where the evolution of a wavefront needs to be computed efficiently.
 The Fast Marching Method is widely used in applications such as seismic imaging, medical imaging, and computer graphics, where accurate and fast computation of wavefront propagation is essential.</p>
 </div>
@@ -3515,7 +3536,7 @@ The Fast Marching Method is widely used in applications such as seismic imaging,
 <li>Like most of the finite difference Eikonal solvers, struggle with high velocity gradients (adressed Kim and Cook, 1999)</li>
 <li>Wavefront may have discontinuous travel time gradients (when wavefront self intersect = multi-pathing) and later arriving information is discarded. The Eikonal cannot be easily solved where <span class="arithmatex">\(\Delta_x T\)</span> is discontinuous because it needs it to be solved... (Adressed Popovici, 1999 using the entropy satisfying upwind scheme "once a point burns, it stays burnt")</li>
 <li>High wavefront curvature cause accuracy loss because first order FDM struggles at describing this trend</li>
-<li>Second, the original fast marching algorithm does not work when the group velocity vector is not aligned with the phase velocity vector, as in the case of the TTI eikonal equation <sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+<li>Second, the original fast marching algorithm does not work when the group velocity vector is not aligned with the phase velocity vector, as in the case of the TTI eikonal equation <sup id="fnref2:Waheed2020"><a class="footnote-ref" href="#fn:Waheed2020">1</a></sup></li>
 </ul>
 </div>
 <h2 id="overview">Overview</h2>
@@ -3549,26 +3570,26 @@ The Fast Marching Method is widely used in applications such as seismic imaging,
 </li>
 <li>Continue the process until the wavefront reaches the desired locations or covers the entire domain.</li>
 </ol>
-<p>From Sambridge (2005) <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>:</p>
+<p>From Sambridge (2005) <sup id="fnref:Rawlindson2005"><a class="footnote-ref" href="#fn:Rawlindson2005">2</a></sup>:</p>
 <figure>
-  <img alt="FMM Principle" src="https://www.researchgate.net/profile/Malcolm-Sambridge/publication/242120349/figure/fig1/AS:668908654710802@1536491659867/Principle-behind-the-tracking-of-reflection-and-transmission-traveltimes-The-incident.png" target="_blank" />
+  !(https://www.researchgate.net/profile/Malcolm-Sambridge/publication/242120349/figure/fig1/AS:668908654710802@1536491659867/Principle-behind-the-tracking-of-reflection-and-transmission-traveltimes-The-incident.png){target=_blank}
   <figcaption>
     Principle behind the tracking of reflection and transmission traveltimes. The incident wavefront is tracked to all points on the wavefront, before FMM is reinitialised in the incident (for reflection) or adjacent (for transmission) layer.
   </figcaption>
 </figure>
 <figure>
-  <img alt="FMM concept" src="https://www.researchgate.net/profile/Malcolm-Sambridge/publication/242120349/figure/fig2/AS:668908654706707@1536491659898/Tracking-of-a-single-reflection-arrival-through-a-medium-containing-a-single-interface.png" target="_blank" />
+  !(https://www.researchgate.net/profile/Malcolm-Sambridge/publication/242120349/figure/fig2/AS:668908654706707@1536491659898/Tracking-of-a-single-reflection-arrival-through-a-medium-containing-a-single-interface.png){target=_blank}
   <figcaption>
     Tracking of a single reflection arrival through a medium containing a single interface. Wavespeed varies linearly with depth within a layer, so each ray path segment is described by a circular arc. Wavefronts are plotted at 0.4 s intervals in all cases. Receivers are denoted by grey triangles and the source by a dark grey star. (a)-(d) Wavefronts and rays; (e)-(h) traveltime accuracy of four different schemes using four different grid sizes (1000 m, 500 m, 250 m, 125 m).
   </figcaption>
 </figure>
 <h2 id="historical-note">Historical note</h2>
-<p>Fast marching (Sethian, 1999) and fast sweeping (Zhao, 2005) are the two most commonly used algorithms for numerically solving an eikonal equation. Fast marching methods rely on the fact that the direction of energy propagation of a wavefront, given by the group velocity, is aligned with the direction of wave propagation, given by the phase velocity. While this is true for isotropic media, the phase velocity vector in an anisotropic medium deviates from the group velocity vector. Therefore, the original fast marching algorithm cannot be reliably used to solve the anisotropic eikonal equation. This limitation led to the development of a more generally applicable version of the fast marching method known as the ordered upwind method (Sethian and Vladimirsky, 2003). However, implementation became significantly more complex compared to the original fast marching method, in addition to an increase in the computational cost. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>Fast marching (Sethian, 1999) and fast sweeping (Zhao, 2005) are the two most commonly used algorithms for numerically solving an eikonal equation. Fast marching methods rely on the fact that the direction of energy propagation of a wavefront, given by the group velocity, is aligned with the direction of wave propagation, given by the phase velocity. While this is true for isotropic media, the phase velocity vector in an anisotropic medium deviates from the group velocity vector. Therefore, the original fast marching algorithm cannot be reliably used to solve the anisotropic eikonal equation. This limitation led to the development of a more generally applicable version of the fast marching method known as the ordered upwind method (Sethian and Vladimirsky, 2003). However, implementation became significantly more complex compared to the original fast marching method, in addition to an increase in the computational cost. <sup id="fnref:Waheed2020"><a class="footnote-ref" href="#fn:Waheed2020">1</a></sup></p>
 <h2 id="equations">Equations</h2>
 <div class="admonition quote">
-<p class="admonition-title">Popovici (1999), Chopp (2001), and Popovici and Sethian (2002) <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<p class="admonition-title">Popovici (1999), Chopp (2001), and Popovici and Sethian (2002) <sup id="fnref:Popovici2002"><a class="footnote-ref" href="#fn:Popovici2002">3</a></sup></p>
 <div class="arithmatex">\[
-\left[ \sqrt{max(D_a^{-x} T | -D_b^{+x} T| 0) + max(D_c^{-y} T | -D_d^{+y} T| 0) + max(D_e^{-z} T | -D_f^{+z} T| 0)}\right] _{ijk} = s_{ijk}
+\left _{ijk} = s_{ijk}
 \]</div>
 <p>where:</p>
 <ul>
@@ -3583,14 +3604,14 @@ The Fast Marching Method is widely used in applications such as seismic imaging,
 <div class="footnote">
 <hr />
 <ol>
-<li id="fn:1">
-<p>Umair Bin Waheed. A fast marching eikonal solver for tilted transversely isotropic media. <em>GEOPHYSICS</em>, 85:1&ndash;54, 09 2020. <a href="https://doi.org/10.1190/geo2019-0799.1">doi:10.1190/geo2019-0799.1</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<li id="fn:Waheed2020">
+<p>Umair Bin Waheed. A fast marching eikonal solver for tilted transversely isotropic media. <em>GEOPHYSICS</em>, 85:1&ndash;54, 09 2020. <a href="https://doi.org/10.1190/geo2019-0799.1">doi:10.1190/geo2019-0799.1</a>.&#160;<a class="footnote-backref" href="#fnref:Waheed2020" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:Waheed2020" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
-<li id="fn:2">
-<p>Nicholas Rawlinson and Malcolm Sambridge. The fast marching method: an effective tool for tomographic imaging and tracking multiple phases in complex layered media. <em>Exploration Geophysics - EXPLOR GEOPHYS</em>, 36:, 12 2005. <a href="https://doi.org/10.1071/EG05341">doi:10.1071/EG05341</a>.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<li id="fn:Rawlindson2005">
+<p>Nicholas Rawlinson and Malcolm Sambridge. The fast marching method: an effective tool for tomographic imaging and tracking multiple phases in complex layered media. <em>Exploration Geophysics - EXPLOR GEOPHYS</em>, 36:, 12 2005. <a href="https://doi.org/10.1071/EG05341">doi:10.1071/EG05341</a>.&#160;<a class="footnote-backref" href="#fnref:Rawlindson2005" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
-<li id="fn:3">
-<p>Alexander Mihai Popovici and James A. Sethian. 3‐d imaging using higher order fast marching traveltimes. <em>GEOPHYSICS</em>, 67(2):604&ndash;609, 2002. <a href="https://doi.org/10.1190/1.1468621">doi:10.1190/1.1468621</a>.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<li id="fn:Popovici2002">
+<p>Alexander Mihai Popovici and James A. Sethian. 3‐d imaging using higher order fast marching traveltimes. <em>GEOPHYSICS</em>, 67(2):604&ndash;609, 2002. <a href="https://doi.org/10.1190/1.1468621">doi:10.1190/1.1468621</a>.&#160;<a class="footnote-backref" href="#fnref:Popovici2002" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

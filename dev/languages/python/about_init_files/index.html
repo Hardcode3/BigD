@@ -892,6 +892,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3593,7 +3614,7 @@
 </ul>
 </div>
 <div class="admonition note">
-<p class="admonition-title">These tips are linked to <a href="../wheels/">python wheels</a>.</p>
+<p class="admonition-title">These tips are linked to (./wheels.md).</p>
 </div>
 <p>Here's a breakdown of its purpose and behavior in the context of creating a Python package.</p>
 <h2 id="1-defining-a-package">1. <strong>Defining a Package</strong></h2>
@@ -3641,7 +3662,7 @@ Each level in the hierarchy requires its own <code>__init__.py</code> file to be
 <span class="c1"># Optionnally from .subpackage.submodule import * imports every component defined in the submodule subpackage (no need to repeat function names)</span>
 
 <span class="c1"># Optionally define an __all__ variable to control what’s accessible when using `from mypackage import *`</span>
-<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;MyClass&quot;</span><span class="p">,</span> <span class="s2">&quot;my_function&quot;</span><span class="p">]</span>
+<span class="n">__all__</span> <span class="o">=</span> 
 
 <span class="c1"># You could also add some package-level variables or configuration settings if needed</span>
 <span class="n">VERSION</span> <span class="o">=</span> <span class="s2">&quot;1.0.0&quot;</span>
@@ -3661,7 +3682,7 @@ Each level in the hierarchy requires its own <code>__init__.py</code> file to be
 <span class="kn">from</span><span class="w"> </span><span class="nn">.submodule</span><span class="w"> </span><span class="kn">import</span> <span class="n">SubClass</span><span class="p">,</span> <span class="n">sub_function</span>
 
 <span class="c1"># Control what’s accessible when using `from mypackage.subpackage import *`</span>
-<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;SubClass&quot;</span><span class="p">,</span> <span class="s2">&quot;sub_function&quot;</span><span class="p">]</span>
+<span class="n">__all__</span> <span class="o">=</span> 
 </code></pre></div>
 </div>
 <p>With this setup:</p>
@@ -3725,7 +3746,7 @@ Each level in the hierarchy requires its own <code>__init__.py</code> file to be
 <h2 id="refs">Refs</h2>
 <div class="admonition cite">
 <p class="admonition-title">Refs</p>
-<p><a href="https://packaging.python.org/en/latest/">Python Packaging User Guide</a></p>
+<p>(https://packaging.python.org/en/latest/)</p>
 </div>
 
 

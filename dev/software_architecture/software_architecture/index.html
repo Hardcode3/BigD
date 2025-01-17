@@ -892,6 +892,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3993,7 +4014,7 @@
 
 <h1 id="software-architecture">Software Architecture</h1>
 <h2 id="a-quick-overview">A quick overview</h2>
-<p><img alt="bytebytego_gif" src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0fb05a9a-d6d3-4961-a005-b5d43c3d89eb_800x1040.gif" target="_blank" title="A cheat sheet for system designs from ByteByteGo.com" /></p>
+<p>!(https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0fb05a9a-d6d3-4961-a005-b5d43c3d89eb_800x1040.gif){target=_blank title="A cheat sheet for system designs from ByteByteGo.com"}</p>
 <h2 id="introduction-to-software-architecture">Introduction to software architecture</h2>
 <div class="admonition success">
 <p class="admonition-title">The objectives of software design is to make the code:</p>
@@ -4070,7 +4091,7 @@ Being capable of representing such entities in a codebase helps with clarity and
 <li>mock-ups</li>
 <li>trade-offs</li>
 </ul>
-<p>CRC cards are useful in this step ([[#Class responsibility collaborator (CRC)]]).</p>
+<p>CRC cards are useful in this step (]).</p>
 <h3 id="build-a-technical-design">Build a technical design</h3>
 <p>Technical design (describes how these responsibilities are met): UML</p>
 <ol>
@@ -4078,7 +4099,7 @@ Being capable of representing such entities in a codebase helps with clarity and
 <li>Use technical descriptions for each component</li>
 <li>Describe how components work together</li>
 </ol>
-<p>UML class diagrams are useful in this step (see [[#Expressing designs structures in java &amp; UML class diagrams]])</p>
+<p>UML class diagrams are useful in this step (see ])</p>
 <h3 id="expressing-requirements-through-user-stories">Expressing requirements through user stories</h3>
 <p>Once requirements are found, they can be expressed as a user story.
 User stories are one of many techniques to express some requirements for a software system.
@@ -4125,9 +4146,9 @@ Its often quality vs time to market.</p>
 </ul>
 <h2 id="class-responsibility-collaborator-crc">Class responsibility collaborator (CRC)</h2>
 <p>CRC cards stands for Class, Responsibility and Collaborator (aka. Components, Connections and Responsibilities).
-This is a way of representing high level structure ([[#Build a conceptual design]]).
+This is a way of representing high level structure (]).
 It is useful to record, organize and refine the components of the system.</p>
-<p><img alt="crc_card" src="../../../res/software_architecture/CRC_card.jpg" /></p>
+<p>!(../../res/software_architecture/CRC_card.jpg)</p>
 <p>Example using a bank system:</p>
 <ul>
 <li>The <strong>bank customer</strong> is the class name</li>
@@ -4202,7 +4223,7 @@ It has a frame lasting the whole life of the car and tires that can be replaced 
 <h2 id="expressing-designs-structures-in-java-uml-class-diagrams">Expressing designs structures in java &amp; UML class diagrams</h2>
 <h3 id="abstraction-in-java-and-uml">Abstraction in Java and UML</h3>
 <p>Properties turn into variables and operations into members.</p>
-<p><img alt="uml_card" src="../../../res/software_architecture/UML_card.jpg" /></p>
+<p>!(../../res/software_architecture/UML_card.jpg)</p>
 <p>Translates into (without considering the exposition):</p>
 <div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Food</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">greceryID</span><span class="p">;</span>
@@ -4227,7 +4248,7 @@ This can be done by using the <code>private</code> specifier and implementing ge
 <li>Composition</li>
 </ul>
 </div>
-<p><img alt="uml_decomposition" src="../../../res/software_architecture/UML_decomposition.jpg" /></p>
+<p>!(../../res/software_architecture/UML_decomposition.jpg)</p>
 <h4 id="association">Association</h4>
 <div class="admonition info">
 <p class="admonition-title">Objects may interact with other for some time.</p>
@@ -4248,7 +4269,7 @@ This can be done by using the <code>private</code> specifier and implementing ge
 <li>Classes can implement one or more interface at a time which allows them to have multiple types. </li>
 <li>Interfaces enable you to describe behaviors without the need to implement them, which allows you to reuse these abstractions.</li>
 </ul>
-<p><img alt="UML_generalization" src="../../../res/software_architecture/UML_generalization.jpg" /></p>
+<p>!(../../res/software_architecture/UML_generalization.jpg)</p>
 <h4 id="using-inheritance">Using inheritance</h4>
 <h5 id="implementation-inheritance">Implementation inheritance</h5>
 <div class="admonition info">
@@ -4295,14 +4316,14 @@ An analogy is:</p>
 </ul>
 <h3 id="separation-of-concerns">Separation of concerns</h3>
 <p>A large problem with a lot of concerns can be divided into smaller parts, using separation of concerns: the code needs it to stay organized.
-It can be achieved through [[#Four design principles]]: [[#Abstraction]], [[#Encapsulation]], [[#Decomposition]] and [[#Generalization]].</p>
+It can be achieved through ]: ], ], ] and ].</p>
 <p>For instance, a dog can be analyzed by its behavior. It eats, but not alone and needs an owner for this. Therefore, concern of getting food is separated from the dog and given to the owner.
 Another example is the smartphone class. A smartphone have a camera and therefore we can create a separate class for the camera. This camera object will then be composed with the smartphone class.</p>
 <h3 id="information-hiding">Information hiding</h3>
 <p>Information hiding allows other developers to work with a codebase without knowing the implementation details of the modules.
-This concept is often associated / achieved through the [[#Encapsulation]] principle.
+This concept is often associated / achieved through the ] principle.
 It is a way to enforce a good use of an API.</p>
-<p>For instance, in [[Java]], there are multiple ways to enforce [[#Encapsulation]]:</p>
+<p>For instance, in ], there are multiple ways to enforce ]:</p>
 <ul>
 <li>public methods</li>
 <li>protected methods</li>
@@ -4321,7 +4342,7 @@ It is a way to enforce a good use of an API.</p>
 </ul>
 <h2 id="generalization-principles">Generalization principles</h2>
 <h3 id="inheritance-issues">Inheritance issues</h3>
-<p>As previously said, [[#Using inheritance]] is about answering the following questions:</p>
+<p>As previously said, ] is about answering the following questions:</p>
 <ul>
 <li>What attributes and behaviors do you need to model in a class through abstraction?</li>
 <li>How are these attributes and behaviors grouped together and accessed through encapsulation?</li>
@@ -4341,8 +4362,8 @@ It is a way to enforce a good use of an API.</p>
 <h3 id="uml-sequence-diagram">UML sequence diagram</h3>
 <p>Sequence Diagrams are used to show your team how objects in your program interact with each other to complete tasks.
 This is a map of the conversations between the involved classes.</p>
-<p><img alt="UML_diagrams-sequence_diagrams_UML" src="../../../res/software_architecture/UML_diagrams-sequence_diagrams_UML.jpg" /></p>
-<p><img alt="UML_diagrams-sequence_diagrams_UML_example" src="../../../res/software_architecture/UML_diagrams-sequence_diagrams_UML_example.jpg" /></p>
+<p>!(../../res/software_architecture/UML_diagrams-sequence_diagrams_UML.jpg)</p>
+<p>!(../../res/software_architecture/UML_diagrams-sequence_diagrams_UML_example.jpg)</p>
 <h3 id="uml-state-diagrams">UML state diagrams</h3>
 <p>A UML state diagram describes how your system acts or behaves by showing states of the system as events occur.
 Think of a car: when it is in reverse, it can only achieve some specific actions, like parking.
@@ -4355,8 +4376,8 @@ There are 3 types of activities:</p>
 <li>Do: actions occurring only once or multiple times while an object is in a certain state</li>
 </ol>
 <p>Terminations represents an object being destroyed, or a process being complete, like returning the credit card at the bank machine.</p>
-<p><img alt="UML_diagrams-state_diagrams_UML.jpg" src="../../../res/software_architecture/UML_diagrams-state_diagrams_UML.jpg" /></p>
-<p><img alt="UML_diagrams-state_diagrams_UML_example.jpg" src="../../../res/software_architecture/UML_diagrams-state_diagrams_UML_example.jpg" /></p>
+<p>!(../../res/software_architecture/UML_diagrams-state_diagrams_UML.jpg)</p>
+<p>!(../../res/software_architecture/UML_diagrams-state_diagrams_UML_example.jpg)</p>
 <h2 id="model-checking">Model checking</h2>
 <p>How to make sure that the created model works?
 Model checking is a systematic check technique of system's state in all its possible variants.

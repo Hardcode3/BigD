@@ -880,6 +880,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3843,7 +3864,7 @@ p_k=-\nabla f(x_k, y_k)
 \]</div>
 </li>
 <li>
-<p>Choose the step size <span class="arithmatex">\(\alpha_k\)</span>​ using a line search method, such as the [[#Armijo rule]] or the [[#Wolf rule]]. This determines how far to move in the negative gradient direction.</p>
+<p>Choose the step size <span class="arithmatex">\(\alpha_k\)</span>​ using a line search method, such as the ] or the ]. This determines how far to move in the negative gradient direction.</p>
 <div class="arithmatex">\[
 \begin{bmatrix}
 x_{k+1} \\
@@ -3916,7 +3937,7 @@ The curvature condition ensures that the step size is not too small.</p>
 <span class="kt">double</span><span class="w"> </span><span class="nf">objectiveFunction</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Eigen</span><span class="o">::</span><span class="n">VectorXd</span><span class="o">&amp;</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// Define your objective function here</span>
 <span class="w">    </span><span class="c1">// Example: f(x) = x^2</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="c1">// Define the gradient of the objective function</span>
@@ -3979,7 +4000,7 @@ The curvature condition ensures that the step size is not too small.</p>
 <span class="w">    </span><span class="c1">// Use Newton method</span>
 <span class="w">    </span><span class="n">NewtonOptimizer</span><span class="w"> </span><span class="n">newtonOptimizer</span><span class="p">;</span>
 <span class="w">    </span><span class="n">Eigen</span><span class="o">::</span><span class="n">VectorXd</span><span class="w"> </span><span class="n">resultNewton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">minimize</span><span class="p">(</span><span class="n">newtonOptimizer</span><span class="p">,</span><span class="w"> </span><span class="n">objectiveFunction</span><span class="p">,</span><span class="w"> </span><span class="n">gradient</span><span class="p">,</span><span class="w"> </span><span class="n">hessian</span><span class="p">,</span><span class="w"> </span><span class="n">initialGuess</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">);</span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Newton Method Result: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">resultNewton</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Newton Method Result: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">resultNewton</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>

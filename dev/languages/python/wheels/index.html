@@ -892,6 +892,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3647,7 +3668,7 @@
 <li>Avoids the intermediate step of building packages off the source distribution   </li>
 </ul>
 </li>
-<li>Avoids missing headers errors since building source distributions requires <a href="https://www.openssl.org/" target="_blank">OpenSSL</a> development headers installed</li>
+<li>Avoids missing headers errors since building source distributions requires (https://www.openssl.org/){target=_blank} development headers installed</li>
 <li>No need for a compiler</li>
 <li>Provide consistency</li>
 <li>Can be used inside other repositories when the package is private or unreleased as dependencies in <code>requirements.txt</code>, therefore allowing to build the dependent software.</li>
@@ -3753,7 +3774,7 @@ docker<span class="w"> </span>container<span class="w"> </span>run<span class="w
 </li>
 </ol>
 <div class="admonition cite">
-<p class="admonition-title">PyPA example repository on GitHub <a href="https://github.com/pypa/python-manylinux-demo" target="_blank">python-manylinux-demo</a></p>
+<p class="admonition-title">PyPA example repository on GitHub (https://github.com/pypa/python-manylinux-demo){target=_blank}</p>
 </div>
 <h3 id="build-a-wheel-from-a-repository">Build a wheel from a repository</h3>
 <ol>
@@ -3765,8 +3786,8 @@ docker<span class="w"> </span>container<span class="w"> </span>run<span class="w
 <div class="admonition example">
 <p class="admonition-title">Real life examples</p>
 <ol>
-<li><a href="https://github.com/lxml/lxml/blob/master/tools/manylinux/build-wheels.sh" target="_blank"><strong><code>lxml</code></strong></a> uses a separate build script that’s invoked from within the <code>manylinux1</code> Docker container.</li>
-<li><a href="https://github.com/ultrajson/ultrajson/blob/master/.github/workflows/deploy-wheels.yml" target="_blank"><strong><code>ultrajson</code></strong></a> does the same and uses GitHub Actions to call the build script.</li>
+<li>(https://github.com/lxml/lxml/blob/master/tools/manylinux/build-wheels.sh){target=_blank} uses a separate build script that’s invoked from within the <code>manylinux1</code> Docker container.</li>
+<li>(https://github.com/ultrajson/ultrajson/blob/master/.github/workflows/deploy-wheels.yml){target=_blank} does the same and uses GitHub Actions to call the build script.</li>
 </ol>
 </div>
 <h2 id="integrate-a-wheel-inside-a-requirements-file">Integrate a wheel inside a requirements file</h2>
@@ -3791,8 +3812,8 @@ wheel~=0.44.0
 <div class="admonition quote">
 <p class="admonition-title">Refs</p>
 <ul>
-<li><a href="https://realpython.com/python-wheels/" target="_blank">Real Python</a></li>
-<li><a href="https://pythonwheels.com/" target="_blank">Pythonwheels</a></li>
+<li>(https://realpython.com/python-wheels/){target=_blank}</li>
+<li>(https://pythonwheels.com/){target=_blank}</li>
 </ul>
 </div>
 

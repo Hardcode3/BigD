@@ -882,6 +882,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3553,8 +3574,8 @@
 <div class="admonition quote">
 <p class="admonition-title">Resources</p>
 <ul>
-<li><a href="https://youtu.be/spUNpyF58BY?si=43lJ-UPiy6w0a0AV" target="_blank">Youtube 3BlueOneBrown</a></li>
-<li><a href="https://mathworld.wolfram.com/FourierTransform.html" target="_blank">Wolfram MathWorld</a></li>
+<li>(https://youtu.be/spUNpyF58BY?si=43lJ-UPiy6w0a0AV){target=_blank}</li>
+<li>(https://mathworld.wolfram.com/FourierTransform.html){target=_blank}</li>
 </ul>
 </div>
 <hr />
@@ -3577,18 +3598,18 @@ x(t) = \int_{-\infty}^\infty X(f) e^{j 2 \pi f t} \, df
 <hr />
 <h2 id="discrete-fourier-transform-dft">Discrete Fourier Transform (DFT)</h2>
 <h3 id="definition_1">Definition</h3>
-<p>The <strong>Discrete Fourier Transform</strong> (DFT) applies to discrete signals (sequences) <span class="arithmatex">\( x[n] \)</span> of finite length <span class="arithmatex">\( N \)</span>. It is defined as:</p>
+<p>The <strong>Discrete Fourier Transform</strong> (DFT) applies to discrete signals (sequences) <span class="arithmatex">\( x \)</span> of finite length <span class="arithmatex">\( N \)</span>. It is defined as:</p>
 <div class="arithmatex">\[
-X[k] = \sum_{n=0}^{N-1} x[n] e^{-j \frac{2 \pi}{N} k n}
+X = \sum_{n=0}^{N-1} x e^{-j \frac{2 \pi}{N} k n}
 \]</div>
 <ul>
-<li><strong><span class="arithmatex">\( X[k] \)</span>:</strong> Frequency domain representation of <span class="arithmatex">\( x[n] \)</span></li>
+<li><strong><span class="arithmatex">\( X \)</span>:</strong> Frequency domain representation of <span class="arithmatex">\( x \)</span></li>
 <li><strong><span class="arithmatex">\( k \)</span>:</strong> Frequency index</li>
 <li><strong><span class="arithmatex">\( N \)</span>:</strong> Number of samples in the sequence</li>
 </ul>
 <h3 id="inverse-transform_1">Inverse Transform</h3>
 <div class="arithmatex">\[
-x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X[k] e^{j \frac{2 \pi}{N} k n}
+x = \frac{1}{N} \sum_{k=0}^{N-1} X e^{j \frac{2 \pi}{N} k n}
 \]</div>
 <hr />
 <h2 id="key-differences-between-cft-and-dft">Key Differences Between CFT and DFT</h2>
@@ -3604,7 +3625,7 @@ x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X[k] e^{j \frac{2 \pi}{N} k n}
 <tr>
 <td>Signal type</td>
 <td>Continuous signals <span class="arithmatex">\( x(t) \)</span></td>
-<td>Discrete signals <span class="arithmatex">\( x[n] \)</span></td>
+<td>Discrete signals <span class="arithmatex">\( x \)</span></td>
 </tr>
 <tr>
 <td>Domain</td>
@@ -3625,7 +3646,7 @@ x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X[k] e^{j \frac{2 \pi}{N} k n}
 </table>
 <hr />
 <h2 id="usual-fourrier-transforms">Usual Fourrier Transforms</h2>
-<p><img alt="Usual Fourrier transforms table" src="https://media.cheggcdn.com/media/fff/fff4050d-7215-4cdd-b056-0af757fd3058/php6hYhHm" /></p>
+<p>!(https://media.cheggcdn.com/media/fff/fff4050d-7215-4cdd-b056-0af757fd3058/php6hYhHm)</p>
 
 
 

@@ -892,6 +892,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3465,7 +3486,7 @@
 
 <span class="c1"># get the relative path of the script given the location at which it is executed</span>
 <span class="c1"># and change directory to the script location</span>
-<span class="nv">RELATIVE_EXEC_PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="w"> </span>dirname<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">BASH_SOURCE</span><span class="p">[0]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">)</span><span class="s2">&quot;</span>
+<span class="nv">RELATIVE_EXEC_PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="w"> </span>dirname<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">BASH_SOURCE</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">)</span><span class="s2">&quot;</span>
 <span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Relative path of the script relative to the execution path: </span><span class="si">${</span><span class="nv">RELATIVE_EXEC_PATH</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="nb">cd</span><span class="w"> </span><span class="si">${</span><span class="nv">RELATIVE_EXEC_PATH</span><span class="si">}</span>
 
@@ -3477,7 +3498,7 @@
 <span class="nv">BUILD_DIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">SCRIPT_DIR</span><span class="si">}</span><span class="s2">/../build&quot;</span>
 
 <span class="c1"># check if the folder exists and if so, delete it</span>
-<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">BUILD_DIR</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="k">if</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
 <span class="w">    </span>rm<span class="w"> </span>-rf<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">BUILD_DIR</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Folder </span><span class="si">${</span><span class="nv">BUILD_DIR</span><span class="si">}</span><span class="s2"> successfully deleted. Solution has been cleared.&quot;</span>
 <span class="k">else</span>

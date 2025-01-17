@@ -880,6 +880,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3505,67 +3526,67 @@
 <div class="admonition quote">
 <p class="admonition-title">Quote</p>
 <ul>
-<li><a href="https://imagecomputing.net/damien.rohmer/teaching/inf585/practice/content/006/index.html">https://imagecomputing.net/damien.rohmer/teaching</a></li>
+<li>(https://imagecomputing.net/damien.rohmer/teaching/inf585/practice/content/006/index.html)</li>
 </ul>
 </div>
 <h2 id="loading-meshes">Loading meshes</h2>
 <h3 id="python">Python</h3>
-<p>From <a href="https://github.com/ssloy/ENSG.git" target="_blank">Dmitry Sokolov</a></p>
+<p>From (https://github.com/ssloy/ENSG.git){target=_blank}</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">Mesh</span><span class="p">():</span>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
         <span class="c1"># parse the .obj file</span>
-        <span class="n">V</span><span class="p">,</span> <span class="n">T</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+        <span class="n">V</span><span class="p">,</span> <span class="n">T</span> <span class="o">=</span> <span class="p">,</span> 
         <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
                <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">):</span> <span class="k">continue</span>
                <span class="n">values</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
                <span class="k">if</span> <span class="ow">not</span> <span class="n">values</span><span class="p">:</span> <span class="k">continue</span>
-               <span class="k">if</span> <span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span>
-                   <span class="n">V</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]])</span>
-               <span class="k">elif</span> <span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;f&#39;</span><span class="p">:</span>
-                   <span class="n">T</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]])</span>
+               <span class="k">if</span> <span class="n">values</span> <span class="o">==</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span>
+                   <span class="n">V</span><span class="o">.</span><span class="n">append</span><span class="p">(])</span>
+               <span class="k">elif</span> <span class="n">values</span> <span class="o">==</span> <span class="s1">&#39;f&#39;</span><span class="p">:</span>
+                   <span class="n">T</span><span class="o">.</span><span class="n">append</span><span class="p">(])</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">V</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">V</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">T</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
 
         <span class="c1"># compute the adjacency</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">v2c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">nverts</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">c2c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">ncorners</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">v2c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">nverts</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">c2c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">ncorners</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ncorners</span><span class="p">):</span>
-            <span class="n">v</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="n">c</span><span class="o">//</span><span class="mi">3</span><span class="p">][</span><span class="n">c</span><span class="o">%</span><span class="mi">3</span><span class="p">]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">v2c</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span>
+            <span class="n">v</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">v2c</span> <span class="o">=</span> <span class="n">c</span>
         <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ncorners</span><span class="p">):</span>
-            <span class="n">v</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="n">c</span><span class="o">//</span><span class="mi">3</span><span class="p">][</span><span class="n">c</span><span class="o">%</span><span class="mi">3</span><span class="p">]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">c2c</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v2c</span><span class="p">[</span><span class="n">v</span><span class="p">]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">v2c</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span>
+            <span class="n">v</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">c2c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v2c</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">v2c</span> <span class="o">=</span> <span class="n">c</span>
 
         <span class="c1"># speed up the computations</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">opp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">ncorners</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">opp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">ncorners</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ncorners</span><span class="p">):</span>
-            <span class="n">c_org</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="n">c</span><span class="o">//</span><span class="mi">3</span><span class="p">][</span><span class="n">c</span><span class="o">%</span><span class="mi">3</span><span class="p">]</span>
-            <span class="n">c_dst</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="n">c</span><span class="o">//</span><span class="mi">3</span><span class="p">][(</span><span class="n">c</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">3</span><span class="p">]</span>
+            <span class="n">c_org</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span>
+            <span class="n">c_dst</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span>
             <span class="n">cir</span> <span class="o">=</span> <span class="n">c</span>
             <span class="n">opp</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
             <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
                 <span class="n">cand</span> <span class="o">=</span> <span class="p">(</span><span class="n">cir</span><span class="o">//</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="p">(</span><span class="n">cir</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span><span class="o">%</span><span class="mi">3</span>
-                <span class="n">cand_org</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="n">cand</span><span class="o">//</span><span class="mi">3</span><span class="p">][</span><span class="n">cand</span><span class="o">%</span><span class="mi">3</span><span class="p">]</span>
-                <span class="n">cand_dst</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="n">cand</span><span class="o">//</span><span class="mi">3</span><span class="p">][(</span><span class="n">cand</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">3</span><span class="p">]</span>
+                <span class="n">cand_org</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span>
+                <span class="n">cand_dst</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span>
                 <span class="k">if</span> <span class="p">(</span><span class="n">cand_org</span> <span class="o">==</span> <span class="n">c_dst</span> <span class="ow">and</span> <span class="n">cand_dst</span> <span class="o">==</span> <span class="n">c_org</span><span class="p">):</span>
                     <span class="n">opp</span> <span class="o">=</span> <span class="n">cand</span> <span class="c1"># we suppose manifold input</span>
-                <span class="n">cir</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">c2c</span><span class="p">[</span><span class="n">cir</span><span class="p">]</span>
+                <span class="n">cir</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">c2c</span>
                 <span class="k">if</span> <span class="p">(</span><span class="n">cir</span><span class="o">==</span><span class="n">c</span><span class="p">):</span> <span class="k">break</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">opp</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">opp</span> 
+            <span class="bp">self</span><span class="o">.</span><span class="n">opp</span> <span class="o">=</span> <span class="n">opp</span> 
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">boundary</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="kc">False</span><span class="p">]</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">nverts</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">boundary</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">nverts</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nverts</span><span class="p">):</span>
-            <span class="n">cir</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v2c</span><span class="p">[</span><span class="n">v</span><span class="p">]</span>
+            <span class="n">cir</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">v2c</span>
             <span class="k">if</span> <span class="n">cir</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span> <span class="k">continue</span>
             <span class="k">while</span> <span class="p">(</span><span class="kc">True</span><span class="p">):</span>
-                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">opp</span><span class="p">[</span><span class="n">cir</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
-                    <span class="bp">self</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">opp</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">boundary</span> <span class="o">=</span> <span class="kc">True</span>
                     <span class="k">break</span>
-                <span class="n">cir</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">c2c</span><span class="p">[</span><span class="n">cir</span><span class="p">]</span>
-                <span class="k">if</span> <span class="p">(</span><span class="n">cir</span><span class="o">==</span><span class="bp">self</span><span class="o">.</span><span class="n">v2c</span><span class="p">[</span><span class="n">v</span><span class="p">]):</span> <span class="k">break</span>
+                <span class="n">cir</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">c2c</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">cir</span><span class="o">==</span><span class="bp">self</span><span class="o">.</span><span class="n">v2c</span><span class="p">):</span> <span class="k">break</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">nverts</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -3592,13 +3613,13 @@
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Gets the vertice at the origin of the edge</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="n">c</span><span class="o">//</span><span class="mi">3</span><span class="p">][</span><span class="n">c</span><span class="o">%</span><span class="mi">3</span><span class="p">]</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">dst</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Gets the destination vertice of the edge</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="n">c</span><span class="o">//</span><span class="mi">3</span><span class="p">][(</span><span class="n">c</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">3</span><span class="p">]</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">prev</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -3616,17 +3637,17 @@
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Gets the oposite half-edge</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">opp</span><span class="p">[</span><span class="n">c</span><span class="p">]</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">opp</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">on_border</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">boundary</span><span class="p">[</span><span class="n">v</span><span class="p">]</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">boundary</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">ret</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
         <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">V</span><span class="p">:</span>
-            <span class="n">ret</span> <span class="o">=</span> <span class="n">ret</span> <span class="o">+</span> <span class="p">(</span><span class="s2">&quot;v </span><span class="si">%f</span><span class="s2"> </span><span class="si">%f</span><span class="s2"> </span><span class="si">%f</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
+            <span class="n">ret</span> <span class="o">=</span> <span class="n">ret</span> <span class="o">+</span> <span class="p">(</span><span class="s2">&quot;v </span><span class="si">%f</span><span class="s2"> </span><span class="si">%f</span><span class="s2"> </span><span class="si">%f</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">v</span><span class="p">))</span>
         <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">T</span><span class="p">:</span>
-            <span class="n">ret</span> <span class="o">=</span> <span class="n">ret</span> <span class="o">+</span> <span class="p">(</span><span class="s2">&quot;f </span><span class="si">%d</span><span class="s2"> </span><span class="si">%d</span><span class="s2"> </span><span class="si">%d</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">t</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+            <span class="n">ret</span> <span class="o">=</span> <span class="n">ret</span> <span class="o">+</span> <span class="p">(</span><span class="s2">&quot;f </span><span class="si">%d</span><span class="s2"> </span><span class="si">%d</span><span class="s2"> </span><span class="si">%d</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">t</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">t</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">t</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
         <span class="k">return</span> <span class="n">ret</span>
 </code></pre></div>
 

@@ -892,6 +892,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -4304,7 +4325,7 @@ sh<span class="w"> </span>myscript.sh
 <div class="admonition info">
 <p class="admonition-title">Enclose variables into quotes</p>
 <p>This practice will prevent from raising errors where the variable might be empty or contains spaces.
-Just use <code>if [ -z "$VENV_NAME" ] || [ -z "$VENV_PATH" ]; then</code> instead of <code>if [ -z $VENV_NAME ] || [ -z $VENV_PATH ]; then</code>.</p>
+Just use <code>if  || ; then</code> instead of <code>if  || ; then</code>.</p>
 </div>
 <h3 id="environment-variables">Environment variables</h3>
 <h4 id="home-directory-for-the-current-user">Home directory for the current user</h4>
@@ -4439,24 +4460,24 @@ whereis<span class="w"> </span>file_or_executable_append_to_path<span class="o">
 <span class="nv">array</span><span class="o">=(</span><span class="s2">&quot;value1&quot;</span><span class="w"> </span><span class="s2">&quot;value2&quot;</span><span class="w"> </span><span class="s2">&quot;value3&quot;</span><span class="o">)</span>
 
 <span class="c1"># Method 2</span>
-array<span class="o">[</span><span class="m">0</span><span class="o">]=</span><span class="s2">&quot;value1&quot;</span>
-array<span class="o">[</span><span class="m">1</span><span class="o">]=</span><span class="s2">&quot;value2&quot;</span>
-array<span class="o">[</span><span class="m">2</span><span class="o">]=</span><span class="s2">&quot;value3&quot;</span>
+<span class="nv">array</span><span class="o">=</span><span class="s2">&quot;value1&quot;</span>
+<span class="nv">array</span><span class="o">=</span><span class="s2">&quot;value2&quot;</span>
+<span class="nv">array</span><span class="o">=</span><span class="s2">&quot;value3&quot;</span>
 </code></pre></div>
 <h5 id="accessing">Accessing</h5>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="si">${</span><span class="nv">array</span><span class="p">[0]</span><span class="si">}</span><span class="w">   </span><span class="c1"># prints &quot;value1&quot;</span>
-<span class="nb">echo</span><span class="w"> </span><span class="si">${</span><span class="nv">array</span><span class="p">[1]</span><span class="si">}</span><span class="w">   </span><span class="c1"># prints &quot;value2&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="si">${</span><span class="nv">array</span><span class="si">}</span><span class="w">   </span><span class="c1"># prints &quot;value1&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="si">${</span><span class="nv">array</span><span class="si">}</span><span class="w">   </span><span class="c1"># prints &quot;value2&quot;</span>
 </code></pre></div>
 <h5 id="iterating">Iterating</h5>
 <div class="highlight"><pre><span></span><code><span class="nv">array</span><span class="o">=(</span><span class="s2">&quot;value1&quot;</span><span class="w"> </span><span class="s2">&quot;value2&quot;</span><span class="w"> </span><span class="s2">&quot;value3&quot;</span><span class="o">)</span>
 
-<span class="k">for</span><span class="w"> </span>element<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">array</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="k">for</span><span class="w"> </span>element<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">array</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$element</span>
 <span class="k">done</span>
 </code></pre></div>
 <h5 id="array-length">Array length</h5>
 <div class="highlight"><pre><span></span><code><span class="nv">array</span><span class="o">=(</span><span class="s2">&quot;value1&quot;</span><span class="w"> </span><span class="s2">&quot;value2&quot;</span><span class="w"> </span><span class="s2">&quot;value3&quot;</span><span class="o">)</span>
-<span class="nv">length</span><span class="o">=</span><span class="si">${#</span><span class="nv">array</span><span class="p">[@]</span><span class="si">}</span>
+<span class="nv">length</span><span class="o">=</span><span class="si">${#</span><span class="nv">array</span><span class="si">}</span>
 <span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Array length: </span><span class="nv">$length</span><span class="s2">&quot;</span>
 </code></pre></div>
 <h5 id="appending">Appending</h5>
@@ -4467,8 +4488,8 @@ array<span class="o">[</span><span class="m">2</span><span class="o">]=</span><s
 <div class="highlight"><pre><span></span><code><span class="nv">array</span><span class="o">=(</span><span class="s2">&quot;apple&quot;</span><span class="w"> </span><span class="s2">&quot;orange&quot;</span><span class="w"> </span><span class="s2">&quot;banana&quot;</span><span class="o">)</span>
 
 <span class="nv">search_element</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span>
-<span class="k">for</span><span class="w"> </span>element<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">array</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$element</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$search_element</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="k">for</span><span class="w"> </span>element<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">array</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
 <span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Element found: </span><span class="nv">$search_element</span><span class="s2">&quot;</span>
 <span class="w">        </span><span class="k">break</span>
 <span class="w">    </span><span class="k">fi</span>
@@ -4478,7 +4499,7 @@ array<span class="o">[</span><span class="m">2</span><span class="o">]=</span><s
 <div class="highlight"><pre><span></span><code><span class="nv">array</span><span class="o">=(</span><span class="s2">&quot;apple&quot;</span><span class="w"> </span><span class="s2">&quot;orange&quot;</span><span class="w"> </span><span class="s2">&quot;banana&quot;</span><span class="o">)</span>
 <span class="nv">element_to_remove</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span>
 
-<span class="nv">array</span><span class="o">=(</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">array</span><span class="p">[@]/</span><span class="nv">$element_to_remove</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">)</span>
+<span class="nv">array</span><span class="o">=(</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">array</span><span class="p">/</span><span class="nv">$element_to_remove</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">)</span>
 </code></pre></div>
 <h4 id="functions">Functions</h4>
 <div class="highlight"><pre><span></span><code>function_name<span class="o">()</span><span class="w"> </span><span class="o">{</span>
@@ -4504,9 +4525,9 @@ array<span class="o">[</span><span class="m">2</span><span class="o">]=</span><s
 <h3 id="statements">Statements</h3>
 <h4 id="conditional-statements">Conditional statements</h4>
 <h5 id="if">If</h5>
-<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$a</span><span class="w"> </span>-gt<span class="w"> </span><span class="nv">$b</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;a is greater than b&quot;</span>
-<span class="k">elif</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$a</span><span class="w"> </span>-lt<span class="w"> </span><span class="nv">$b</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="k">elif</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;a is less than b&quot;</span>
 <span class="k">else</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;a is equal to b&quot;</span>
@@ -4533,14 +4554,14 @@ array<span class="o">[</span><span class="m">2</span><span class="o">]=</span><s
 </code></pre></div>
 <h5 id="while">While</h5>
 <div class="highlight"><pre><span></span><code><span class="nv">count</span><span class="o">=</span><span class="m">1</span>
-<span class="k">while</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$count</span><span class="w"> </span>-le<span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="k">while</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$count</span>
 <span class="w">    </span><span class="o">((</span>count++<span class="o">))</span>
 <span class="k">done</span>
 </code></pre></div>
 <h5 id="until">Until</h5>
 <div class="highlight"><pre><span></span><code><span class="nv">count</span><span class="o">=</span><span class="m">1</span>
-<span class="k">until</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$count</span><span class="w"> </span>-gt<span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="k">until</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$count</span>
 <span class="w">    </span><span class="o">((</span>count++<span class="o">))</span>
 <span class="k">done</span>
@@ -4548,14 +4569,14 @@ array<span class="o">[</span><span class="m">2</span><span class="o">]=</span><s
 <h5 id="foreach">Foreach</h5>
 <div class="highlight"><pre><span></span><code><span class="nv">fruits</span><span class="o">=(</span><span class="s2">&quot;apple&quot;</span><span class="w"> </span><span class="s2">&quot;orange&quot;</span><span class="w"> </span><span class="s2">&quot;banana&quot;</span><span class="o">)</span>
 
-<span class="k">for</span><span class="w"> </span>fruit<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">fruits</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="k">for</span><span class="w"> </span>fruit<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">fruits</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$fruit</span>
 <span class="k">done</span>
 </code></pre></div>
 <h5 id="break-and-continue">Break and continue</h5>
 <p>Exit a loop prematurely using <code>break</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="o">{</span><span class="m">1</span>..10<span class="o">}</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$i</span><span class="w"> </span>-eq<span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
 <span class="w">        </span><span class="k">break</span>
 <span class="w">    </span><span class="k">fi</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$i</span>
@@ -4563,7 +4584,7 @@ array<span class="o">[</span><span class="m">2</span><span class="o">]=</span><s
 </code></pre></div>
 <p>Skip the rest of the loop code to the next iteration using <code>continue</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="o">{</span><span class="m">1</span>..5<span class="o">}</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$i</span><span class="w"> </span>-eq<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
 <span class="w">        </span><span class="k">continue</span>
 <span class="w">    </span><span class="k">fi</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$i</span>
@@ -4575,9 +4596,9 @@ array<span class="o">[</span><span class="m">2</span><span class="o">]=</span><s
 <h3 id="conditional-arguments">Conditional arguments</h3>
 <p>TODO</p>
 <h2 id="script-examples">Script examples</h2>
-<p>[[Configure and build a CMake solution]]
-[[Delete a folder properly]]
-[[Run doxygen on a project]]</p>
+<p>]
+]
+]</p>
 
 
 

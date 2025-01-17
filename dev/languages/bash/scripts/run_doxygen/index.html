@@ -892,6 +892,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloud_services/aws/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3476,7 +3497,7 @@ It ensures that the doc is in the same folder no matter where doxygen is execute
 
 <span class="c1"># get the relative path of the script given the location at which it is executed</span>
 <span class="c1"># and change directory to the script location</span>
-<span class="nv">RELATIVE_EXEC_PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="w"> </span>dirname<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">BASH_SOURCE</span><span class="p">[0]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">)</span><span class="s2">&quot;</span>
+<span class="nv">RELATIVE_EXEC_PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="w"> </span>dirname<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">BASH_SOURCE</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">)</span><span class="s2">&quot;</span>
 <span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Relative path of the script relative to the execution path: </span><span class="si">${</span><span class="nv">RELATIVE_EXEC_PATH</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">RELATIVE_EXEC_PATH</span><span class="si">}</span><span class="s2">&quot;</span>
 
@@ -3503,13 +3524,13 @@ It ensures that the doc is in the same folder no matter where doxygen is execute
 <span class="k">fi</span>
 
 <span class="c1"># Check if the documentation exists</span>
-<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>!<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">DOC_DIR</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="k">if</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Error: Documentation directory not found at </span><span class="si">${</span><span class="nv">DOC_DIR</span><span class="si">}</span><span class="s2">. Please check if the directory exists.&quot;</span>
 <span class="w">    </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
 <span class="k">fi</span>
 
 <span class="c1"># Check if the Doxyfile exists</span>
-<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>!<span class="w"> </span>-f<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">DOXYFILE_ABS_PATH</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="k">if</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Error: Doxyfile not found at </span><span class="si">${</span><span class="nv">DOXYFILE_ABS_PATH</span><span class="si">}</span><span class="s2">. Please check if the text file exists in the documentation directory at </span><span class="si">${</span><span class="nv">DOC_DIR</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="w">    </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
 <span class="k">fi</span>
@@ -3525,14 +3546,14 @@ doxygen<span class="w"> </span><span class="s2">&quot;</span><span class="si">${
 <span class="nv">OUTPUT_DOC_NAME</span><span class="o">=</span><span class="s2">&quot;SpotDemigDoc&quot;</span>
 <span class="nv">OUTPUT_DOC_PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">DOC_DIR</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">OUTPUT_DOC_NAME</span><span class="si">}</span><span class="s2">/index.html&quot;</span>
 
-<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$DOXYGEN_EXIT_CODE</span><span class="w"> </span>-eq<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="k">if</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Doxygen executed successfully, articafts are in </span><span class="si">${</span><span class="nv">DOC_DIR</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">OUTPUT_DOC_NAME</span><span class="si">}</span><span class="s2"> exit code </span><span class="si">${</span><span class="nv">DOXYGEN_EXIT_CODE</span><span class="si">}</span><span class="s2">.&quot;</span>
 <span class="k">else</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Doxygen encountered an error, exit code </span><span class="si">${</span><span class="nv">DOXYGEN_EXIT_CODE</span><span class="si">}</span><span class="s2">.&quot;</span>
 <span class="w">    </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
 <span class="k">fi</span>
 
-<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>!<span class="w"> </span>-f<span class="w"> </span><span class="nv">$OUTPUT_DOC_PATH</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="k">if</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Error, the output doxygen index html index at </span><span class="nv">$OUTPUT_DOC_PATH</span><span class="s2"> can not be open because the path is incorrect&quot;</span>
 <span class="w">    </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
 <span class="k">fi</span>
