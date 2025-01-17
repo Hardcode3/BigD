@@ -189,6 +189,28 @@ Before deploying the API to Amazon AWS, make sure that the API:
 
 - is tested
 - works locally
+- uses adapters to reduce the impact of dependencies in the project
+
+```mermaid
+flowchart TB
+    rest_api("REST API")
+    api_core("API Core")
+    cloud_specific_calls("Cloud-specific methods")
+    authentication_specific_calls("Authentication-specific methods")
+
+    subgraph Adapters
+    cloud_adapter("Cloud adapter")
+    file_adapter("File")
+    authentication_adapter("Authentication Adapter")
+    end
+
+    rest_api -- authenticate --> authentication_adapter
+    rest_api -- uses --> api_core
+    api_core --> cloud_adapter
+    api_core --> file_adapter
+    cloud_adapter --> cloud_specific_calls
+    authentication_adapter --> authentication_specific_calls
+```
 
 ### Adapting ASGI requests to the Lambdas using an adapter
 
