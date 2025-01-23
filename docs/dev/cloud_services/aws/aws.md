@@ -407,7 +407,7 @@ title: Integration of ECR image upload using GitHub actions
     checkout main
     merge develop id: "merge"
     
-    commit id: "CD: Auto deploy: ECR...)" tag: "0.0.1"
+    commit id: "CD: Auto deploy: ECR..." tag: "0.0.1"
     commit
 
 ```
