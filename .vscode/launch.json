@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Serve Doc",
-            "consoleName": "Mkdocs Documentation",
+            "consoleName": "Mkdocs Documentation Serve",
             "request": "launch",
             "type": "debugpy",
             "module": "mkdocs",
@@ -15,7 +15,20 @@
             ],
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
-            "preLaunchTask": "Open Browser"
+            "preLaunchTask": "Open Browser at 127.0.0.1:8000"
+        },
+        {
+            "name": "Build Doc",
+            "consoleName": "Mkdocs Documentation Build",
+            "request": "launch",
+            "type": "debugpy",
+            "module": "mkdocs",
+            "args": [
+                "build"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
         }
+        
     ]
 }
