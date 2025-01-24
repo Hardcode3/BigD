@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Open Browser at 127.0.0.1:8000",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "-m",
+                "webbrowser",
+                "http://127.0.0.1:8000"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Documentation",
+            "type": "shell",
+            "command": "mkdocs",
+            "args": [
+                "build"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Open Browser at index",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "-m",
+                "webbrowser",
+                "${workspaceFolder}/site/index.html"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
