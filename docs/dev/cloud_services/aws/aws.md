@@ -191,6 +191,8 @@ Before deploying the API to Amazon AWS, make sure that the API:
 - works locally
 - uses adapters to reduce the impact of dependencies in the project
 
+---
+
 ```mermaid
 flowchart TB
     rest_api("REST API")
@@ -211,6 +213,59 @@ flowchart TB
     cloud_adapter --> cloud_specific_calls
     authentication_adapter --> authentication_specific_calls
 ```
+
+---
+
+```mermaid
+---
+title: Example of API Design
+---
+flowchart TB
+    subgraph REST_API
+        root("GET /")
+        get_project_files("GET /v1/project/{project}/files/")
+    end
+
+    subgraph API_CORE
+        subgraph Cloud_Adapter
+            list_files_from_storage("list_files_from_storage()")
+        end
+        subgraph Authentication_Adapter
+            authenticate("authenticate()")
+        end
+        subgraph DB_Adapter
+            connect_db("connect()")
+            request("request()")
+        end
+        subgraph Object_Models
+            file("File")
+            list_files("FilesGroup")
+        end
+    end
+
+    subgraph AWS
+        get_files_from_bucket("get_files_from_bucket()")
+        build_bucket_name_from_client("build_bucket_name_from_client()")
+        convert_aws_obj_to_internal_model("aws_obj_to_internal_model()")
+    end
+
+    subgraph OAuth
+        oauthenticate("authenticate()")
+    end
+
+    postgresdb[(PostgresDB)]
+    s3bucket[(S3 Bucket)]
+
+    REST_API --> API_CORE
+    Cloud_Adapter --> AWS
+    Authentication_Adapter --> OAuth
+    DB_Adapter -- query --> postgresdb
+    AWS --> s3bucket
+
+
+```
+
+---
 
 ### Adapting ASGI requests to the Lambdas using an adapter
 
@@ -281,13 +336,15 @@ flowchart LR
 
 ```
 
-#### Using a docker image and ECR
+#### Using a container image and ECR
 
 !!! cite "Documentation"
 
     - [Create a Lambda function using a container image](https://docs.aws.amazon.com/lambda/latest/dg/images-create.html){target=_blank}
     - [AWS Lambda base images](https://gallery.ecr.aws/lambda/){target=_blank}
     - [How to package and deploy a Lambda function as a container image](https://dev.to/aws-builders/how-to-package-and-deploy-a-lambda-function-as-a-container-image-3d1a){target=_blank}
+    - [Creating a container image for use on Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-container-image.html){target=_blank}
+    - [DockerHub amazon/aws-lambda-python](https://hub.docker.com/r/amazon/aws-lambda-python)
 
 A more suited workflow would be to setup a Docker image for the API project.
 Then upload the workflow to Elastic Container Registry (ECR).
@@ -309,6 +366,8 @@ flowchart LR
 
 ```
 
+##### Build the docker file
+
 Example of lambda image running python 3.13:
 
 ```txt
@@ -327,6 +386,30 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 CMD ["path/to/main.py"]
+```
+
+##### Upload a docker image to the ECR
+
+Authenticate the docker client for AWS:
+
+```bash
+aws ecr get-login-password --region eu-west-3 | docker login --username AWS --password-stdin 285647635452.dkr.ecr.eu-west-3.amazonaws.com
+```
+
+Then, build the image:
+
+```bash
+docker build -t <ecr_name> -f Dockerfile .
+```
+
+Tag the image:
+
+```bash
+docker tag <ecr_name>:latest 285647635452.dkr.ecr.eu-west-3.amazonaws.com/<ecr_name>:latest
+```
+
+```bash
+docker push 285647635452.dkr.ecr.eu-west-3.amazonaws.com/<ecr_name>:latest
 ```
 
 ### Let the lambda access a bucket
