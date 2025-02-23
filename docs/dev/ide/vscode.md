@@ -7,6 +7,24 @@ Sign in using
 1. Microsoft account
 2. Github account (settings sync & supercharge git features)
 
+## Editor font
+
+Most fonts can be found on [google fonts](https://fonts.google.com/)
+
+Favorites:
+
+- [Cascadia Code](https://github.com/microsoft/cascadia-code)
+
+### Nerd fonts
+
+Nerd fonts are available [here](https://www.nerdfonts.com/font-downloads).
+
+Favorites:
+
+- ComicShannsMono Nerd Font
+- 0xProto Nerd Font
+- JetBrainsMono Nerd Font
+
 ## Extensions
 
 - ✔️ means verified
@@ -71,8 +89,19 @@ Sign in using
   // Security
   "security.workspace.trust.untrustedFiles": "prompt",
 
+  // Zoom
+  "window.zoomLevel": 0.8,
+
+  // Terminal
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.cwd": "${workspaceFolder}",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
   // Editor
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
   "editor.formatOnSave": false,
@@ -85,7 +114,8 @@ Sign in using
   "editor.fontFamily": "'0xProto Nerd Font', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.lineHeight": 1.5,
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
+  "editor.mouseWheelZoom": true,
 
   // Files
   "files.autoSave": "afterDelay",
@@ -98,7 +128,7 @@ Sign in using
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": true,
+    "**/Thumbs.db": true
   },
 
   // Explorer related settings
@@ -113,7 +143,7 @@ Sign in using
   "workbench.colorTheme": "Solarized Light",
   "workbench.colorCustomizations": {
     "[Solarized Light]": {
-      "editor.selectionBackground":"#f4f292",
+      "editor.selectionBackground": "#f4f292"
     }
   },
 
@@ -126,25 +156,29 @@ Sign in using
   "gitlens.codeLens.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
 
-  // Terminal
-  "terminal.integrated.defaultLocation": "editor",
-  "terminal.integrated.cwd": "${workspaceFolder}",
-  "terminal.integrated.defaultProfile.linux": "bash",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-
   // Language specific settings
   "[python]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "python.analysis.autoFormatStrings": true,
 
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // Extensions
-  "autoDocstring.docstringFormat": "google"
+  "autoDocstring.docstringFormat": "google",
+
+  // Disable Copilot Icon
+  "chat.commandCenter.enabled": false
 }
 
 ```
@@ -153,76 +187,87 @@ Sign in using
 
 ```json
 {
-    "shortcuts": [
-        {
-            "key": "ctrl+'",
-            "command": "editor.action.smartSelect.expand",
-            "when": "editorTextFocus"
-        },
-        {
-            "key": "ctrl+shift+'",
-            "command": "editor.action.addSelectionToNextFindMatch",
-            "when": "editorTextFocus"
-        },
-        {
-            "key": "ctrl+shift+up",
-            "command": "editor.action.moveLinesUpAction",
-            "when": "editorTextFocus"
-        },
-        {
-            "key": "ctrl+shift+down",
-            "command": "editor.action.moveLinesDownAction",
-            "when": "editorTextFocus"
-        },
-        {
-            "key": "ctrl+shift+k",
-            "command": "editor.action.deleteLines",
-            "when": "editorTextFocus"
-        },
-        {
-            "key": "alt+up",
-            "command": "editor.action.insertLineBefore",
-            "when": "editorTextFocus"
-        },
-        {
-            "key": "alt+down",
-            "command": "editor.action.insertLineAfter",
-            "when": "editorTextFocus"
-        },
-        {
-            "key": "ctrl+o",
-            "command": "workbench.action.quickOpen",
-            "when": "editorTextFocus"
-        },
-        {
-            "key": "ctrl+shift+o",
-            "command": "revealFileInOS",
-            "when": "editorTextFocus"
-        },
-        {
-            "key": "ctrl+shift+l",
-            "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
-        },
-        {
-            "key": "ctrl+shift+/",
-            "command": "workbench.action.gotoSymbol"
-        },
-        {
-            "key": "ctrl+n",
-            "command": "explorer.newFile"
-        },
-        {
-            "key": "ctrl+alt+l",
-            "command": "editor.action.formatDocument"
-        },
-        {
-            "key": "ctrl+t",
-            "command": "workbench.action.terminal.toggleTerminal"
-        },
-        {
-            "key": "ctrl+shift+t",
-            "command": "workbench.action.terminal.new"
-        }
-    ]
+  "shortcuts": [
+    {
+      "key": "ctrl+'",
+      "command": "editor.action.smartSelect.expand",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+'",
+      "command": "editor.action.addSelectionToNextFindMatch",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+x",
+      "command": "editor.action.clipboardCutAction",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+d",
+      "command": "editor.action.copyLinesDownAction",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+up",
+      "command": "editor.action.moveLinesUpAction",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+down",
+      "command": "editor.action.moveLinesDownAction",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+k",
+      "command": "editor.action.deleteLines",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "alt+up",
+      "command": "editor.action.insertLineBefore",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "alt+down",
+      "command": "editor.action.insertLineAfter",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+o",
+      "command": "workbench.action.quickOpen",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+o",
+      "command": "revealFileInOS",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+l",
+      "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+    },
+    {
+      "key": "ctrl+shift+/",
+      "command": "workbench.action.gotoSymbol"
+    },
+    {
+      "key": "ctrl+n",
+      "command": "explorer.newFile"
+    },
+    {
+      "key": "ctrl+alt+l",
+      "command": "editor.action.formatDocument"
+    },
+    {
+      "key": "ctrl+t",
+      "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+      "key": "ctrl+shift+t",
+      "command": "workbench.action.terminal.new"
+    }
+  ]
 }
+
 ```
