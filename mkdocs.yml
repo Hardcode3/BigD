@@ -90,7 +90,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Contact: 
+  - Contact:
       - contact.md
   - Dev:
       - dev/cyber_security.md
@@ -154,6 +154,8 @@ nav:
           - dev/tools/github.md
           - dev/tools/amazon_aws.md
           - dev/tools/virtualization.md
+      - IDE:
+          - dev/ide/vscode.md
       - Operating Systems:
           - dev/os/linux_file_system.md
   - Algorithms:
