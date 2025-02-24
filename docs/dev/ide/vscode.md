@@ -116,6 +116,9 @@ Favorites:
   "editor.lineHeight": 1.5,
   "editor.fontSize": 15,
   "editor.mouseWheelZoom": true,
+  "editor.pasteAs.preferences": [
+        "markdown.link"
+    ],
 
   // Files
   "files.autoSave": "afterDelay",
