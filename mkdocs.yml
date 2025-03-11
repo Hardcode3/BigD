@@ -93,6 +93,7 @@ nav:
   - Contact:
       - contact.md
   - Dev:
+      - dev/mac_setup.md
       - dev/cyber_security.md
       - dev/code_quality.md
       - AI:
