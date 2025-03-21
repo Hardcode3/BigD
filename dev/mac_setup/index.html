@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -869,6 +869,15 @@
   <a href="#install-tree-command" class="md-nav__link">
     <span class="md-ellipsis">
       Install Tree Command
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-unison-file-sync" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Unison (file sync)
     </span>
   </a>
   
@@ -4047,6 +4056,54 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 <h2 id="install-tree-command">Install Tree Command</h2>
 <p>The <code>tree</code> command allows you to visualize directory structures in a tree format.</p>
 <div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>tree
+</code></pre></div>
+<hr />
+<h2 id="install-unison-file-sync">Install Unison (file sync)</h2>
+<p>Allows for synchronizing two directories.</p>
+<p>Used to sync an external disk with the local document folder.</p>
+<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>unison
+</code></pre></div>
+<p>Setup the unison profile, located in <code>/Library/Application Support/Unison</code> by first opening the folder.</p>
+<p>Create a file that will have the profile name <code>sync_t5.prf</code> for instance.</p>
+<p>Add the following content:</p>
+<div class="highlight"><pre><span></span><code># Unison Profile for syncing an external disk
+root = /Volumes/BaptisteT5/DOCUMENTS
+root = /Users/baptistepenot/Documents
+
+# Sync options
+auto = true
+batch = true
+prefer = newer
+fastcheck = true
+
+# This disk uses the ExFAT file system
+fat = true
+
+ignore = Name *.swp         # Fichiers temporaires de Vim
+ignore = Name *~            # Fichiers temporaires classiques
+ignore = Name *.bak         # Fichiers de sauvegarde
+ignore = Name *.DS_Store*   # Fichiers macOS inutiles
+ignore = Name .localized    # ?
+ignore = Name *.unison*     # unsion temporary files
+ignore = Name Thumbs.db     # Fichiers Windows inutiles
+</code></pre></div>
+<p>Launch unison using:</p>
+<div class="highlight"><pre><span></span><code>unison<span class="w"> </span>sync-t5<span class="w"> </span>-batch
+</code></pre></div>
+<p>or optionaly, use a script:</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/zsh</span>
+
+<span class="c1"># Define the external drive name (e.g., &quot;BaptisteT5&quot;)</span>
+<span class="nv">DRIVE_NAME</span><span class="o">=</span><span class="s2">&quot;BaptisteT5&quot;</span>
+
+<span class="c1"># Check if the folder for the external drive exists under &quot;/Volumes&quot;</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;/Volumes/</span><span class="nv">$DRIVE_NAME</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="c1"># Run Unison in batch mode silently in the background</span>
+<span class="w">    </span>/opt/homebrew/bin/unison<span class="w"> </span>sync-t5<span class="w"> </span>-batch
+<span class="k">else</span>
+<span class="w">    </span><span class="c1"># Print a message if the directory doesn&#39;t exist</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Drive </span><span class="nv">$DRIVE_NAME</span><span class="s2"> not found! Please connect the external drive.&quot;</span>
+<span class="k">fi</span>
 </code></pre></div>
 <hr />
 <h2 id="install-latex">Install LaTeX</h2>
