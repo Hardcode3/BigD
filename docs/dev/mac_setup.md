@@ -185,6 +185,71 @@ brew install tree
 
 ---
 
+## Install Unison (file sync)
+
+Allows for synchronizing two directories.
+
+Used to sync an external disk with the local document folder.
+
+```bash
+brew install unison
+```
+
+Setup the unison profile, located in `/Library/Application Support/Unison` by first opening the folder.
+
+Create a file that will have the profile name `sync_t5.prf` for instance.
+
+Add the following content:
+
+```unison
+# Unison Profile for syncing an external disk
+root = /Volumes/BaptisteT5/DOCUMENTS
+root = /Users/baptistepenot/Documents
+
+# Sync options
+auto = true
+batch = true
+prefer = newer
+fastcheck = true
+
+# This disk uses the ExFAT file system
+fat = true
+
+ignore = Name *.swp         # Fichiers temporaires de Vim
+ignore = Name *~            # Fichiers temporaires classiques
+ignore = Name *.bak         # Fichiers de sauvegarde
+ignore = Name *.DS_Store*   # Fichiers macOS inutiles
+ignore = Name .localized    # ?
+ignore = Name *.unison*     # unsion temporary files
+ignore = Name Thumbs.db     # Fichiers Windows inutiles
+```
+
+Launch unison using:
+
+```shell
+unison sync-t5 -batch
+```
+
+or optionaly, use a script:
+
+```bash
+#!/bin/zsh
+
+# Define the external drive name (e.g., "BaptisteT5")
+DRIVE_NAME="BaptisteT5"
+
+# Check if the folder for the external drive exists under "/Volumes"
+if [ -d "/Volumes/$DRIVE_NAME" ]; then
+    # Run Unison in batch mode silently in the background
+    /opt/homebrew/bin/unison sync-t5 -batch
+else
+    # Print a message if the directory doesn't exist
+    echo "Drive $DRIVE_NAME not found! Please connect the external drive."
+fi
+```
+
+---
+
 ## Install LaTeX
 
 If you need to work with LaTeX, install a minimal distribution.
