@@ -46,6 +46,30 @@ xcode-select --install
 
 ---
 
+## GCC compiler
+
+```shell
+brew install gcc
+```
+
+---
+
+## LLVM tools (clang, clangd)
+
+```shell
+brew install llvm
+````
+
+---
+
+## C++ Static code analysis (cppcheck)
+
+```shell
+brew install cppcheck
+```
+
+---
+
 ## Install Pyenv (Python Version Management)
 
 Pyenv is used to manage multiple versions of Python.
