@@ -112,6 +112,14 @@ eval "$(pyenv virtualenv-init -)"
 
 ---
 
+## Install postgresql
+
+```shell
+brew install postgresql
+```
+
+---
+
 ## Install Oh My Zsh (Improved Terminal Experience)
 
 Oh My Zsh offers plugins, themes, and various enhancements for the Zsh shell.
@@ -270,6 +278,16 @@ else
     # Print a message if the directory doesn't exist
     echo "Drive $DRIVE_NAME not found! Please connect the external drive."
 fi
+```
+
+---
+
+## Install rdfind
+
+To identify duplicated files.
+
+```shell
+brew install rdfind
 ```
 
 ---

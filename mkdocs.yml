@@ -112,6 +112,7 @@ nav:
           - dev/computer_science/multithreading.md
       - Database:
           - dev/database/relational_database.md
+          - dev/database/adr_psycopg2_vs_sqlalchemy.md
       - Languages:
           - Python:
               - dev/languages/python/about_init_files.md
