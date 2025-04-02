@@ -11,25 +11,25 @@
       
       
       
-        <link rel="prev" href="../../bash/scripts/run_doxygen/">
+        <link rel="prev" href="../relational_database/">
       
       
-        <link rel="next" href="../pybind11_basics/">
+        <link rel="next" href="../../languages/python/about_init_files/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>CppCon 2022 - Back to Basics C++ API Design - Jason Turner - My Knowledge DB - BigD</title>
+        <title>SQLAlchemy vs psycopg2 - My Knowledge DB - BigD</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,11 +48,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cppcon-2022-back-to-basics-c-api-design-jason-turner" class="md-skip">
+        <a href="#sqlalchemy-vs-psycopg2" class="md-skip">
           Skip to content
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="My Knowledge DB - BigD" class="md-header__button md-logo" aria-label="My Knowledge DB - BigD" data-md-component="logo">
+    <a href="../../.." title="My Knowledge DB - BigD" class="md-header__button md-logo" aria-label="My Knowledge DB - BigD" data-md-component="logo">
       
-  <img src="../../../../res/main_icon.png" alt="logo">
+  <img src="../../../res/main_icon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CppCon 2022 - Back to Basics C++ API Design - Jason Turner
+              SQLAlchemy vs psycopg2
             
           </span>
         </div>
@@ -235,7 +235,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -256,7 +256,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../contact/" class="md-tabs__link">
+        <a href="../../../contact/" class="md-tabs__link">
           
   
   
@@ -278,7 +278,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../mac_setup/" class="md-tabs__link">
+        <a href="../../mac_setup/" class="md-tabs__link">
           
   
   
@@ -298,7 +298,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../algorithms/simulated_annealing/" class="md-tabs__link">
+        <a href="../../../algorithms/simulated_annealing/" class="md-tabs__link">
           
   
   
@@ -318,7 +318,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../data_structures/data_structures/" class="md-tabs__link">
+        <a href="../../../data_structures/data_structures/" class="md-tabs__link">
           
   
   
@@ -338,7 +338,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../file_formats/json/" class="md-tabs__link">
+        <a href="../../../file_formats/json/" class="md-tabs__link">
           
   
   
@@ -365,7 +365,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../geoscience/seismic/eikonal_equation/" class="md-tabs__link">
+        <a href="../../../geoscience/seismic/eikonal_equation/" class="md-tabs__link">
           
   
   
@@ -388,7 +388,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../physics/huygens_principle/" class="md-tabs__link">
+        <a href="../../../physics/huygens_principle/" class="md-tabs__link">
           
   
   
@@ -415,7 +415,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../mathematics/fourrier_transform/" class="md-tabs__link">
+        <a href="../../../mathematics/fourrier_transform/" class="md-tabs__link">
           
   
   
@@ -460,9 +460,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="My Knowledge DB - BigD" class="md-nav__button md-logo" aria-label="My Knowledge DB - BigD" data-md-component="logo">
+    <a href="../../.." title="My Knowledge DB - BigD" class="md-nav__button md-logo" aria-label="My Knowledge DB - BigD" data-md-component="logo">
       
-  <img src="../../../../res/main_icon.png" alt="logo">
+  <img src="../../../res/main_icon.png" alt="logo">
 
     </a>
     My Knowledge DB - BigD
@@ -489,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -556,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../contact/" class="md-nav__link">
+      <a href="../../../contact/" class="md-nav__link">
         
   
   
@@ -634,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mac_setup/" class="md-nav__link">
+      <a href="../../mac_setup/" class="md-nav__link">
         
   
   
@@ -657,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cyber_security/" class="md-nav__link">
+      <a href="../../cyber_security/" class="md-nav__link">
         
   
   
@@ -680,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../code_quality.md" class="md-nav__link">
+      <a href="../../code_quality.md" class="md-nav__link">
         
   
   
@@ -703,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ssh_setup/" class="md-nav__link">
+      <a href="../../ssh_setup/" class="md-nav__link">
         
   
   
@@ -774,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ai/generative_ai/" class="md-nav__link">
+      <a href="../../ai/generative_ai/" class="md-nav__link">
         
   
   
@@ -853,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../api/api/" class="md-nav__link">
+      <a href="../../api/api/" class="md-nav__link">
         
   
   
@@ -876,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../api/rest_api/" class="md-nav__link">
+      <a href="../../api/rest_api/" class="md-nav__link">
         
   
   
@@ -899,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../api/api_testing/" class="md-nav__link">
+      <a href="../../api/api_testing/" class="md-nav__link">
         
   
   
@@ -978,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud_services/cloud_services_comparison/" class="md-nav__link">
+      <a href="../../cloud_services/cloud_services_comparison/" class="md-nav__link">
         
   
   
@@ -1001,7 +1001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cloud_services/aws/aws/" class="md-nav__link">
+      <a href="../../cloud_services/aws/aws/" class="md-nav__link">
         
   
   
@@ -1080,7 +1080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../computer_science/parallelism_and_concurrency/" class="md-nav__link">
+      <a href="../../computer_science/parallelism_and_concurrency/" class="md-nav__link">
         
   
   
@@ -1103,7 +1103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../computer_science/program_process_thread/" class="md-nav__link">
+      <a href="../../computer_science/program_process_thread/" class="md-nav__link">
         
   
   
@@ -1126,7 +1126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../computer_science/url_uri_urn/" class="md-nav__link">
+      <a href="../../computer_science/url_uri_urn/" class="md-nav__link">
         
   
   
@@ -1149,114 +1149,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../computer_science/multithreading/" class="md-nav__link">
+      <a href="../../computer_science/multithreading/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Multithreading
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    Database
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_9">
-            <span class="md-nav__icon md-icon"></span>
-            Database
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../database/relational_database/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Relational Database
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../database/adr_psycopg2_vs_sqlalchemy/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    SQLAlchemy vs psycopg2
     
   </span>
   
@@ -1300,7 +1198,214 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Database
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            Database
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relational_database/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Relational Database
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    SQLAlchemy vs psycopg2
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQLAlchemy vs psycopg2
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#higher-level-abstraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Higher-Level Abstraction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scalability-connection-pooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalability: Connection Pooling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migrations-with-alembic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrations with Alembic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-agnosticism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Agnosticism
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cleaner-code-and-maintainability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cleaner Code and Maintainability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-psycopg2" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use Psycopg2?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-sqlalchemy" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use SQLAlchemy?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_10" >
         
           
           <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="">
@@ -1316,7 +1421,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_10">
             <span class="md-nav__icon md-icon"></span>
             Languages
@@ -1375,7 +1480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/about_init_files/" class="md-nav__link">
+      <a href="../../languages/python/about_init_files/" class="md-nav__link">
         
   
   
@@ -1398,7 +1503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/wheels/" class="md-nav__link">
+      <a href="../../languages/python/wheels/" class="md-nav__link">
         
   
   
@@ -1421,7 +1526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../python/environments/" class="md-nav__link">
+      <a href="../../languages/python/environments/" class="md-nav__link">
         
   
   
@@ -1497,7 +1602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bash/bash_basics/" class="md-nav__link">
+      <a href="../../languages/bash/bash_basics/" class="md-nav__link">
         
   
   
@@ -1565,7 +1670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bash/scripts/confgure_and_build_cmake_solution/" class="md-nav__link">
+      <a href="../../languages/bash/scripts/confgure_and_build_cmake_solution/" class="md-nav__link">
         
   
   
@@ -1588,7 +1693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bash/scripts/delete_folder/" class="md-nav__link">
+      <a href="../../languages/bash/scripts/delete_folder/" class="md-nav__link">
         
   
   
@@ -1611,7 +1716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bash/scripts/configure_python_environment/" class="md-nav__link">
+      <a href="../../languages/bash/scripts/configure_python_environment/" class="md-nav__link">
         
   
   
@@ -1634,7 +1739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bash/scripts/run_doxygen/" class="md-nav__link">
+      <a href="../../languages/bash/scripts/run_doxygen/" class="md-nav__link">
         
   
   
@@ -1670,8 +1775,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1684,11 +1787,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_10_3" >
         
           
           <label class="md-nav__link" for="__nav_3_10_3" id="__nav_3_10_3_label" tabindex="0">
@@ -1704,7 +1809,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_10_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_10_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_10_3">
             <span class="md-nav__icon md-icon"></span>
             CXX
@@ -1715,32 +1820,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    CppCon 2022 - Back to Basics C++ API Design - Jason Turner
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../languages/cpp/cppcon_2022_back_to_basics_cpp_api_design/" class="md-nav__link">
         
   
   
@@ -1751,44 +1834,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1801,7 +1846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pybind11_basics/" class="md-nav__link">
+      <a href="../../languages/cpp/pybind11_basics/" class="md-nav__link">
         
   
   
@@ -1877,7 +1922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../java/java_basics/" class="md-nav__link">
+      <a href="../../languages/java/java_basics/" class="md-nav__link">
         
   
   
@@ -1953,7 +1998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../markdown/markdown_basics/" class="md-nav__link">
+      <a href="../../languages/markdown/markdown_basics/" class="md-nav__link">
         
   
   
@@ -2029,7 +2074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/sql/" class="md-nav__link">
+      <a href="../../languages/sql/sql/" class="md-nav__link">
         
   
   
@@ -2052,7 +2097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sql/sql_examples/" class="md-nav__link">
+      <a href="../../languages/sql/sql_examples/" class="md-nav__link">
         
   
   
@@ -2139,7 +2184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../software_architecture/design_patterns/" class="md-nav__link">
+      <a href="../../software_architecture/design_patterns/" class="md-nav__link">
         
   
   
@@ -2162,7 +2207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../software_architecture/software_architecture/" class="md-nav__link">
+      <a href="../../software_architecture/software_architecture/" class="md-nav__link">
         
   
   
@@ -2185,7 +2230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../software_architecture/unified_modelling_language/" class="md-nav__link">
+      <a href="../../software_architecture/unified_modelling_language/" class="md-nav__link">
         
   
   
@@ -2208,7 +2253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../software_architecture/authentication_mechanisms/" class="md-nav__link">
+      <a href="../../software_architecture/authentication_mechanisms/" class="md-nav__link">
         
   
   
@@ -2287,7 +2332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devsecops/software_version_numbers/" class="md-nav__link">
+      <a href="../../devsecops/software_version_numbers/" class="md-nav__link">
         
   
   
@@ -2310,7 +2355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devsecops/software_development_lifecycle/" class="md-nav__link">
+      <a href="../../devsecops/software_development_lifecycle/" class="md-nav__link">
         
   
   
@@ -2389,7 +2434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/curl/" class="md-nav__link">
+      <a href="../../tools/curl/" class="md-nav__link">
         
   
   
@@ -2412,7 +2457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/brew/" class="md-nav__link">
+      <a href="../../tools/brew/" class="md-nav__link">
         
   
   
@@ -2435,7 +2480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/git/" class="md-nav__link">
+      <a href="../../tools/git/" class="md-nav__link">
         
   
   
@@ -2458,7 +2503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/screen/" class="md-nav__link">
+      <a href="../../tools/screen/" class="md-nav__link">
         
   
   
@@ -2481,7 +2526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/tar/" class="md-nav__link">
+      <a href="../../tools/tar/" class="md-nav__link">
         
   
   
@@ -2504,7 +2549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/vcpkg/" class="md-nav__link">
+      <a href="../../tools/vcpkg/" class="md-nav__link">
         
   
   
@@ -2527,7 +2572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/docker/" class="md-nav__link">
+      <a href="../../tools/docker/" class="md-nav__link">
         
   
   
@@ -2550,7 +2595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/docker-compose/" class="md-nav__link">
+      <a href="../../tools/docker-compose/" class="md-nav__link">
         
   
   
@@ -2573,7 +2618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/portainer/" class="md-nav__link">
+      <a href="../../tools/portainer/" class="md-nav__link">
         
   
   
@@ -2596,7 +2641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/github/" class="md-nav__link">
+      <a href="../../tools/github/" class="md-nav__link">
         
   
   
@@ -2619,7 +2664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/amazon_aws/" class="md-nav__link">
+      <a href="../../tools/amazon_aws/" class="md-nav__link">
         
   
   
@@ -2642,7 +2687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/virtualization/" class="md-nav__link">
+      <a href="../../tools/virtualization/" class="md-nav__link">
         
   
   
@@ -2721,7 +2766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ide/vscode/" class="md-nav__link">
+      <a href="../../ide/vscode/" class="md-nav__link">
         
   
   
@@ -2800,7 +2845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../os/linux_file_system/" class="md-nav__link">
+      <a href="../../os/linux_file_system/" class="md-nav__link">
         
   
   
@@ -2883,7 +2928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../algorithms/simulated_annealing/" class="md-nav__link">
+      <a href="../../../algorithms/simulated_annealing/" class="md-nav__link">
         
   
   
@@ -2906,7 +2951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../algorithms/rejection_sampling/" class="md-nav__link">
+      <a href="../../../algorithms/rejection_sampling/" class="md-nav__link">
         
   
   
@@ -2929,7 +2974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../algorithms/metropolis_hastings/" class="md-nav__link">
+      <a href="../../../algorithms/metropolis_hastings/" class="md-nav__link">
         
   
   
@@ -2952,7 +2997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../algorithms/markov_chain_monte_carlo/" class="md-nav__link">
+      <a href="../../../algorithms/markov_chain_monte_carlo/" class="md-nav__link">
         
   
   
@@ -2975,7 +3020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../algorithms/inverse_problem_theory/" class="md-nav__link">
+      <a href="../../../algorithms/inverse_problem_theory/" class="md-nav__link">
         
   
   
@@ -2998,7 +3043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../algorithms/algorithm_glossary/" class="md-nav__link">
+      <a href="../../../algorithms/algorithm_glossary/" class="md-nav__link">
         
   
   
@@ -3021,7 +3066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../algorithms/numerical_optimization/" class="md-nav__link">
+      <a href="../../../algorithms/numerical_optimization/" class="md-nav__link">
         
   
   
@@ -3044,7 +3089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../algorithms/big_0_notation/" class="md-nav__link">
+      <a href="../../../algorithms/big_0_notation/" class="md-nav__link">
         
   
   
@@ -3119,7 +3164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../data_structures/data_structures/" class="md-nav__link">
+      <a href="../../../data_structures/data_structures/" class="md-nav__link">
         
   
   
@@ -3142,7 +3187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../data_structures/digit_representations/" class="md-nav__link">
+      <a href="../../../data_structures/digit_representations/" class="md-nav__link">
         
   
   
@@ -3165,7 +3210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../data_structures/meshes/" class="md-nav__link">
+      <a href="../../../data_structures/meshes/" class="md-nav__link">
         
   
   
@@ -3188,7 +3233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../data_structures/quadtree/" class="md-nav__link">
+      <a href="../../../data_structures/quadtree/" class="md-nav__link">
         
   
   
@@ -3211,7 +3256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../data_structures/spatial_acceleration_structures/" class="md-nav__link">
+      <a href="../../../data_structures/spatial_acceleration_structures/" class="md-nav__link">
         
   
   
@@ -3286,7 +3331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../file_formats/json/" class="md-nav__link">
+      <a href="../../../file_formats/json/" class="md-nav__link">
         
   
   
@@ -3309,7 +3354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../file_formats/obj/" class="md-nav__link">
+      <a href="../../../file_formats/obj/" class="md-nav__link">
         
   
   
@@ -3332,7 +3377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../file_formats/segy/" class="md-nav__link">
+      <a href="../../../file_formats/segy/" class="md-nav__link">
         
   
   
@@ -3355,7 +3400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../file_formats/xml/" class="md-nav__link">
+      <a href="../../../file_formats/xml/" class="md-nav__link">
         
   
   
@@ -3475,7 +3520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../geoscience/seismic/eikonal_equation/" class="md-nav__link">
+      <a href="../../../geoscience/seismic/eikonal_equation/" class="md-nav__link">
         
   
   
@@ -3498,7 +3543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../geoscience/seismic/seismic_industry_history/" class="md-nav__link">
+      <a href="../../../geoscience/seismic/seismic_industry_history/" class="md-nav__link">
         
   
   
@@ -3521,7 +3566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../geoscience/seismic/fast_marching_method/" class="md-nav__link">
+      <a href="../../../geoscience/seismic/fast_marching_method/" class="md-nav__link">
         
   
   
@@ -3544,7 +3589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../geoscience/seismic/fast_sweeping_method/" class="md-nav__link">
+      <a href="../../../geoscience/seismic/fast_sweeping_method/" class="md-nav__link">
         
   
   
@@ -3567,7 +3612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../geoscience/seismic/full_waveform_inversion/" class="md-nav__link">
+      <a href="../../../geoscience/seismic/full_waveform_inversion/" class="md-nav__link">
         
   
   
@@ -3590,7 +3635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../geoscience/seismic/born_modelling/" class="md-nav__link">
+      <a href="../../../geoscience/seismic/born_modelling/" class="md-nav__link">
         
   
   
@@ -3613,7 +3658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../geoscience/seismic/tomography/" class="md-nav__link">
+      <a href="../../../geoscience/seismic/tomography/" class="md-nav__link">
         
   
   
@@ -3636,7 +3681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../geoscience/seismic/seismic_fundamentals/" class="md-nav__link">
+      <a href="../../../geoscience/seismic/seismic_fundamentals/" class="md-nav__link">
         
   
   
@@ -3719,7 +3764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../physics/huygens_principle/" class="md-nav__link">
+      <a href="../../../physics/huygens_principle/" class="md-nav__link">
         
   
   
@@ -3742,7 +3787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../physics/wave_propagation/" class="md-nav__link">
+      <a href="../../../physics/wave_propagation/" class="md-nav__link">
         
   
   
@@ -3862,7 +3907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mathematics/fourrier_transform/" class="md-nav__link">
+      <a href="../../../mathematics/fourrier_transform/" class="md-nav__link">
         
   
   
@@ -3885,7 +3930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../mathematics/sampling_theory/" class="md-nav__link">
+      <a href="../../../mathematics/sampling_theory/" class="md-nav__link">
         
   
   
@@ -3935,33 +3980,70 @@
   
 
 
-<h1 id="cppcon-2022-back-to-basics-c-api-design-jason-turner">CppCon 2022 - Back to Basics C++ API Design - Jason Turner</h1>
-<div class="admonition cite">
-<p class="admonition-title">Cite</p>
+<h1 id="sqlalchemy-vs-psycopg2">SQLAlchemy vs psycopg2</h1>
+<p>Using SQLAlchemy instead of raw psycopg2 provides better scalability, maintainability, and flexibility for several reasons:</p>
+<h2 id="higher-level-abstraction">Higher-Level Abstraction</h2>
 <ul>
-<li><a href="https://github.com/CppCon/CppCon2022/tree/main">GutHub CppCon</a></li>
-<li><a href="https://youtu.be/zL-vn_pGGgY?si=S7mGTiImdlfpYl6J">Youtube</a></li>
+<li>psycopg2 requires writing raw SQL queries, which can become verbose and error-prone.</li>
+<li>SQLAlchemy ORM lets you interact with the database using Python classes and objects, making the code more readable and modular.</li>
 </ul>
-</div>
-<h2 id="summary">Summary</h2>
-<div class="admonition abstract">
-<p class="admonition-title">Illustrates which are the bad and the good habits while writing a C++ API</p>
-</div>
-<h2 id="conclusion">Conclusion</h2>
-<div class="admonition success">
-<p class="admonition-title">Its all about making your API hard to use wrong</p>
-<p>Its all about making your API hard to use wrong by:
-- Trying to use your API incorrectly
-- Using better naming
-- Use <code>[[nodiscard]]</code> liberally
-- Never return a ray pointer, instead prefer references or better: smart pointers
-- Use <code>noexcept</code> to indicate that a function does not raise errors
-- Provide consistent and IMPOSSIBLE to ignore error handling (avoid returning error codes for instance and prefer throwing errors)
-- Use strong types (that can not be constructed with cast / different inputs) and avoid implicit conversions. For instance, std::filesystem is a weak type since it can be constructed with a string, a const char*, etc... Prevent conversions by using <code>delete</code> on the relevant constructors and functions (sparingly).
-- Avoid passing raw pointers except for optional and unique arguments
-- Limit API visibility to the required on no more
-- Use <code>constexpr</code> unless there is a good reason</p>
-</div>
+<p>Example: Psycopg2 (Raw SQL)</p>
+<div class="highlight"><pre><span></span><code><span class="k">cursor</span><span class="p">.</span><span class="k">execute</span><span class="p">(</span><span class="ss">&quot;SELECT * FROM expenses WHERE amount &gt; %s&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="mi">10</span><span class="p">,))</span>
+</code></pre></div>
+<p>Example: SQLAlchemy ORM</p>
+<div class="highlight"><pre><span></span><code><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">Expense</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">Expense</span><span class="o">.</span><span class="n">amount</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</code></pre></div>
+<p>This is more readable and reusable.</p>
+<h2 id="scalability-connection-pooling">Scalability: Connection Pooling</h2>
+<ul>
+<li>psycopg2 opens and closes connections manually, which can slow down an application under heavy load.</li>
+<li>SQLAlchemy provides connection pooling, reusing connections instead of creating a new one each time.</li>
+</ul>
+<p>Example: Connection Pooling in SQLAlchemy</p>
+<div class="highlight"><pre><span></span><code><span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s2">&quot;postgresql://user:pass@localhost/db&quot;</span><span class="p">,</span> <span class="n">pool_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_overflow</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</code></pre></div>
+<p>This improves performance in high-traffic applications.</p>
+<h2 id="migrations-with-alembic">Migrations with Alembic</h2>
+<ul>
+<li>Databases evolve (new tables, modified schemas, etc.).</li>
+<li>psycopg2 requires manually altering tables with raw SQL.</li>
+<li>SQLAlchemy works with Alembic for versioned schema migrations.</li>
+</ul>
+<p>Example: Alembic Migration Command</p>
+<div class="highlight"><pre><span></span><code>alembic<span class="w"> </span>revision<span class="w"> </span>--autogenerate<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Added new column&quot;</span>
+alembic<span class="w"> </span>upgrade<span class="w"> </span>head
+</code></pre></div>
+<p>This makes managing schema changes safer and easier.</p>
+<h2 id="database-agnosticism">Database Agnosticism</h2>
+<ul>
+<li>psycopg2 is PostgreSQL-specific.</li>
+<li>SQLAlchemy supports multiple databases (PostgreSQL, MySQL, SQLite, etc.), making it easier to switch databases if needed.</li>
+</ul>
+<h2 id="cleaner-code-and-maintainability">Cleaner Code and Maintainability</h2>
+<p>With SQLAlchemy, database logic stays organized using models.</p>
+<p>Example: Psycopg2 (Verbose)</p>
+<div class="highlight"><pre><span></span><code><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO expenses (description, amount) VALUES (</span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">)&quot;</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Lunch&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</code></pre></div>
+<p>Example: SQLAlchemy ORM (Cleaner)</p>
+<div class="highlight"><pre><span></span><code><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Expense</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Lunch&quot;</span><span class="p">,</span> <span class="n">amount</span><span class="o">=</span><span class="mi">15</span><span class="p">))</span>
+<span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</code></pre></div>
+<ul>
+<li>The ORM approach makes code more maintainable in large applications.</li>
+</ul>
+<h2 id="when-to-use-psycopg2">When to Use Psycopg2?</h2>
+<ul>
+<li>If you only need raw SQL for a simple script or minimal performance overhead.</li>
+<li>If you need very fine-tuned control over queries.</li>
+</ul>
+<h2 id="when-to-use-sqlalchemy">When to Use SQLAlchemy?</h2>
+<ul>
+<li>✅ If your application will grow (more queries, schema changes).</li>
+<li>✅ If you want connection pooling for better performance.</li>
+<li>✅ If you need database migrations.</li>
+<li>✅ If you might switch to another SQL database in the future.</li>
+</ul>
 
 
 
@@ -3997,7 +4079,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../bash/scripts/run_doxygen/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Run doxygen on a C++ project">
+          <a href="../relational_database/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Relational Database">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -4007,20 +4089,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Run doxygen on a C++ project
+                Relational Database
               </div>
             </div>
           </a>
         
         
           
-          <a href="../pybind11_basics/" class="md-footer__link md-footer__link--next" aria-label="Next: Pybind 11 basics">
+          <a href="../../languages/python/about_init_files/" class="md-footer__link md-footer__link--next" aria-label="Next: __init__.py">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Pybind 11 basics
+                __init__.py
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -4062,12 +4144,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.footer", "navigation.path", "navigation.top", "content.code.annotate", "content.code.copy", "content.code.select", "search.suggest", "search.highlight", "search.share", "toc.follow", "toc.integrate"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.footer", "navigation.path", "navigation.top", "content.code.annotate", "content.code.copy", "content.code.select", "search.suggest", "search.highlight", "search.share", "toc.follow", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="../../../../javascripts/katex.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       
