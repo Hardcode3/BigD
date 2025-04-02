@@ -96,6 +96,7 @@ nav:
       - dev/mac_setup.md
       - dev/cyber_security.md
       - dev/code_quality.md
+      - dev/ssh_setup.md
       - AI:
           - dev/ai/generative_ai.md
       - API:
